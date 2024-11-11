@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--main-color: rgb(15, 92, 86);
+	--dark-main-color: rgb(7, 51, 47);
+	--break-color: #7d7d7c;
+	--medium-light-color: #e2e8f0;
+	--darkest-light-color: #bfc0c0;
+	--accent-color: rgb(245, 203, 92);
+	--nav-main-color: rgba(15, 92, 85, 0.8);
+	--nav-break-color: rgba(125, 125, 124, 0.9);
+	--nav-accent-color: rgba(245, 203, 92, 0.9);
+	--alert-color: rgb(165, 21, 21);
+	--black-color: rgb(0, 0, 0);
+	--form-bgc: rgb(238, 238, 238);
+
+	scroll-behavior: smooth;
+}
+
+body {
+	@apply font-hind;
+}
+
+body p {
+	color: var(--break-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply font-proza-libre;
+}
