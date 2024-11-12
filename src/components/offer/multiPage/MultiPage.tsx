@@ -6,11 +6,11 @@ import MultiPageImage from "../../../assets/videos/Ola-Tomasiewicz-rozbudowana-s
 const MultiPage = () => {
 	return (
 		<section className='w-full flex justify-center items-center'>
-			<article className='w-[90%] flex flex-col gap-8 py-8'>
+			<article className='w-[90%] flex flex-col gap-10 py-8'>
 				<div className='w-full grid grid-cols-1 '>
-					<div className=' w-full flex flex-col gap-8 '>
+					<div className=' w-full flex flex-col gap-10 '>
 						<div className='flex items-center justify-between'>
-							<div className='w-[25%]'>
+							<div className='w-[20%]'>
 								<Divider
 									width={100}
 									color={"main"}
@@ -54,7 +54,7 @@ const MultiPage = () => {
 						/>
 					</div>
 				</div>
-				<div className='w-full grid grid-cols-1 gap-6'>
+				<div className='w-full grid grid-cols-1 gap-10'>
 					<div className='w-full flex flex-col gap-2 '>
 						<h3 className='text-lg font-semibold '>
 							Więcej miejsca na unikalne treści

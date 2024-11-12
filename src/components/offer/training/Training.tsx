@@ -9,9 +9,9 @@ import four from "../../../assets/icons/corporate-culture-2.svg";
 const Training = () => {
 	return (
 		<section className='w-full flex justify-center items-center'>
-			<article className='w-[90%] flex flex-col gap-8 py-8'>
+			<article className='w-[90%] flex flex-col gap-10 py-8'>
 				<div className='w-full grid grid-cols-1 '>
-					<div className=' w-full flex flex-col gap-8 '>
+					<div className=' w-full flex flex-col gap-10 '>
 						<div className='flex flex-col gap-4 items-center justify-center'>
 							<div className='w-[25%] pb-6'>
 								<Divider
@@ -29,11 +29,12 @@ const Training = () => {
 							Szkolenia
 						</h2>
 						<p className='text-center'>
-							Alternatywa dla małych i średnich firm, które potrzebują większej
-							przestrzeni do prezentacji swojej działalności, oferty, portfolio
-							czy referencji. Doskonały sposób na przedstawienie szerokiej gamy
-							treści w sposób przejrzysty i zorganizowany, zapewniający
-							efektywną komunikację z odwiedzającymi.
+							Szkolenie z zakresu obsługi strony, które oferuje Dewwwelopment,
+							to doskonała okazja dla klientów, którzy chcą nauczyć się
+							zarządzać i aktualizować swoje strony internetowe samodzielnie.
+							Nasze szkolenie zapewnia praktyczne i szczegółowe wprowadzenie do
+							obsługi strony, umożliwiając klientom pełną kontrolę nad ich
+							online’ową obecnością.
 						</p>
 					</div>
 					<div className='w-full flex justify-center ml-2 mt-6'>
@@ -41,7 +42,7 @@ const Training = () => {
 					</div>
 				</div>
 
-				<div className='w-full grid grid-cols-1 gap-6'>
+				<div className='w-full grid grid-cols-1 gap-10'>
 					<div className='w-full grid grid-cols-1 gap-8 '>
 						<div className='flex flex-col gap-6 justify-center items-center'>
 							<div className='w-[100px]'>
@@ -58,7 +59,7 @@ const Training = () => {
 						<div className='flex flex-col gap-2 text-center'>
 							<h3 className='text-lg font-semibold'>Indywidualne podejście</h3>
 							<p>
-								Nasze szkolenie jest dostosowane do potrzeb i umiejętności
+								Szkolenie jest dostosowane do potrzeb i umiejętności
 								uczestników. Rozumiemy, że każdy klient może mieć inną wiedzę
 								techniczną, dlatego dostosowujemy tempo i treść szkolenia, aby
 								zapewnić optymalne zrozumienie i przyswojenie materiału.
@@ -134,7 +135,7 @@ const Training = () => {
 								Bezpieczeństwo i optymalizacja
 							</h3>
 							<p>
-								W naszym szkoleniu nie tylko uczymy obsługi strony, ale również
+								Podczas szkolenia nie tylko uczymy obsługi strony, ale również
 								zapewniamy wskazówki dotyczące bezpieczeństwa i optymalizacji.
 								Wyjaśniamy, jak dbać o bezpieczeństwo strony, jak regularnie
 								tworzyć kopie zapasowe danych oraz jak optymalizować stronę pod

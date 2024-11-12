@@ -13,7 +13,7 @@ const OfferHeader = () => {
 				}}
 			>
 				<div className='z-10 pb-8'>
-					<h1 className='text-4xl font-semibold uppercase tracking-wider'>
+					<h1 className='text-5xl font-semibold uppercase tracking-wider'>
 						Oferta
 					</h1>
 				</div>
