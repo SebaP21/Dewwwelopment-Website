@@ -6,14 +6,14 @@ import Link from "next/link";
 
 const About = () => {
 	return (
-		<section className='min-h-[100svh]  w-full relative' id="o-nas">
+		<section className='min-h-[100svh]  w-full relative scroll-mt-[8svh]' id="o-nas">
 			<div
 				className='absolute w-full min-h-[100svh] bg-cover flex justify-center items-center'
 				style={{
 					backgroundImage: "url('/assets/img/Dewwwelopment-projektowanie.jpg'",
 				}}
 			>
-				<article className='relative w-[90%] min-h-[90svh]  z-30 flex flex-col justify-evenly'>
+				<article className='relative w-[90%] min-h-[90svh]  z-30 flex flex-col justify-evenly gap-8'>
 					<div className='flex items-center justify-between'>
 						<div className='w-[30%]'>
 							<Divider

@@ -10,7 +10,7 @@ const PageHeader = () => {
 					backgroundImage: "url('/assets/img/Dewwwelopment-strona-glowna.jpg')",
 				}}
 			>
-				<div className='min-h-[40svh] z-30 w-[90%] flex flex-col gap-12 '>
+				<div className='min-h-[50svh] z-30 w-[90%] flex flex-col gap-12 mb-4'>
 					<h1 className='text-4xl font-semibold'>
 						Budowanie stron i sklepów internetowych
 					</h1>

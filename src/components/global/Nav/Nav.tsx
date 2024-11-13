@@ -30,8 +30,11 @@ const Nav = () => {
 	return (
 		<>
 			<nav
-				className={`fixed top-0 w-full flex opacity-95 justify-center items-center  transition-all duration-500 z-50 min-h-[8svh] ${
+				className={`fixed top-0 w-full flex  opacity-95 justify-center items-center  transition-all duration-500 z-50 min-h-[8svh] ${
 					isScrolled ? "bg-darkmain bg-opacity-20" : "bg-transparent"
+				} 
+				${
+					isScrolled ? "pt-0" : "pt-8"
 				} 
 				${!isNavShown ? "translate-y-0" : "-translate-y-full"}
 				`}

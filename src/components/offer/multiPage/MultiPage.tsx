@@ -9,7 +9,7 @@ const MultiPage = () => {
 			<article className='w-[90%] flex flex-col gap-10 py-8'>
 				<div className='w-full grid grid-cols-1 '>
 					<div className=' w-full flex flex-col gap-10 '>
-						<div className='flex items-center justify-between'>
+						<div className='flex items-center justify-between px-2'>
 							<div className='w-[20%]'>
 								<Divider
 									width={100}
