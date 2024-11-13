@@ -14,7 +14,7 @@ const Faq = () => {
 	return (
 		<section
 			id='faq'
-			className='py-8 scroll-mt-[8svh] w-full flex justify-center'
+			className='py-12 scroll-mt-[8svh] w-full flex justify-center'
 		>
 			<div className='w-[90%] grid grid-cols-1 gap-8 '>
 				<div className='w-full flex flex-col items-center text-center gap-6'>

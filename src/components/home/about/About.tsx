@@ -13,7 +13,7 @@ const About = () => {
 					backgroundImage: "url('/assets/img/Dewwwelopment-projektowanie.jpg'",
 				}}
 			>
-				<article className='relative w-[90%] min-h-[90svh]  z-30 flex flex-col justify-evenly gap-8 sm:w-[80%] md:w-[70%] lg:w-[800px]'>
+				<article className='relative w-[90%] min-h-[90svh]  z-30 flex flex-col justify-evenly gap-8 sm:w-[80%] lg:w-[80%] lg:py-12 xl:max-w-[1000px]'>
 					<div className='flex items-center justify-between'>
 						<div className='w-[30%]'>
 							<Divider
@@ -25,15 +25,23 @@ const About = () => {
 							<h5 className='text-accent font-bold uppercase '>O nas</h5>
 						</div>
 					</div>
-					<div className='w-full'>
+					<div className='w-full mx-auto lg:w-[80%]'>
 						<Image
 							src={logo}
 							alt={"logo-dewwwelopment.pl"}
 							className='w-full h-[100%]'
 						/>
 					</div>
-					<div className='w-full flex justify-center ml-4'>
-						<div className='w-[80%] border border-white '>
+					<div className='w-full flex justify-center ml-4 lg:justify-between items-center'>
+					<p className='text-white hidden lg:flex w-[30%] xl:w-[40%]'>
+							W Dewwwelopment zajmujemy się projektowaniem i tworzeniem stron
+							internetowych oraz sklepów online. Nasza misja polega na
+							dostarczaniu rozwiązań, które skutecznie reprezentują Ciebie lub
+							Twoją firmę w sieci. Dzięki naszemu doświadczeniu, kreatywności i
+							zaangażowaniu, pomagamy budować silną obecność online i osiągać
+							sukces w świecie cyfrowym.
+						</p>
+						<div className='w-[80%] border border-white max-w-[480px]'>
 							<div className='w-full mt-4 -ml-4 -mb-4 border border-white'>
 								<Image
 									src={aboutPicture}
@@ -43,7 +51,7 @@ const About = () => {
 							</div>
 						</div>
 					</div>
-					<div>
+					<div className="lg:hidden">
 						<p className='text-white'>
 							W Dewwwelopment zajmujemy się projektowaniem i tworzeniem stron
 							internetowych oraz sklepów online. Nasza misja polega na

@@ -22,7 +22,7 @@ export const OfferCard: FC<OfferCardProps> = ({
 			? buttonTitle
 			: "Dowiedz się więcej";
 	return (
-		<div className='bg-white p-4 flex flex-col justify-evenly items-center min-h-[55svh] gap-4 shadow-lg border border-break text-center rounded-sm'>
+		<div className='bg-white p-4 flex flex-col justify-evenly items-center min-h-[55svh] gap-4 shadow-lg border border-break text-center mx-auto rounded-sm lg:max-w-[430px] sm:max-w-[500px]'>
 			<div className='max-w-[80px]'>
 				<Image
 					src={imgSrc}
