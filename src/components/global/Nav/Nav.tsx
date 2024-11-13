@@ -33,16 +33,14 @@ const Nav = () => {
 				className={`fixed top-0 w-full flex  opacity-95 justify-center items-center  transition-all duration-500 z-50 min-h-[8svh] ${
 					isScrolled ? "bg-darkmain bg-opacity-20" : "bg-transparent"
 				} 
-				${
-					isScrolled ? "pt-0" : "pt-8"
-				} 
+				${isScrolled ? "pt-0" : "pt-8"} 
 				${!isNavShown ? "translate-y-0" : "-translate-y-full"}
 				`}
 			>
-				<div className='w-[90%] flex justify-between items-center'>
+				<div className='w-[90%] flex justify-between items-center lg:w-[80%]'>
 					<Link
 						href={"/"}
-						className='w-[180px]'
+						className='w-[180px] lg:w-[220px]'
 					>
 						<div className={`${isScrolled ? "hidden" : "flex"}`}>
 							<Image
@@ -64,7 +62,7 @@ const Nav = () => {
 					<div
 						className={`${
 							isScrolled ? "hidden" : "flex"
-						} w-[30px] h-[30px] cursor-pointer`}
+						} w-[30px] h-[30px] cursor-pointer lg:hidden`}
 						onClick={onClickNav}
 					>
 						<Image
@@ -75,13 +73,43 @@ const Nav = () => {
 					<div
 						className={`${
 							isScrolled ? "flex" : "hidden"
-						} w-[30px] h-[30px] cursor-pointer`}
+						} w-[30px] h-[30px] cursor-pointer lg:hidden`}
 						onClick={onClickNav}
 					>
 						<Image
 							src={burgerWhite}
 							alt={"burger-icon-black"}
 						/>
+					</div>
+					<div
+						className={`hidden w-[60%] lg:flex justify-evenly uppercase font-semibold text-lg ${
+							isScrolled ? "text-white" : "text-black"
+						}`}
+					>
+						<Link
+							href={"/#o-nas"}
+							className='transition-all hover:text-break'
+						>
+							O nas
+						</Link>
+						<Link
+							href={"/oferta"}
+							className='transition-all hover:text-break'
+						>
+							Oferta
+						</Link>
+						<Link
+							href={"/#faq"}
+							className='transition-all hover:text-break'
+						>
+							FAQ
+						</Link>
+						<Link
+							href={"/#kontakt"}
+							className='transition-all hover:text-break'
+						>
+							Kontakt
+						</Link>
 					</div>
 				</div>
 			</nav>
