@@ -9,10 +9,10 @@ type StepsIconProps = {
 export const StepsIcon: FC<StepsIconProps> = ({ img, isLast }) => {
 	return (
 		<div
-			className={`w-[120px] ${
-				isLast ? "border-transparent" : "border-black"
-			} border-[3px] rounded-full p-6 flex items-center justify-center ${
-				isLast ? "bg-main" : ""
+			className={`w-[120px] border-dotted ${
+				isLast ? "border-transparent" : "border-main"
+			} border-[3px] rounded-full p-8 flex items-center justify-center ${
+				isLast ? "bg-main" : "bg-ctabgc"
 			}`}
 		>
 			<Image

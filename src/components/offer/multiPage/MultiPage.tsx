@@ -5,7 +5,7 @@ import MultiPageImage from "../../../assets/videos/Ola-Tomasiewicz-rozbudowana-s
 
 const MultiPage = () => {
 	return (
-		<section className='w-full flex justify-center items-center'>
+		<section className='w-full flex justify-center items-center scroll-mt-[8svh]' id="rozbudowana-strona">
 			<article className='w-[90%] flex flex-col gap-10 py-8'>
 				<div className='w-full grid grid-cols-1 '>
 					<div className=' w-full flex flex-col gap-10 '>

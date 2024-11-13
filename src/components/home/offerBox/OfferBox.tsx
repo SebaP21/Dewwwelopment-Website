@@ -11,7 +11,7 @@ import Divider from "@/components/global/Divider/Divider";
 const OfferBox = () => {
 	return (
 		<section
-			className='w-full flex flex-col justify-center items-center bg-white py-8 gap-4'
+			className='w-full scroll-mt-[8svh] flex flex-col justify-center items-center bg-white py-8 gap-4'
 			id='offerBox'
 		>
 			<div className='w-[40%]'>

@@ -9,7 +9,10 @@ import Link from "next/link";
 
 const Contact = () => {
 	return (
-		<section className='w-full flex justify-center py-12'>
+		<section
+			className='scroll-mt-[8svh] w-full flex justify-center py-12'
+			id='kontakt'
+		>
 			<div className='w-[90%]'>
 				<div className='w-full flex flex-col items-center text-center gap-6'>
 					<p className='uppercase text-main text-lg font-semibold tracking-wider'>

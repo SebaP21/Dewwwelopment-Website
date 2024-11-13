@@ -21,6 +21,7 @@ export default {
 				alert: "var(--alert-color)",
 				blackColor: "var(--black-color)",
 				formBgc: "var(--form-bgc)",
+				ctabgc: "var(--cta-bgc)",
 			},
 			fontFamily: {
 				"proza-libre": ["Proza Libre", "sans-serif"],

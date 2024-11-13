@@ -1,64 +1,79 @@
 "use client";
 
 import { useState } from "react";
-import { FaqItem, FaqItemProps } from "./FAQComponents/FaqItem";
+
 import Divider from "@/components/global/Divider/Divider";
 
 const Faq = () => {
 	const [expandedItemId, setExpandedItemId] = useState<number | undefined>(0);
 
 	const handleExpand = (index: number) => {
-		setExpandedItemId((prev) => {
-			if (prev === index) {
-				return undefined;
-			}
-
-			return index;
-		});
+		setExpandedItemId((prev) => (prev === index ? undefined : index));
 	};
 
 	return (
-		<>
-			<section
-				id='faq'
-				className='py-8 w-full flex justify-center '
-			>
-				<div className='w-[90%] grid grid-cols-1 gap-8'>
-					<div className='w-full flex flex-col items-center text-center gap-6'>
-						<p className='uppercase text-main text-lg font-semibold tracking-wider'>
-							Najczęściej zadawane pytania
-						</p>
-						<h2 className='text-4xl font-bold'>FAQ</h2>
-						<Divider
-							width={50}
-							color={"blackColor"}
-						/>
-						<div className='flex flex-col gap-2'>
-							<p className=''>Nie znalazłeś odpowiedzi na swoje pytanie?</p>
-							<p>Zadzwoń do Nas lub skorzystaj z formularza kontaktowego</p>
-						</div>
-					</div>
-
-					<div className='border border-break border-b-transparent flex flex-col rounded-md'>
-						{faqItemData.map((data, index) => (
-							<FaqItem
-								expanded={expandedItemId === index}
-								expand={() => handleExpand(index)}
-								key={index}
-								question={data.question}
-								answer={data.answer}
-							/>
-						))}
+		<section
+			id='faq'
+			className='py-8 scroll-mt-[8svh] w-full flex justify-center'
+		>
+			<div className='w-[90%] grid grid-cols-1 gap-8'>
+				<div className='w-full flex flex-col items-center text-center gap-6'>
+					<p className='uppercase text-main text-lg font-semibold tracking-wider'>
+						Najczęściej zadawane pytania
+					</p>
+					<h2 className='text-4xl font-bold'>FAQ</h2>
+					<Divider
+						width={50}
+						color={"main"}
+					/>
+					<div className='flex flex-col gap-2'>
+						<p>Nie znalazłeś odpowiedzi na swoje pytanie?</p>
+						<p>Zadzwoń do Nas lub skorzystaj z formularza kontaktowego</p>
 					</div>
 				</div>
-			</section>
-		</>
+
+				<div className='border border-break border-b-transparent flex flex-col rounded-sm'>
+					{faqItemData.map((data, index) => (
+						<div
+							key={index}
+							className='border-b border-black'
+						>
+							<div
+								onClick={() => handleExpand(index)}
+								className='cursor-pointer flex justify-between items-center p-4'
+							>
+								<h4
+									className={`text-lg font-semibold ${
+										expandedItemId === index ? "text-main" : "text-black"
+									}`}
+								>
+									{data.question}
+								</h4>
+							</div>
+
+							<div
+								className={`overflow-hidden transition-all duration-500 ease-in-out ${
+									expandedItemId === index
+										? "max-h-[1000px] opacity-100"
+										: "max-h-0 opacity-0"
+								}`}
+							>
+								<p className='px-4 py-2 text-break'>{data.answer}</p>
+							</div>
+						</div>
+					))}
+				</div>
+			</div>
+		</section>
 	);
 };
 
 export default Faq;
 
-type SingleFaqItemData = Pick<FaqItemProps, "answer" | "question">;
+type SingleFaqItemData = {
+	answer: string;
+	question: string;
+};
 
 const faqItemData: SingleFaqItemData[] = [
 	{

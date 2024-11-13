@@ -10,7 +10,7 @@ const Steps = () => {
 	return (
 		<>
 			<section
-				className='w-full flex justify-center py-8'
+				className='w-full flex justify-center py-10'
 				id='steps'
 			>
 				<div className='w-[90%] grid grid-cols-1 gap-12'>

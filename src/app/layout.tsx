@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 // import localFont from "next/font/local";
 import "./globals.css";
+import Nav from "@/components/global/Nav/Nav";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -31,7 +32,12 @@ export default function RootLayout({
 					href='https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Proza+Libre:wght@400;700&display=swap'
 				/>
 			</head>
-			<body className={``}>{children}</body>
+
+			<body className={``}>
+				<Nav />
+
+				{children}
+			</body>
 		</html>
 	);
 }

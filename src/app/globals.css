@@ -15,6 +15,7 @@
 	--alert-color: rgb(165, 21, 21);
 	--black-color: rgb(0, 0, 0);
 	--form-bgc: rgb(238, 238, 238);
+	--cta-bgc:rgb(244, 244, 242);
 
 	scroll-behavior: smooth;
 }

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const About = () => {
 	return (
-		<section className='min-h-[100svh] w-full relative' id="about">
+		<section className='min-h-[100svh]  w-full relative' id="o-nas">
 			<div
 				className='absolute w-full min-h-[100svh] bg-cover flex justify-center items-center'
 				style={{
@@ -56,7 +56,7 @@ const About = () => {
 					<div className='w-full flex justify-end'>
 						<Link
 							href={"/#offerBox"}
-							className='text-white border-b border-accent'
+							className='text-white border-b border-accent py-2'
 						>
 							Dowiedz się więcej
 						</Link>

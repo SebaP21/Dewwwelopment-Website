@@ -1,5 +1,6 @@
 import CtaOffer from "@/components/offer/ctaOffer/CTAOffer";
 import ECommerce from "@/components/offer/eCommerce/Ecommerce";
+import FooterOffer from "@/components/offer/footerOffer/FooterOffer";
 import MultiPage from "@/components/offer/multiPage/MultiPage";
 import OfferHeader from "@/components/offer/offerHeader/OfferHeader";
 import OnePage from "@/components/offer/onePage/OnePage";
@@ -16,6 +17,7 @@ const OfferPage = () => {
 			<Training />
 			<CtaOffer />
 			<Support />
+			<FooterOffer/>
 		</>
 	);
 };
