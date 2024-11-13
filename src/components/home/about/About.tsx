@@ -6,14 +6,17 @@ import Link from "next/link";
 
 const About = () => {
 	return (
-		<section className='min-h-[100svh]  w-full relative scroll-mt-[8svh]' id="o-nas">
+		<section
+			className='min-h-[100svh]  w-full  relative scroll-mt-[8svh] '
+			id='o-nas'
+		>
 			<div
 				className='absolute w-full min-h-[100svh] bg-cover flex justify-center items-center'
 				style={{
 					backgroundImage: "url('/assets/img/Dewwwelopment-projektowanie.jpg'",
 				}}
 			>
-				<article className='relative w-[90%] min-h-[90svh]  z-30 flex flex-col py-6 justify-evenly gap-4 sm:gap-6 sm:w-[80%] lg:w-[80%] lg:py-12 xl:max-w-[1000px]'>
+				<article className='relative w-[90%] min-h-[90svh]  z-30 flex flex-col  justify-evenly gap-8 sm:gap-6 sm:w-[80%] lg:w-[80%] lg:py-12 xl:max-w-[1000px]'>
 					<div className='flex items-center justify-between'>
 						<div className='w-[30%]'>
 							<Divider
@@ -33,7 +36,7 @@ const About = () => {
 						/>
 					</div>
 					<div className='w-full flex justify-center ml-4 lg:justify-between items-center'>
-					<p className='text-white hidden lg:flex w-[30%] xl:w-[40%]'>
+						<p className='text-white hidden  lg:flex w-[30%] xl:w-[40%]'>
 							W Dewwwelopment zajmujemy się projektowaniem i tworzeniem stron
 							internetowych oraz sklepów online. Nasza misja polega na
 							dostarczaniu rozwiązań, które skutecznie reprezentują Ciebie lub
@@ -51,7 +54,7 @@ const About = () => {
 							</div>
 						</div>
 					</div>
-					<div className="lg:hidden">
+					<div className='lg:hidden mt-2'>
 						<p className='text-white'>
 							W Dewwwelopment zajmujemy się projektowaniem i tworzeniem stron
 							internetowych oraz sklepów online. Nasza misja polega na
