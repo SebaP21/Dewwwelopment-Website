@@ -43,7 +43,7 @@ const ContactForm = () => {
 				setStatus("Błąd wysyłania wiadomości");
 			}
 		} catch (error) {
-			setStatus("Wystąpił błąd wysyłania. Spróbuj ponownie");
+			setStatus(`${error}`);
 		}
 	};
 

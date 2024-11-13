@@ -1,5 +1,4 @@
-import Image from "next/image";
-import shape from "../../../assets/img/shape-overlay-2 (1).png";
+
 import Link from "next/link";
 
 const PageHeader = () => {
