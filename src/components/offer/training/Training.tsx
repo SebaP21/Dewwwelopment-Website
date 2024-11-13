@@ -9,7 +9,7 @@ import four from "../../../assets/icons/corporate-culture-2.svg";
 const Training = () => {
 	return (
 		<section className='w-full flex justify-center items-center scroll-mt-[8svh]' id="szkolenia">
-			<article className='w-[90%] flex flex-col gap-10 py-8'>
+			<article className='w-[90%] flex flex-col gap-10 py-8 sm:w-[80%] lg:w-[70%] xl:max-w-[800px]'>
 				<div className='w-full grid grid-cols-1 '>
 					<div className=' w-full flex flex-col gap-10 '>
 						<div className='flex flex-col gap-4 items-center justify-center'>
@@ -43,7 +43,7 @@ const Training = () => {
 				</div>
 
 				<div className='w-full grid grid-cols-1 gap-10'>
-					<div className='w-full grid grid-cols-1 gap-8 '>
+					<div className='w-full grid grid-cols-1 gap-8 lg:grid-cols-2'>
 						<div className='flex flex-col gap-6 justify-center items-center'>
 							<div className='w-[100px]'>
 								<Image
@@ -66,7 +66,7 @@ const Training = () => {
 							</p>
 						</div>
 					</div>
-					<div className='w-full grid grid-cols-1 gap-8 '>
+					<div className='w-full grid grid-cols-1 gap-8 lg:grid-cols-2 '>
 						<div className='flex flex-col gap-6 justify-center items-center'>
 							<div className='w-[100px]'>
 								<Image
@@ -92,7 +92,7 @@ const Training = () => {
 							</p>
 						</div>
 					</div>
-					<div className='w-full grid grid-cols-1 gap-8 '>
+					<div className='w-full grid grid-cols-1 gap-8 lg:grid-cols-2'>
 						<div className='flex flex-col gap-6 justify-center items-center'>
 							<div className='w-[100px]'>
 								<Image
@@ -117,7 +117,7 @@ const Training = () => {
 							</p>
 						</div>
 					</div>
-					<div className='w-full grid grid-cols-1 gap-8 '>
+					<div className='w-full grid grid-cols-1 gap-8 lg:grid-cols-2'>
 						<div className='flex flex-col gap-6 justify-center items-center'>
 							<div className='w-[100px]'>
 								<Image

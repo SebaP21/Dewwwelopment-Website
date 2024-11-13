@@ -7,5 +7,5 @@ type StepsDescriptionProps = {
 export const StepsDescription: FC<StepsDescriptionProps> = ({
 	description,
 }) => {
-	return <p className=''>{description}</p>;
+	return <p className='w-full sm:max-w-[70%]'>{description}</p>;
 };

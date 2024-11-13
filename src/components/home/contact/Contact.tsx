@@ -18,7 +18,7 @@ const Contact = () => {
 					<p className='uppercase text-main text-lg font-semibold tracking-wider'>
 						Umów się na bezpłatną wycenę
 					</p>
-					<h2 className='text-4xl font-bold'>Kontakt</h2>
+					<h2 className='text-5xl font-bold'>Kontakt</h2>
 					<Divider
 						width={50}
 						color={"blackColor"}
@@ -30,10 +30,10 @@ const Contact = () => {
 						</p>
 					</div>
 				</div>
-				<div className='w-full grid grid-cols-1 gap-8'>
+				<div className='w-full grid grid-cols-1 gap-8 md:grid-cols-2 xl:max-w-[1200px] xl:mx-auto'>
 					<ContactForm />
-					<div className='flex flex-col gap-8 justify-center items-center'>
-						<div className='w-full'>
+					<div className='flex flex-col gap-8 justify-center items-center md:order-1 lg:w-[400px] lg:mx-auto'>
+						<div className='w-full sm:w-[70%] md:w-full'>
 							<Image
 								src={logo}
 								alt={""}

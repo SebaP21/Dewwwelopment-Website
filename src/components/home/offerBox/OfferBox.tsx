@@ -21,9 +21,9 @@ const OfferBox = () => {
 				/>
 			</div>
 			<p className='uppercase text-lg'>Co oferujemy?</p>
-			<h2 className='text-4xl font-semibold uppercase'>Usługi</h2>
+			<h2 className='text-5xl font-semibold uppercase'>Usługi</h2>
 
-			<article className='w-[90%] py-4 grid grid-cols-1 gap-6 md:grid-cols-2 '>
+			<article className='w-[90%] py-4 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 xl:max-w-[1200px]'>
 				{offerCardsData.map((data, index) => (
 					<OfferCard
 						key={index}

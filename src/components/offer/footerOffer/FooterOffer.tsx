@@ -12,7 +12,7 @@ const FooterOffer = () => {
 					href={"/"}
 					className='w-[90%] py-8'
 				>
-					<div className=''>
+					<div className='sm:w-[60%] lg:w-[50%] xl:max-w-[400px] mx-auto'>
 						<Image
 							src={logoFooter}
 							alt={"Dewwwelopment-strony internetowe"}

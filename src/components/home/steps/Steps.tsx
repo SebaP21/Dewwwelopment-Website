@@ -13,7 +13,7 @@ const Steps = () => {
 				className='w-full flex justify-center py-10'
 				id='steps'
 			>
-				<div className='w-[90%] grid grid-cols-1 gap-12'>
+				<div className='w-[90%] grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-3 xl:max-w-[1200px]'>
 					{stepsCardsData.map((data, index) => (
 						<StepCard
 							key={index}

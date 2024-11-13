@@ -6,7 +6,7 @@ import eCommerceImage from "../../../assets/img/Dewwwelopment-sklep-intenetowy.j
 const ECommerce = () => {
 	return (
 		<section className='w-full flex justify-center items-center scroll-mt-[8svh]' id="sklepy-internetowe">
-			<article className='w-[90%] flex flex-col gap-10 py-8'>
+			<article className='w-[90%] flex flex-col gap-10 py-8 sm:w-[80%] lg:w-[70%] xl:max-w-[800px]'>
 				<div className='w-full grid grid-cols-1 '>
 					<div className=' w-full flex flex-col gap-10 '>
 						<div className='flex items-center justify-between px-2'>
@@ -33,7 +33,7 @@ const ECommerce = () => {
 						</p>
 					</div>
 					<div className='w-full flex justify-center ml-2 mt-6'>
-						<div className='w-[90%] bg-main '>
+						<div className='w-[90%] bg-main max-w-[480px]'>
 							<div className='w-full mt-4 -ml-4 -mb-4 shadow-2xl'>
 								<Image
 									src={eCommerceImage}
@@ -53,7 +53,7 @@ const ECommerce = () => {
 						/>
 					</div>
 				</div>
-				<div className='w-full grid grid-cols-1 gap-10'>
+				<div className='w-full grid grid-cols-1 gap-10 lg:grid-cols-2'>
 					<div className='w-full flex flex-col gap-2 '>
 						<h3 className='text-lg font-semibold '>
 							Pełna funkcjonalność e-commerce

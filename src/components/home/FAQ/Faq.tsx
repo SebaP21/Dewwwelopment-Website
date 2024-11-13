@@ -16,12 +16,12 @@ const Faq = () => {
 			id='faq'
 			className='py-8 scroll-mt-[8svh] w-full flex justify-center'
 		>
-			<div className='w-[90%] grid grid-cols-1 gap-8'>
+			<div className='w-[90%] grid grid-cols-1 gap-8 '>
 				<div className='w-full flex flex-col items-center text-center gap-6'>
 					<p className='uppercase text-main text-lg font-semibold tracking-wider'>
 						Najczęściej zadawane pytania
 					</p>
-					<h2 className='text-4xl font-bold'>FAQ</h2>
+					<h2 className='text-5xl font-bold'>FAQ</h2>
 					<Divider
 						width={50}
 						color={"main"}
@@ -32,7 +32,7 @@ const Faq = () => {
 					</div>
 				</div>
 
-				<div className='border border-break border-b-transparent flex flex-col rounded-sm'>
+				<div className='w-full border border-break border-b-transparent flex flex-col rounded-sm sm:w-[90%] sm:mx-auto md:w-[80%] lg:w-[70%] xl:w-[60%]'>
 					{faqItemData.map((data, index) => (
 						<div
 							key={index}
