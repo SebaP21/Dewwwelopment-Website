@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /polityka-prywatnosci
+
+# Host
+Host: https://dewwwelopment.pl
+
+# Sitemaps
+Sitemap: https://dewwwelopment.pl/sitemap.xml
