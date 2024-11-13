@@ -13,7 +13,7 @@ const About = () => {
 					backgroundImage: "url('/assets/img/Dewwwelopment-projektowanie.jpg'",
 				}}
 			>
-				<article className='relative w-[90%] min-h-[90svh]  z-30 flex flex-col justify-evenly gap-8 sm:w-[80%] lg:w-[80%] lg:py-12 xl:max-w-[1000px]'>
+				<article className='relative w-[90%] min-h-[90svh]  z-30 flex flex-col py-6 justify-evenly gap-4 sm:gap-6 sm:w-[80%] lg:w-[80%] lg:py-12 xl:max-w-[1000px]'>
 					<div className='flex items-center justify-between'>
 						<div className='w-[30%]'>
 							<Divider
