@@ -31,7 +31,7 @@ const CookieConsentBanner: React.FC = () => {
 
 	return (
 		<div
-			className={`fixed bottom-0 w-full bg-darkmain bg-opacity-70 text-white p-4 flex flex-col justify-between items-center z-50 transition-transform duration-500 ${
+			className={`fixed bottom-0 w-full bg-darkmain opacity-85 text-white p-4 flex flex-col justify-between items-center z-50 transition-transform duration-500 ${
 				isVisible ? "translate-y-0" : "translate-y-full"
 			}`}
 		>
