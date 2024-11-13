@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/global/Nav/Nav";
 import { Hind } from "next/font/google";
+import CookieConsentBanner from "@/components/CookieConsent/CookieConsentBanner";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -32,6 +33,7 @@ export default function RootLayout({
 				<Nav />
 
 				{children}
+				<CookieConsentBanner/>
 			</body>
 		</html>
 	);

@@ -50,7 +50,7 @@ const Support = () => {
 				</div>
 
 				<div className='w-full grid grid-cols-1 gap-10'>
-					<div className='w-full flex flex-col gap-4 border-[2px] border-main p-6  rounded-md shadow-lg'>
+					<div className='w-full flex flex-col gap-4 border-[2px] border-main p-6  rounded-sm shadow-lg'>
 						<h3 className='text-lg text-center font-semibold'>
 							Wsparcie dla nowych stron i sklepów
 						</h3>
@@ -69,7 +69,7 @@ const Support = () => {
 							potrzeb.
 						</p>
 					</div>
-					<div className='w-full flex flex-col gap-4 border-[2px] border-main p-6  rounded-md shadow-lg'>
+					<div className='w-full flex flex-col gap-4 border-[2px] border-main p-6  rounded-sm shadow-lg'>
 						<h3 className='text-lg text-center font-semibold'>
 							Rozwiązywanie problemów
 						</h3>
@@ -88,7 +88,7 @@ const Support = () => {
 							narzędziami. Daj nam znać, a my zajmiemy się tym natychmiast.
 						</p>
 					</div>
-					<div className='w-full flex flex-col gap-4 border-[2px] border-main p-6  rounded-md shadow-lg'>
+					<div className='w-full flex flex-col gap-4 border-[2px] border-main p-6  rounded-sm shadow-lg'>
 						<h3 className='text-lg font-semibold text-center'>
 							Aktualizacje i optymalizacja
 						</h3>
