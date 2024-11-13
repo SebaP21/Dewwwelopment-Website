@@ -50,7 +50,7 @@ const ContactForm = () => {
 	return (
 		<form
 			onSubmit={handleSubmit}
-			className='w-full flex flex-col gap-4 py-8 md:order-2 lg:w-[500px] lg:mx-auto'
+			className='w-full flex flex-col gap-4 py-8 md:order-2 lg:max-w-[500px] lg:mx-auto'
 		>
 			<div className=''>
 				<input

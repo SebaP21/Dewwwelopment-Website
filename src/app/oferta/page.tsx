@@ -1,3 +1,4 @@
+import SectionDivider from "@/components/global/SectionDivider/SectionDivider";
 import CtaOffer from "@/components/offer/ctaOffer/CTAOffer";
 import ECommerce from "@/components/offer/eCommerce/Ecommerce";
 import FooterOffer from "@/components/offer/footerOffer/FooterOffer";
@@ -25,8 +26,11 @@ const OfferPage = () => {
 			</Head>
 			<OfferHeader />
 			<OnePage />
+			<SectionDivider/>
 			<MultiPage />
+			<SectionDivider/>
 			<ECommerce />
+			<SectionDivider/>
 			<Training />
 			<CtaOffer />
 			<Support />

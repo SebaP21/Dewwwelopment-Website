@@ -6,7 +6,7 @@ import eCommerceImage from "../../../assets/img/Dewwwelopment-sklep-intenetowy.j
 const ECommerce = () => {
 	return (
 		<section className='w-full flex justify-center items-center scroll-mt-[8svh]' id="sklepy-internetowe">
-			<article className='w-[90%] flex flex-col gap-10 py-8 sm:w-[80%] lg:w-[70%] xl:max-w-[800px]'>
+			<article className='w-[90%] flex flex-col gap-10 py-8 sm:w-[80%] lg:w-[80%] lg:py-12 xl:max-w-[1000px]'>
 				<div className='w-full grid grid-cols-1 '>
 					<div className=' w-full flex flex-col gap-10 '>
 						<div className='flex items-center justify-between px-2'>
@@ -22,17 +22,23 @@ const ECommerce = () => {
 								</h5>
 							</div>
 						</div>
-						<h2 className='text-center text-2xl font-semibold'>
+						<h2 className='text-center text-2xl font-semibold lg:text-3xl lg:py-4'>
 							Sklepy internetowe
 						</h2>
-						<p className='text-center'>
+						<p className='text-center lg:hidden'>
 							Kompleksowe rozwiązanie dla przedsiębiorców, którzy chcą prowadzić
 							sprzedaż swoich produktów lub usług w sieci. Możesz rozwinąć swój
 							biznes online, dotrzeć do szerszego grona klientów i prowadzić
 							sprzedaż w efektywny i wygodny sposób.
 						</p>
 					</div>
-					<div className='w-full flex justify-center ml-2 mt-6'>
+					<div className='w-full flex justify-center ml-2 mt-6 lg:justify-between items-center'>
+					<p className='hidden lg:flex w-[30%] text-center xl:w-[40%]'>
+							Kompleksowe rozwiązanie dla przedsiębiorców, którzy chcą prowadzić
+							sprzedaż swoich produktów lub usług w sieci. Możesz rozwinąć swój
+							biznes online, dotrzeć do szerszego grona klientów i prowadzić
+							sprzedaż w efektywny i wygodny sposób.
+						</p>
 						<div className='w-[90%] bg-main max-w-[480px]'>
 							<div className='w-full mt-4 -ml-4 -mb-4 shadow-2xl'>
 								<Image

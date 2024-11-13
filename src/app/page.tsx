@@ -1,3 +1,4 @@
+import SectionDivider from "@/components/global/SectionDivider/SectionDivider";
 import About from "@/components/home/about/About";
 import Contact from "@/components/home/contact/Contact";
 import CtaSteps from "@/components/home/CtaSteps/CTASteps";
@@ -22,7 +23,9 @@ export default function Home() {
 			<OfferBox />
 			<CtaSteps />
 			<Steps />
+			<SectionDivider />
 			<Faq />
+			<SectionDivider />
 			<Contact />
 			<FooterHome />
 		</>

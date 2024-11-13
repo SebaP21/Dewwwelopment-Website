@@ -5,8 +5,11 @@ import MultiPageImage from "../../../assets/videos/Ola-Tomasiewicz-rozbudowana-s
 
 const MultiPage = () => {
 	return (
-		<section className='w-full flex justify-center items-center scroll-mt-[8svh]' id="rozbudowana-strona">
-			<article className='w-[90%] flex flex-col gap-10 py-8 sm:w-[80%] lg:w-[70%] xl:max-w-[800px]'>
+		<section
+			className='w-full flex justify-center items-center scroll-mt-[8svh]'
+			id='rozbudowana-strona'
+		>
+			<article className='w-[90%] flex flex-col gap-10 py-8 sm:w-[80%] lg:w-[80%] lg:py-12 xl:max-w-[1000px]'>
 				<div className='w-full grid grid-cols-1 '>
 					<div className=' w-full flex flex-col gap-10 '>
 						<div className='flex items-center justify-between px-2'>
@@ -22,10 +25,10 @@ const MultiPage = () => {
 								</h5>
 							</div>
 						</div>
-						<h2 className='text-center text-2xl font-semibold'>
+						<h2 className='text-center text-2xl font-semibold lg:py-4'>
 							Rozbudowana strona internetowa
 						</h2>
-						<p className='text-center'>
+						<p className='text-center lg:hidden'>
 							Alternatywa dla małych i średnich firm, które potrzebują większej
 							przestrzeni do prezentacji swojej działalności, oferty, portfolio
 							czy referencji. Doskonały sposób na przedstawienie szerokiej gamy
@@ -33,7 +36,7 @@ const MultiPage = () => {
 							efektywną komunikację z odwiedzającymi.
 						</p>
 					</div>
-					<div className='w-full flex justify-center ml-2 mt-6'>
+					<div className='w-full flex justify-center ml-2 mt-6 lg:justify-between items-center lg:ml-4'>
 						<div className='w-[90%] bg-main max-w-[480px] '>
 							<div className='w-full mt-4 -ml-4 -mb-4 shadow-2xl'>
 								<Image
@@ -43,6 +46,13 @@ const MultiPage = () => {
 								/>
 							</div>
 						</div>
+						<p className='hidden  lg:flex w-[30%] text-center xl:w-[40%]'>
+							Alternatywa dla małych i średnich firm, które potrzebują większej
+							przestrzeni do prezentacji swojej działalności, oferty, portfolio
+							czy referencji. Doskonały sposób na przedstawienie szerokiej gamy
+							treści w sposób przejrzysty i zorganizowany, zapewniający
+							efektywną komunikację z odwiedzającymi.
+						</p>
 					</div>
 				</div>
 				<div className='w-full flex flex-col justify-center items-center gap-2 pt-4'>

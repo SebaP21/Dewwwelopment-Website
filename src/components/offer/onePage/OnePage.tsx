@@ -5,8 +5,11 @@ import Image from "next/image";
 
 const OnePage = () => {
 	return (
-		<section className='w-full flex justify-center items-center scroll-mt-[8svh]' id="one-page">
-			<article className='w-[90%] flex flex-col gap-10 py-8 sm:w-[80%] lg:w-[70%] xl:max-w-[800px]'>
+		<section
+			className='w-full flex justify-center items-center scroll-mt-[8svh] '
+			id='one-page'
+		>
+			<article className='w-[90%] flex flex-col gap-10 py-8 sm:w-[80%] lg:w-[80%] lg:py-12 xl:max-w-[1000px]'>
 				<div className='w-full grid grid-cols-1 '>
 					<div className=' w-full flex flex-col gap-10 '>
 						<div className='flex items-center justify-between px-2'>
@@ -20,16 +23,21 @@ const OnePage = () => {
 								<h5 className='text-break font-bold uppercase '>One-Page</h5>
 							</div>
 						</div>
-						<h2 className='text-center text-2xl font-semibold'>
+						<h2 className='text-center text-2xl font-semibold lg:text-3xl lg:py-4'>
 							Strony internetowe - wizytówki
 						</h2>
-						<p className='text-center'>
+						<p className='text-center lg:hidden'>
 							Strona wizytówka typu one-page to doskonałe rozwiązanie dla małych
 							firm, startupów, czy osób, które chcą stworzyć stronę wizytówkę
 							lub landing page w nowoczesny sposób.
 						</p>
 					</div>
-					<div className='w-full flex justify-center ml-2 mt-6'>
+					<div className='w-full flex justify-center mr-0 ml-2 mt-6 lg:justify-between items-center'>
+						<p className='hidden lg:flex w-[30%] text-center xl:w-[40%]'>
+							Strona wizytówka typu one-page to doskonałe rozwiązanie dla małych
+							firm, startupów, czy osób, które chcą stworzyć stronę wizytówkę
+							lub landing page w nowoczesny sposób.
+						</p>
 						<div className='w-[90%] bg-main max-w-[480px]'>
 							<div className='w-full mt-4 -ml-4 -mb-4 shadow-2xl'>
 								<Image

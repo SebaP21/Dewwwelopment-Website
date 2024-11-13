@@ -23,7 +23,7 @@ const CtaOffer = () => {
 					></div>
 				</div>
 				<div className=' w-[90%] min-h-[40svh] flex justify-center items-center shadow-2xl p-6  text-center -mt-24 z-20 bg-white rounded-sm md:w-[80%] lg:w-[70%] lg:max-w-[800px]'>
-					<p className='text-black'>
+					<p className='text-black text-xl font-semibold'>
 						W Dewwwelopment nie zostawiamy Cię z filmikiem szkoleniowym, na
 						którym ktoś pokazuje Ci jak edytuje czyjąś stronę lub sklep. W
 						ramach projektu organizujemy 1h szkolenie w formie online, na którym
