@@ -64,7 +64,7 @@ const About = () => {
 							sukces w świecie cyfrowym.
 						</p>
 					</div>
-					<div className='w-full flex justify-end'>
+					<div className='w-full flex justify-end -mt-4 md:mt-0'>
 						<Link
 							href={"/#offerBox"}
 							className='text-white border-b border-accent py-2'

@@ -50,7 +50,7 @@ const Support = () => {
 				</div>
 
 				<div className='w-full grid grid-cols-1 gap-10 lg:grid-cols-3 lg:gap-2 xl:gap-4'>
-					<div className='w-full flex flex-col gap-4 border-[2px] border-main p-6  rounded-sm shadow-lg lg:p-4 '>
+					<div className='w-full flex flex-col gap-2 border-[2px] border-main p-6  rounded-sm shadow-lg lg:p-4 lg:gap-4'>
 						<h3 className='text-lg text-center font-semibold'>
 							Wsparcie dla nowych stron i sklepów
 						</h3>
