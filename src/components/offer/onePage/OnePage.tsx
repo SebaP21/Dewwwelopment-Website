@@ -2,6 +2,7 @@ import Divider from "@/components/global/Divider/Divider";
 
 import onePageImage from "../../../assets/videos/Uslugi_remontowo-budowlane_Piotr_Portka__Tomaszow_Lubelski_-_Google_Chrome_2023-06-23_21-30-01_AdobeExpress-1.gif";
 import Image from "next/image";
+import AnimatedSection from "@/components/global/AnimatedSection/AnimatedSection";
 
 const OnePage = () => {
 	return (
@@ -13,15 +14,19 @@ const OnePage = () => {
 				<div className='w-full grid grid-cols-1 '>
 					<div className=' w-full flex flex-col gap-10 '>
 						<div className='flex items-center justify-between px-2'>
+							<AnimatedSection  animationClass={"animate-fade-right"} tailwindClass="w-full">
 							<div className='w-[20%]'>
 								<Divider
 									width={100}
 									color={"main"}
 								/>
 							</div>
-							<div className=''>
+							</AnimatedSection>
+							<AnimatedSection animationClass={"animate-fade-left"} tailwindClass="w-full">
+							<div className='text-right'>
 								<h5 className='text-break font-bold uppercase '>One-Page</h5>
 							</div>
+							</AnimatedSection>
 						</div>
 						<h2 className='text-center text-2xl font-semibold lg:text-3xl lg:py-4'>
 							Strony internetowe - wizytówki
@@ -49,6 +54,7 @@ const OnePage = () => {
 						</div>
 					</div>
 				</div>
+				<AnimatedSection  animationClass={"animate-fade-up"}>
 				<div className='w-full flex flex-col justify-center items-center gap-2 pt-4'>
 					<h6 className='text-break'>od 3000zł netto</h6>
 					<div className='w-[40%]'>
@@ -58,6 +64,7 @@ const OnePage = () => {
 						/>
 					</div>
 				</div>
+				</AnimatedSection>
 				<div className='w-full grid grid-cols-1 gap-10 lg:grid-cols-2'>
 					<div className='w-full flex flex-col gap-2 '>
 						<h3 className='text-lg font-semibold '>

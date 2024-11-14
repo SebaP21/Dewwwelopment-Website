@@ -40,12 +40,12 @@ const CtaSteps = () => {
 					"url('/assets/img/Dewwwelopment-strona-w-kliku-krokach.jpg')",
 			}}
 		>
-			<div className='w-[90%] z-10'>
+			<div className='w-[90%] z-10 flex flex-col gap-2'>
 				<h4 className='text-4xl text-center font-semibold text-white'>
 					Zbuduj swój wizerunek w{" "}
-					<span className='text-main text-5xl'> {count} </span> prostych
-					krokach!
 				</h4>
+				<h4 className='text-main text-5xl text-center font-semibold'> {count} </h4>
+				<h4 className="text-4xl text-center font-semibold text-white">prostych krokach!</h4>
 			</div>
 			<div
 				className='w-full min-h-[35svh] absolute opacity-80'

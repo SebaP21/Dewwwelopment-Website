@@ -2,6 +2,7 @@ import Divider from "@/components/global/Divider/Divider";
 import Image from "next/image";
 
 import eCommerceImage from "../../../assets/img/Dewwwelopment-sklep-intenetowy.jpg";
+import AnimatedSection from "@/components/global/AnimatedSection/AnimatedSection";
 
 const ECommerce = () => {
 	return (
@@ -10,17 +11,21 @@ const ECommerce = () => {
 				<div className='w-full grid grid-cols-1 '>
 					<div className=' w-full flex flex-col gap-10 '>
 						<div className='flex items-center justify-between px-2'>
+							<AnimatedSection  animationClass={"animate-fade-right"} tailwindClass="w-full">
 							<div className='w-[20%]'>
 								<Divider
 									width={100}
 									color={"main"}
 								/>
 							</div>
-							<div className=''>
+							</AnimatedSection>
+							<AnimatedSection animationClass={"animate-fade-left"} tailwindClass="w-full">
+							<div className='text-right'>
 								<h5 className='text-break font-bold uppercase '>
 									sprzedawaj w sieci
 								</h5>
 							</div>
+							</AnimatedSection>
 						</div>
 						<h2 className='text-center text-2xl font-semibold lg:text-3xl lg:py-4'>
 							Sklepy internetowe
@@ -50,6 +55,7 @@ const ECommerce = () => {
 						</div>
 					</div>
 				</div>
+				<AnimatedSection  animationClass={"animate-fade-up"}>
 				<div className='w-full flex flex-col justify-center items-center gap-2 pt-4'>
 					<h6 className='text-break'>od 5000zł netto</h6>
 					<div className='w-[40%]'>
@@ -59,6 +65,7 @@ const ECommerce = () => {
 						/>
 					</div>
 				</div>
+				</AnimatedSection>
 				<div className='w-full grid grid-cols-1 gap-10 lg:grid-cols-2'>
 					<div className='w-full flex flex-col gap-2 '>
 						<h3 className='text-lg font-semibold '>

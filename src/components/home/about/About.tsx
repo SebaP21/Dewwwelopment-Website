@@ -8,7 +8,7 @@ import AnimatedSection from "@/components/global/AnimatedSection/AnimatedSection
 const About = () => {
 	return (
 		<section
-			className='min-h-[100svh]  w-full  relative scroll-mt-[8svh] '
+			className='min-h-[100svh]  w-full  relative scroll-mt-[4svh] '
 			id='o-nas'
 		>
 			<div

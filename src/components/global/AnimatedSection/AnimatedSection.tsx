@@ -6,21 +6,24 @@ import { useIntersectionObserver } from "./Observer";
 interface AnimatedSectionProps {
 	children: ReactNode;
 	animationClass: string;
+	tailwindClass?:string
 }
 
 const AnimatedSection: React.FC<AnimatedSectionProps> = ({
 	children,
 	animationClass,
+	tailwindClass
 }) => {
 	const [ref, isVisible] = useIntersectionObserver<HTMLDivElement>();
 
 	return (
-		<div
+		<div 
 			ref={ref}
-			className={`${isVisible ? animationClass : "opacity-0"}`}
+			className={`${isVisible ? animationClass : "opacity-0"} ${tailwindClass} `}
 		>
 			{children}
 		</div>
+		
 	);
 };
 

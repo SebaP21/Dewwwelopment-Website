@@ -2,6 +2,7 @@ import Divider from "@/components/global/Divider/Divider";
 import Image from "next/image";
 
 import MultiPageImage from "../../../assets/videos/Ola-Tomasiewicz-rozbudowana-strona-gif.gif";
+import AnimatedSection from "@/components/global/AnimatedSection/AnimatedSection";
 
 const MultiPage = () => {
 	return (
@@ -13,17 +14,21 @@ const MultiPage = () => {
 				<div className='w-full grid grid-cols-1 '>
 					<div className=' w-full flex flex-col gap-10 '>
 						<div className='flex items-center justify-between px-2'>
-							<div className='w-[20%]'>
-								<Divider
-									width={100}
-									color={"main"}
-								/>
-							</div>
-							<div className=''>
-								<h5 className='text-break font-bold uppercase '>
-									do 6 podstron
-								</h5>
-							</div>
+							<AnimatedSection animationClass={"animate-fade-right"} tailwindClass="w-full">
+								<div className='w-[20%]'>
+									<Divider
+										width={100}
+										color={"main"}
+									/>
+								</div>
+							</AnimatedSection>
+							<AnimatedSection animationClass={"animate-fade-left"} tailwindClass="w-full">
+								<div className='text-right'>
+									<h5 className='text-break font-bold uppercase '>
+										do 6 podstron
+									</h5>
+								</div>
+							</AnimatedSection>
 						</div>
 						<h2 className='text-center text-2xl font-semibold lg:py-4'>
 							Rozbudowana strona internetowa
@@ -55,15 +60,17 @@ const MultiPage = () => {
 						</p>
 					</div>
 				</div>
-				<div className='w-full flex flex-col justify-center items-center gap-2 pt-4'>
-					<h6 className='text-break'>od 3500zł netto</h6>
-					<div className='w-[40%]'>
-						<Divider
-							width={100}
-							color={"main"}
-						/>
+				<AnimatedSection animationClass={"animate-fade-up"}>
+					<div className='w-full flex flex-col justify-center items-center gap-2 pt-4'>
+						<h6 className='text-break'>od 3500zł netto</h6>
+						<div className='w-[40%]'>
+							<Divider
+								width={100}
+								color={"main"}
+							/>
+						</div>
 					</div>
-				</div>
+				</AnimatedSection>
 				<div className='w-full grid grid-cols-1 gap-10'>
 					<div className='w-full flex flex-col gap-2 '>
 						<h3 className='text-lg font-semibold '>

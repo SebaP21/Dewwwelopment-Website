@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import phoneIcon from "../../../assets/icons/telephone (1).png";
 import Link from "next/link";
+import AnimatedSection from "@/components/global/AnimatedSection/AnimatedSection";
 
 const Support = () => {
 	return (
@@ -19,14 +20,16 @@ const Support = () => {
 									potrzebujesz pomocy?
 								</h5>
 							</div>
-							<Link href={"tel:661924740"}>
-								<div className='w-[70px] border-[2px] border-main rounded-full p-4'>
-									<Image
-										src={phoneIcon}
-										alt={"support-icon"}
-									/>
-								</div>
-							</Link>
+							<AnimatedSection animationClass={"animate-fade-left"}>
+								<Link href={"tel:661924740"}>
+									<div className='w-[70px] border-[2px] border-main rounded-full p-4'>
+										<Image
+											src={phoneIcon}
+											alt={"support-icon"}
+										/>
+									</div>
+								</Link>
+							</AnimatedSection>
 						</div>
 						<h2 className=' text-5xl font-semibold uppercase'>
 							Wsparcie techniczne
@@ -50,14 +53,14 @@ const Support = () => {
 				</div>
 
 				<div className='w-full grid grid-cols-1 gap-10 lg:grid-cols-3 lg:gap-2 xl:gap-4'>
-					<div className='w-full flex flex-col gap-2 border-[2px] border-main p-6  rounded-sm shadow-lg lg:p-4 lg:gap-4'>
+					<div className='w-full flex flex-col gap-2 border-[2px]  p-6  rounded-sm shadow-lg lg:p-4 lg:gap-4'>
 						<h3 className='text-lg text-center font-semibold'>
 							Wsparcie dla nowych stron i sklepów
 						</h3>
 						<div className='w-full flex justify-center'>
 							<Divider
 								width={20}
-								color={"break"}
+								color={"main"}
 							/>
 						</div>
 						<p>
@@ -69,14 +72,14 @@ const Support = () => {
 							potrzeb.
 						</p>
 					</div>
-					<div className='w-full flex flex-col gap-4 border-[2px] border-main p-6  rounded-sm shadow-lg lg:p-4 '>
+					<div className='w-full flex flex-col gap-4 border-[2px]  p-6  rounded-sm shadow-lg lg:p-4 '>
 						<h3 className='text-lg text-center font-semibold'>
 							Rozwiązywanie problemów
 						</h3>
 						<div className='w-full flex justify-center'>
 							<Divider
 								width={20}
-								color={"break"}
+								color={"main"}
 							/>
 						</div>
 						<p>
@@ -88,17 +91,17 @@ const Support = () => {
 							narzędziami. Daj nam znać, a my zajmiemy się tym natychmiast.
 						</p>
 					</div>
-					<div className='w-full flex flex-col gap-4 border-[2px] border-main p-6  rounded-sm shadow-lg lg:p-4 '>
+					<div className='w-full flex flex-col gap-4 border-[2px]  p-6  rounded-sm shadow-lg lg:p-4 '>
 						<h3 className='text-lg font-semibold text-center'>
 							Aktualizacje i optymalizacja
 						</h3>
 						<div className='w-full flex justify-center'>
 							<Divider
 								width={20}
-								color={"break"}
+								color={"main"}
 							/>
 						</div>
-						<p>
+						<p className="">
 							Wspieramy również istniejące strony i sklepy internetowe poprzez
 							regularne aktualizacje i optymalizację. Dbamy o to, aby Twoja
 							strona działała zgodnie z najnowszymi standardami i miała

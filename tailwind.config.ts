@@ -74,7 +74,7 @@ export default {
 				"fade-down": "fade-down 0.5s ease-out",
 				"scale-in-center": "scale-in-center 0.3s ease-out",
 				"scale-up": "scale 0.5s ease-in-out forwards",
-				"fade-front": "fade-front 1s ease-in-out forwards",
+				"fade-front": "fade-front 0.7s ease-in-out forwards",
 			},
 		},
 	},
