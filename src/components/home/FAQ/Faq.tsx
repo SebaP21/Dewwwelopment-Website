@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 import Divider from "@/components/global/Divider/Divider";
+import AnimatedSection from "@/components/global/AnimatedSection/AnimatedSection";
 
 const Faq = () => {
 	const [expandedItemId, setExpandedItemId] = useState<number | undefined>(0);
@@ -26,10 +27,12 @@ const Faq = () => {
 						width={50}
 						color={"main"}
 					/>
+					<AnimatedSection  animationClass={"animate-fade-up"}>
 					<div className='flex flex-col gap-2'>
 						<p>Nie znalazłeś odpowiedzi na swoje pytanie?</p>
 						<p>Zadzwoń do Nas lub skorzystaj z formularza kontaktowego</p>
 					</div>
+					</AnimatedSection>
 				</div>
 
 				<div className='w-full border border-break border-b-transparent flex flex-col rounded-sm sm:w-[90%] sm:mx-auto md:w-[80%] lg:w-[70%] xl:w-[60%]'>

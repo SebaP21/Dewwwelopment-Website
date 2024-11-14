@@ -56,7 +56,7 @@ export default function RootLayout({
 				/>
 			</head>
 
-			<body className={hind.className}>
+			<body className={`${hind.className} overflow-x-hidden`}>
 				<Script
 					strategy='afterInteractive'
 					src='https://www.googletagmanager.com/gtag/js?id=G-6RLN8N2PD3'

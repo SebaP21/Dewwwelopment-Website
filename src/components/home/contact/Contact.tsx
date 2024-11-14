@@ -6,6 +6,7 @@ import logo from "../../../assets/img/dewwwelopment-low-resolution-logo-black-on
 import tel from "../../../assets/icons/telephone (1).png";
 import mail from "../../../assets/icons/email.png";
 import Link from "next/link";
+import AnimatedSection from "@/components/global/AnimatedSection/AnimatedSection";
 
 const Contact = () => {
 	return (
@@ -23,21 +24,26 @@ const Contact = () => {
 						width={50}
 						color={"blackColor"}
 					/>
+					<AnimatedSection  animationClass={"animate-fade-up"}>
+
 					<div className='flex flex-col gap-2 '>
 						<p className=''>
 							Zadzwoń lub skorzystaj z formularza kontaktowego i wyślij
 							wiadomość
 						</p>
 					</div>
+					</AnimatedSection>
 				</div>
 				<div className='w-full grid grid-cols-1 gap-8 md:grid-cols-2 xl:max-w-[1200px] xl:mx-auto'>
 					<ContactForm />
 					<div className='flex flex-col gap-8 justify-center items-center md:order-1 lg:w-[400px] lg:mx-auto'>
 						<div className='w-full sm:w-[70%] md:w-full'>
+							<Link href={"/"}>
 							<Image
 								src={logo}
 								alt={""}
 							/>
+							</Link>
 						</div>
 						<h4 className='text-xl text-center font-semibold'>
 							Budowanie stron i sklepów internetowych

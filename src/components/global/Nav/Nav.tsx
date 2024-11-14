@@ -121,52 +121,61 @@ const Nav = () => {
 			>
 				<div className='w-[90%] min-h-[95svh] flex flex-col justify-evenly'>
 					<div
-						className='absolute top-5 right-5 flex self-end w-[25px]'
+						className='absolute top-5 right-5 flex self-end w-[25px] cursor-pointer'
 						onClick={onClickNav}
 					>
 						<Image
 							src={crossIcon}
 							alt={"close-btn"}
+							className='transition-all hover:rotate-90'
 						/>
 					</div>
-					<div className='min-h-[80svh] flex flex-col justify-evenly'>
+					<div className='min-h-[80svh] flex flex-col justify-evenly '>
 						<Link
 							href={"/"}
 							onClick={onClickNav}
 						>
-							<div className='w-full'>
+							<div
+								className={`w-[80%] mx-auto transition-all hover:scale-105 ${
+									isNavShown && "animate-fade-down "
+								} `}
+							>
 								<Image
 									src={logoImageWhite}
 									alt={""}
 								/>
 							</div>
 						</Link>
-						<div className='w-full min-h-[60svh] flex flex-col items-center justify-evenly text-white text-xl font-semibold uppercase'>
+						<div
+							className={`w-full min-h-[60svh] flex flex-col items-center justify-evenly text-white text-xl font-semibold uppercase delay-500 ${
+								isNavShown && "animate-fade-right "
+							} `}
+						>
 							<Link
 								href={"/#o-nas"}
 								onClick={onClickNav}
-								className='border-b-2 border-b-accent pb-2'
+								className='w-[50%] border-b-2 border-b-accent pb-4 text-2xl text-center transition-all hover:scale-105'
 							>
 								O Nas
 							</Link>
 							<Link
 								href={"/oferta"}
 								onClick={onClickNav}
-								className='border-b-2 border-b-accent pb-2'
+								className='w-[50%] border-b-2 border-b-accent pb-4 text-2xl text-center transition-all hover:scale-105'
 							>
 								Oferta
 							</Link>
 							<Link
 								href={"/#faq"}
 								onClick={onClickNav}
-								className='border-b-2 border-b-accent pb-2'
+								className='w-[50%] border-b-2 border-b-accent pb-4 text-2xl text-center transition-all hover:scale-105'
 							>
 								FAQ
 							</Link>
 							<Link
 								href={"/#kontakt"}
 								onClick={onClickNav}
-								className='border-b-2 border-b-accent pb-2'
+								className='w-[50%] border-b-2 border-b-accent pb-4 text-2xl text-center transition-all hover:scale-105'
 							>
 								Kontakt
 							</Link>

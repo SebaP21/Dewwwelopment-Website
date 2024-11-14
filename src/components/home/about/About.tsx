@@ -3,6 +3,7 @@ import Image from "next/image";
 import logo from "../../../assets/img/dewwwelopment-low-resolution-logo-white-on-transparent-background (2).png";
 import aboutPicture from "../../../assets/img/Dewwwelopment-o-nas (1).jpg";
 import Link from "next/link";
+import AnimatedSection from "@/components/global/AnimatedSection/AnimatedSection";
 
 const About = () => {
 	return (
@@ -25,7 +26,7 @@ const About = () => {
 							/>
 						</div>
 						<div className=''>
-							<h5 className='text-accent font-bold uppercase '>O nas</h5>
+							<p className='text-accent text-lg font-bold uppercase '>O nas</p>
 						</div>
 					</div>
 					<div className='w-full mx-auto lg:w-[80%]'>
@@ -64,14 +65,16 @@ const About = () => {
 							sukces w świecie cyfrowym.
 						</p>
 					</div>
-					<div className='w-full flex justify-end -mt-4 md:mt-0'>
-						<Link
-							href={"/#offerBox"}
-							className='text-white border-b border-accent py-2'
-						>
-							Dowiedz się więcej
-						</Link>
-					</div>
+					<AnimatedSection animationClass={"animate-fade-left"}>
+						<div className='w-full flex justify-end -mt-4 md:mt-0 '>
+							<Link
+								href={"/#offerBox"}
+								className='text-white border-b border-accent py-2'
+							>
+								Dowiedz się więcej
+							</Link>
+						</div>
+					</AnimatedSection>
 				</article>
 			</div>
 			<div
