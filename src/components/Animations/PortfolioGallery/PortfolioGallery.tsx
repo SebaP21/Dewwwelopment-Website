@@ -1,5 +1,8 @@
 "use client";
 
+
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import Lenis from "@studio-freight/lenis";
 import { motion, MotionValue, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";

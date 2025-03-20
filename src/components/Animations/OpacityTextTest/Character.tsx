@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useRef } from "react";
 
