@@ -5,13 +5,13 @@
 import Lenis from "@studio-freight/lenis";
 import {
 	motion,
-	useMotionTemplate,
+	// useMotionTemplate,
 	useScroll,
 	useTransform,
 } from "framer-motion";
 // import { SiSpacex } from "react-icons/si";
 // import { FiArrowRight, FiMapPin } from "react-icons/fi";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 // import Paragraph from "../OpacityTextTest/Character";
 import Link from "next/link";
 
@@ -224,43 +224,43 @@ export const Schedule = () => {
 	);
 };
 
-type ParallaxImgProps = {
-	className?: string;
-	alt: string;
-	src: string;
-	start: number;
-	end: number;
-};
+// type ParallaxImgProps = {
+// 	className?: string;
+// 	alt: string;
+// 	src: string;
+// 	start: number;
+// 	end: number;
+// };
 
-const ParallaxImg: React.FC<ParallaxImgProps> = ({
-	className,
-	alt,
-	src,
-	start,
-	end,
-}) => {
-	const ref = useRef<HTMLImageElement>(null);
+// const ParallaxImg: React.FC<ParallaxImgProps> = ({
+// 	className,
+// 	alt,
+// 	src,
+// 	start,
+// 	end,
+// }) => {
+// 	const ref = useRef<HTMLImageElement>(null);
 
-	const { scrollYProgress } = useScroll({
-		target: ref,
-		offset: [`${start}px end`, `end ${end * -1}px`],
-	});
+// 	const { scrollYProgress } = useScroll({
+// 		target: ref,
+// 		offset: [`${start}px end`, `end ${end * -1}px`],
+// 	});
 
-	const opacity = useTransform(scrollYProgress, [0.75, 1], [1, 0]);
-	const scale = useTransform(scrollYProgress, [0.75, 1], [1, 0.85]);
-	const y = useTransform(scrollYProgress, [0, 1], [start, end]);
-	const transform = useMotionTemplate`translateY(${y}px) scale(${scale})`;
+// 	const opacity = useTransform(scrollYProgress, [0.75, 1], [1, 0]);
+// 	const scale = useTransform(scrollYProgress, [0.75, 1], [1, 0.85]);
+// 	const y = useTransform(scrollYProgress, [0, 1], [start, end]);
+// 	const transform = useMotionTemplate`translateY(${y}px) scale(${scale})`;
 
-	return (
-		<motion.img
-			src={src}
-			alt={alt}
-			className={className}
-			ref={ref}
-			style={{ transform, opacity }}
-		/>
-	);
-};
+// 	return (
+// 		<motion.img
+// 			src={src}
+// 			alt={alt}
+// 			className={className}
+// 			ref={ref}
+// 			style={{ transform, opacity }}
+// 		/>
+// 	);
+// };
 
 type ScheduleItemProps = {
 	title: string;
