@@ -4,8 +4,11 @@ const FooterHome = () => {
 	const year = new Date().getFullYear();
 
 	return (
-		<footer className=' py-4 w-full flex justify-center items-center border-[1px] border-t-main'>
-			<div className='w-[90%] bg-white min-h-[8svh] flex flex-col gap-2'>
+		<footer
+			className='  w-full flex justify-center items-center border-[1px] border-t-main  '
+			
+		>
+			<div className='w-full bg-white min-h-[8svh] flex flex-col gap-2 '>
 				<div className='flex justify-evenly '>
 					<Link
 						href={"/oferta"}

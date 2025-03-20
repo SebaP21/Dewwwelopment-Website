@@ -10,6 +10,7 @@ import burgerBlack from "../../../assets/icons/sort.png";
 import burgerWhite from "../../../assets/icons/sort (1).png";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import TransitionLink from "@/components/utils/TransitionLink";
 
 const Nav = () => {
 	const [isNavShown, setIsNavShown] = useState(false);
@@ -30,8 +31,8 @@ const Nav = () => {
 	return (
 		<>
 			<nav
-				className={`fixed top-0 w-full flex  opacity-95 justify-center items-center  transition-all duration-500 z-50 min-h-[8svh] ${
-					isScrolled ? "bg-darkmain bg-opacity-20" : "bg-transparent"
+				className={`fixed top-0 w-full flex  opacity-95 justify-center items-center  transition-all duration-400 ease-ease-custom z-50 min-h-[8svh] ${
+					isScrolled ? "bg-black bg-opacity-35 backdrop-blur-[22.5px]" : "bg-transparent"
 				} 
 				${isScrolled ? "pt-0" : "pt-8"} 
 				${!isNavShown ? "translate-y-0" : "-translate-y-full"}
@@ -44,7 +45,7 @@ const Nav = () => {
 					>
 						<div className={`${isScrolled ? "hidden" : "flex"}`}>
 							<Image
-								src={logoImageBlack}
+								src={logoImageWhite}
 								alt={
 									"Dewwwelopment-tworzenie stron i sklepów internetowych logo"
 								}
@@ -66,7 +67,7 @@ const Nav = () => {
 						onClick={onClickNav}
 					>
 						<Image
-							src={burgerBlack}
+							src={burgerWhite}
 							alt={"burger-icon-black"}
 						/>
 					</div>
@@ -86,36 +87,36 @@ const Nav = () => {
 							isScrolled ? "text-white" : "text-black"
 						}`}
 					>
-						<Link
+						<TransitionLink
 							href={"/#o-nas"}
-							className='transition-all hover:text-break'
+							// className='transition-all hover:text-break'
 						>
 							O nas
-						</Link>
-						<Link
+						</TransitionLink>
+						<TransitionLink
 							href={"/oferta"}
-							className='transition-all hover:text-break'
+							// className='transition-all hover:text-break'
 						>
 							Oferta
-						</Link>
-						<Link
+						</TransitionLink>
+						<TransitionLink
 							href={"/#faq"}
-							className='transition-all hover:text-break'
+							// className='transition-all hover:text-break'
 						>
 							FAQ
-						</Link>
-						<Link
+						</TransitionLink>
+						<TransitionLink
 							href={"/#kontakt"}
-							className='transition-all hover:text-break'
+							// className='transition-all hover:text-break'
 						>
 							Kontakt
-						</Link>
+						</TransitionLink>
 					</div>
 				</div>
 			</nav>
 
 			<nav
-				className={`w-full fixed top-0 bg-darkmain opacity-95 min-h-[100svh] z-50 flex justify-center items-center duration-500 transition-all ${
+				className={`w-full fixed top-0 bg-black bg-opacity-70 backdrop-blur-lg min-h-[100svh] z-50 flex justify-center items-center duration-500 transition-all ${
 					!isNavShown ? "translate-x-full" : "translate-x-0"
 				}`}
 			>
@@ -156,7 +157,7 @@ const Nav = () => {
 								onClick={onClickNav}
 								className='w-[50%] border-b-2 border-b-accent pb-4 text-2xl text-center transition-all hover:scale-105'
 							>
-								O Nas
+								O nas
 							</Link>
 							<Link
 								href={"/oferta"}

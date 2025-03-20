@@ -7,12 +7,16 @@ import Training from "../../../assets/icons/graduate-1.svg";
 import Support from "../../../assets/icons/settings-2.svg";
 import { OfferCard, OfferCardProps } from "./OfferCard";
 import Divider from "@/components/global/Divider/Divider";
+import projects from "../../../assets/img/Dewwwelopment-o-nas (1).jpg";
 
 const OfferBox = () => {
 	return (
 		<section
-			className='w-full scroll-mt-[8svh] flex flex-col justify-center items-center bg-white py-8 gap-4'
+			className='w-full scroll-mt-[8svh] flex flex-col justify-center items-center  py-8 gap-4'
 			id='offerBox'
+			style={{
+				backgroundImage: "url('/assets/img/Dewwwelopment-projektowanie.jpg'",
+			}}
 		>
 			<div className='w-[40%]'>
 				<Divider
@@ -27,11 +31,12 @@ const OfferBox = () => {
 				{offerCardsData.map((data, index) => (
 					<OfferCard
 						key={index}
-						imgSrc={data.imgSrc}
+						src={data.src}
 						title={data.title}
 						description={data.description}
 						path={data.path}
 						buttonTitle={data.buttonTitle}
+						color={data.color}
 					/>
 				))}
 			</article>
@@ -41,7 +46,7 @@ const OfferBox = () => {
 
 export default OfferBox;
 
-const offerCardsData: OfferCardProps[] = [
+export const offerCardsData: OfferCardProps[] = [
 	{
 		title: "Strony internetowe-wizytówki",
 		description:
@@ -50,8 +55,9 @@ const offerCardsData: OfferCardProps[] = [
 			" usługi, produkty lub informacje w sposób klarowny i zwięzły. " +
 			"Użytkownik przewija stronę w dół, aby poznać kolejne sekcje. " +
 			"Wszystkie informacje skoncentrowane w jednym miejscu.",
-		imgSrc: onePageIcon,
+		src: "Dewwwelopment-oferta-projektowa.jpg",
 		path: "/oferta/#one-page",
+		color: "#C2491D",
 	},
 	{
 		title: "Rozbudowane strony internetowe",
@@ -60,8 +66,9 @@ const offerCardsData: OfferCardProps[] = [
 			"umożliwiając bardziej szczegółowe przedstawienie treści lub " +
 			"portfolio. Każda podstrona może być dedykowana innemu tematowi " +
 			"lub sekcji biznesowej. Oferują wygodną nawigację i pełne dostosowanie treści do potrzeb użytkownika.",
-		imgSrc: advancedIcon,
+		src: "Dewwwelopment-oferta-projektowa.jpg",
 		path: "/oferta/#rozbudowana-strona",
+		color: "#BBACAF",
 	},
 	{
 		title: "Sklepy internetowe",
@@ -74,8 +81,9 @@ const offerCardsData: OfferCardProps[] = [
 			"zarządzania produktem i zawartością sklepu. Sklepy zoptymalizowane" +
 			"są pod kątem efektywności i wydajności, co znacznie poprawia ich" +
 			"pozycję w wynikach wyszukiwania.",
-		imgSrc: ecommerce,
+		src: "Dewwwelopment-oferta-projektowa.jpg",
 		path: "oferta/#sklepy-internetowe",
+		color: "#977F6D",
 	},
 	{
 		title: "Projekty indywidualne",
@@ -86,9 +94,10 @@ const offerCardsData: OfferCardProps[] = [
 			"szkoleniowych. Oferujemy możliwość tworzenia dedykowanych platform" +
 			"edukacyjnych umożliwiających przeprowadzanie szkoleń online, kursów" +
 			"oraz przechowywanie materiałów dostępnych dla Twoich użytkowników.",
-		imgSrc: individual,
+		src: "Dewwwelopment-oferta-projektowa.jpg",
 		path: "/#kontakt",
 		buttonTitle: "Zadzwoń po wycenę",
+		color: "#977F6D",
 	},
 	{
 		title: "Szkolenia",
@@ -99,8 +108,9 @@ const offerCardsData: OfferCardProps[] = [
 			"aktualizacja treści, dodawanie nowych funkcji, optymalizacja witryny" +
 			"pod kątem szybkości i SEO oraz efektywne zarządzanie pluginami i" +
 			"narzędziami.",
-		imgSrc: Training,
+		src: "Dewwwelopment-oferta-projektowa.jpg",
 		path: "/oferta/#szkolenia",
+		color: "#977F6D",
 	},
 	{
 		title: "Wsparcie techniczne",
@@ -111,7 +121,8 @@ const offerCardsData: OfferCardProps[] = [
 			" Dzięki naszemu wsparciu możesz mieć pewność," +
 			" że Twoja strona będzie działać sprawnie, bez" +
 			"zakłóceń i awarii.",
-		imgSrc: Support,
+		src: "Dewwwelopment-oferta-projektowa.jpg",
 		path: "/oferta/#wsparcie-techniczne",
+		color: "#977F6D",
 	},
 ];

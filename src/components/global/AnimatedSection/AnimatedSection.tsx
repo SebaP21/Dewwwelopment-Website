@@ -16,6 +16,7 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({
 }) => {
 	const [ref, isVisible] = useIntersectionObserver<HTMLDivElement>();
 
+	
 	return (
 		<div 
 			ref={ref}

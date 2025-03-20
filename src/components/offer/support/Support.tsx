@@ -16,7 +16,7 @@ const Support = () => {
 					<div className=' w-full flex flex-col gap-10 '>
 						<div className='flex gap-4 items-center justify-between'>
 							<div className=''>
-								<h5 className='text-break font-bold uppercase text-md'>
+								<h5 className='text-break font-bold uppercase text-md '>
 									potrzebujesz pomocy?
 								</h5>
 							</div>

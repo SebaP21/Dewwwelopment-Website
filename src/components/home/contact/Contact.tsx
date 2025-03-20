@@ -11,8 +11,8 @@ import AnimatedSection from "@/components/global/AnimatedSection/AnimatedSection
 const Contact = () => {
 	return (
 		<section
-			className='scroll-mt-[8svh] w-full flex justify-center py-12'
-			id='kontakt'
+			className='scroll-mt-[10svh] w-full flex justify-center py-24'
+			
 		>
 			<div className='w-[90%]'>
 				<div className='w-full flex flex-col items-center text-center gap-6'>

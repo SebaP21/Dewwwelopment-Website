@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-	--main-color: rgb(15, 92, 86);
+	--main-color: #0f5c56;
 	--dark-main-color: rgb(7, 51, 47);
 	--break-color: #7d7d7c;
 	--medium-light-color: #e2e8f0;
@@ -17,7 +17,7 @@
 	--form-bgc: rgb(238, 238, 238);
 	--cta-bgc: rgb(244, 244, 242);
 
-	scroll-behavior: smooth;
+	/* scroll-behavior: smooth; */
 }
 ::selection {
 	color: var(--medium-light-color);
@@ -26,6 +26,11 @@
 
 body {
 	@apply font-hind;
+	transition-property: opacity, background-color, transform, filter;
+	transition-timing-function: ease-in-out;
+	transition-duration: 500ms;
+	background-color: black;
+	/* color: white; */
 }
 
 body p {
@@ -40,3 +45,14 @@ h5,
 h6 {
 	@apply font-proza-libre;
 }
+
+.page-transition {
+	opacity: 0;
+	background-color: black;
+	transform: translateY(40px);
+	filter: blur(12px);
+}
+.light-section {
+	background-color: white;
+}
+

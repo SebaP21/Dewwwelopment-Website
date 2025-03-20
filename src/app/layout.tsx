@@ -3,6 +3,7 @@ import Nav from "@/components/global/Nav/Nav";
 import { Hind } from "next/font/google";
 import CookieConsentBanner from "@/components/CookieConsent/CookieConsentBanner";
 import Script from "next/script";
+import StickyFooter from "@/components/global/Footer/StickyFooter";
 
 const hind = Hind({
 	subsets: ["latin"],
@@ -27,14 +28,6 @@ export const metadata = {
 			"Zbuduj z nami swój wizerunek w sieci! Tworzymy strony internetowe, sklepy internetowe, platformy edukacyjne i oferujemy szkolenia w Warszawie.",
 		url: "https://dewwwelopment.pl",
 		type: "website",
-		// images: [
-		// 	{
-		// 		url: "https://twojastrona.pl/image.jpg",
-		// 		width: 800,
-		// 		height: 600,
-		// 		alt: "Tworzenie stron internetowych w Warszawie",
-		// 	},
-		// ],
 	},
 };
 
@@ -56,7 +49,7 @@ export default function RootLayout({
 				/>
 			</head>
 
-			<body className={`${hind.className} overflow-x-hidden`}>
+			<body className={`${hind.className} overflow-x-hidden `}>
 				<Script
 					strategy='afterInteractive'
 					src='https://www.googletagmanager.com/gtag/js?id=G-6RLN8N2PD3'
@@ -78,6 +71,7 @@ export default function RootLayout({
 
 				<Nav />
 				{children}
+				<StickyFooter/>
 				<CookieConsentBanner />
 			</body>
 		</html>

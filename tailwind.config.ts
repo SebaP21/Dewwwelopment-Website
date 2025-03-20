@@ -76,6 +76,15 @@ export default {
 				"scale-up": "scale 0.5s ease-in-out forwards",
 				"fade-front": "fade-front 0.7s ease-in-out forwards",
 			},
+			backdropBlur: {
+				"22.5": "22.5px",
+			},
+			transitionTimingFunction: {
+				"ease-custom": "ease",
+			},
+			transitionDuration: {
+				"400": "400ms",
+			},
 		},
 	},
 	plugins: [],
