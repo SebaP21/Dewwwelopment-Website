@@ -1,5 +1,5 @@
 import Contact from "@/components/home/contact/Contact";
-import FooterHome from "@/components/home/footerHome/FooterHome";
+// import FooterHome from "@/components/home/footerHome/FooterHome";
 import React from "react";
 
 const StickyFooter = () => {

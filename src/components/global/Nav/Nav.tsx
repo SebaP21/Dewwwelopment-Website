@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 
-import logoImageBlack from "../../../assets/img/dewwwelopment-low-resolution-logo-black-on-transparent-background-3.png";
+// import logoImageBlack from "../../../assets/img/dewwwelopment-low-resolution-logo-black-on-transparent-background-3.png";
 import logoImageWhite from "../../../assets/img/dewwwelopment-low-resolution-logo-white-on-transparent-background (2).png";
 import crossIcon from "../../../assets/icons/close (2).png";
 
-import burgerBlack from "../../../assets/icons/sort.png";
+// import burgerBlack from "../../../assets/icons/sort.png";
 import burgerWhite from "../../../assets/icons/sort (1).png";
 import Link from "next/link";
 import { useState, useEffect } from "react";

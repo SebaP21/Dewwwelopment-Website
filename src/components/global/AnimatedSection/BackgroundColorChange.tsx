@@ -1,6 +1,6 @@
 "use client";
 
-import React, { ReactNode, useContext } from "react";
+import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
 
 interface BackgroundColorChangeProps {

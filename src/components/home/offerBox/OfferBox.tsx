@@ -1,50 +1,52 @@
-import onePageIcon from "../../../assets/icons/web-programming-2.svg";
-import advancedIcon from "../../../assets/icons/coding-1.svg";
-import ecommerce from "../../../assets/icons/ecommerce-1.svg";
+// import onePageIcon from "../../../assets/icons/web-programming-2.svg";
+// import advancedIcon from "../../../assets/icons/coding-1.svg";
+// import ecommerce from "../../../assets/icons/ecommerce-1.svg";
 
-import individual from "../../../assets/icons/star-2.svg";
-import Training from "../../../assets/icons/graduate-1.svg";
-import Support from "../../../assets/icons/settings-2.svg";
-import { OfferCard, OfferCardProps } from "./OfferCard";
-import Divider from "@/components/global/Divider/Divider";
-import projects from "../../../assets/img/Dewwwelopment-o-nas (1).jpg";
+// import individual from "../../../assets/icons/star-2.svg";
+// import Training from "../../../assets/icons/graduate-1.svg";
+// import Support from "../../../assets/icons/settings-2.svg";
+// import { OfferCard, OfferCardProps } from "./OfferCard";
+// import {OfferCard}
+// import Divider from "@/components/global/Divider/Divider";
+import { OfferCardProps } from "@/components/OfferScrollSection/OfferScrollSection";
+// import projects from "../../../assets/img/Dewwwelopment-o-nas (1).jpg";
 
-const OfferBox = () => {
-	return (
-		<section
-			className='w-full scroll-mt-[8svh] flex flex-col justify-center items-center  py-8 gap-4'
-			id='offerBox'
-			style={{
-				backgroundImage: "url('/assets/img/Dewwwelopment-projektowanie.jpg'",
-			}}
-		>
-			<div className='w-[40%]'>
-				<Divider
-					width={100}
-					color={"main"}
-				/>
-			</div>
-			<p className='uppercase text-lg'>Co oferujemy?</p>
-			<h2 className='text-5xl font-semibold uppercase'>Usługi</h2>
+// const OfferBox = () => {
+// 	return (
+// 		<section
+// 			className='w-full scroll-mt-[8svh] flex flex-col justify-center items-center  py-8 gap-4'
+// 			id='offerBox'
+// 			style={{
+// 				backgroundImage: "url('/assets/img/Dewwwelopment-projektowanie.jpg'",
+// 			}}
+// 		>
+// 			<div className='w-[40%]'>
+// 				<Divider
+// 					width={100}
+// 					color={"main"}
+// 				/>
+// 			</div>
+// 			<p className='uppercase text-lg'>Co oferujemy?</p>
+// 			<h2 className='text-5xl font-semibold uppercase'>Usługi</h2>
 
-			<article className='w-[90%] py-4 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 xl:max-w-[1200px] '>
-				{offerCardsData.map((data, index) => (
-					<OfferCard
-						key={index}
-						src={data.src}
-						title={data.title}
-						description={data.description}
-						path={data.path}
-						buttonTitle={data.buttonTitle}
-						color={data.color}
-					/>
-				))}
-			</article>
-		</section>
-	);
-};
+// 			<article className='w-[90%] py-4 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 xl:max-w-[1200px] '>
+// 				{offerCardsData.map((data, index) => (
+// 					<OfferCard
+// 						key={index}
+// 						src={data.src}
+// 						title={data.title}
+// 						description={data.description}
+// 						path={data.path}
+// 						buttonTitle={data.buttonTitle}
+// 						color={data.color}
+// 					/>
+// 				))}
+// 			</article>
+// 		</section>
+// 	);
+// };
 
-export default OfferBox;
+// export default OfferBox;
 
 export const offerCardsData: OfferCardProps[] = [
 	{

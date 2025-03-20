@@ -1,10 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { div } from "framer-motion/client";
+// import { div } from "framer-motion/client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { FC, useEffect, useState } from "react";
+import React, { FC,  useState } from "react";
 import { BlogBoxDataProps } from "./BlogPreview";
 
 export const BlogItem: FC<BlogBoxDataProps> = ({ blogData }) => {

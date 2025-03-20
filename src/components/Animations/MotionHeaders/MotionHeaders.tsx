@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import React, { FC } from "react";
 
 type MotionbHeaderProps = {
@@ -10,8 +10,8 @@ type MotionbHeaderProps = {
 };
 
 const MotionHeader: FC<MotionbHeaderProps> = ({
-	title,
-	classname,
+	// title,
+	// classname,
 	hNumber,
 }) => {
 	return (

@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
+import React from "react";
 import { BlogItem } from "./BlogItem";
 
 import AnimatedSection from "@/components/global/AnimatedSection/AnimatedSection";
 import BackgroundColorChange from "@/components/global/AnimatedSection/BackgroundColorChange";
-import { BackgroundContextProvider } from "@/components/global/Context/BackgroundContext/BackgroundContext";
+// import { BackgroundContextProvider } from "@/components/global/Context/BackgroundContext/BackgroundContext";
 
 const BlogPreview = () => {
 	return (

@@ -1,10 +1,10 @@
 "use client";
 
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { FC, useRef } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
-import Paragraph from "../Animations/OpacityTextTest/Character";
+// import Paragraph from "../Animations/OpacityTextTest/Character";
 
 export type OfferCardProps = {
 	src: string;

@@ -1,8 +1,8 @@
 "use client";
 
-import { Schedule } from "@/components/Animations/HeaderTest/HeaderTest";
+// import { Schedule } from "@/components/Animations/HeaderTest/HeaderTest";
 import { motion } from "framer-motion";
-import { div, section } from "framer-motion/client";
+// import { div, section } from "framer-motion/client";
 import React, { useState } from "react";
 
 const NewFaq = () => {

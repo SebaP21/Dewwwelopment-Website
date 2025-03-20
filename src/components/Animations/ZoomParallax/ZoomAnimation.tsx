@@ -11,7 +11,7 @@ import styles from "./zoom.module.css";
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import Paragraph from "../OpacityTextTest/Character";
+// import Paragraph from "../OpacityTextTest/Character";
 import TextOpacityAnimated from "../OpacityTextTest/OpacityText";
 
 const ZoomAnimation = () => {
