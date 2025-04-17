@@ -52,14 +52,14 @@ export default function Home() {
 			{/* <ParrallaxTest/> */}
 
 			{/* <Mask /> */}
-			<HomeOffer />
+			{/* <HomeOffer /> */}
 			{/* <ZoomSection /> */}
 			{/* <TextOpacityAnimated/> */}
-			<PortfolioGallery />
-			<StepsAndFaqBackgroundWrapper>
+			{/* <PortfolioGallery /> */}
+			{/* <StepsAndFaqBackgroundWrapper>
 				<OurWork />
 				<BlogPreview />
-			</StepsAndFaqBackgroundWrapper>
+			</StepsAndFaqBackgroundWrapper> */}
 
 			<NewFaq />
 			{/* <BlogBox/> */}
