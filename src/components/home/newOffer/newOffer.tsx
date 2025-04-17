@@ -25,9 +25,10 @@ export const NewOffer = () => {
   }, []);
 
   return (
-    <section ref={container} className=" mb-[1svh] scroll-m-[8svh] relative ">
+    <section ref={container} className=" pb-[11svh] scroll-m-[8svh] relative ">
       {offerCardsData.map((project, i) => {
-        const targetScale = 1 - (offerCardsData.length - i) * 0.05;
+        const targetScale = 1 - (offerCardsData.length - i) * 0.07;
+        
 
         return (
           <Card
@@ -36,7 +37,7 @@ export const NewOffer = () => {
             {...project}
             url={""}
             progress={scrollYProgress}
-            range={[i * 0.25, 1]}
+            range={[i * 0.25, 2]}
             targetScale={targetScale}
           />
         );

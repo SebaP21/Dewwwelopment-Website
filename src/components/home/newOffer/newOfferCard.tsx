@@ -35,21 +35,21 @@ export const Card: FC<NewCardProps> = ({
 		offset: ["start end", "start start"],
 	});
 
-	const imageScale = useTransform(scrollYProgress, [0, 1], [2, 1]);
+	const imageScale = useTransform(scrollYProgress, [0, 1], [3, 1]);
 	const scale = useTransform(progress, range, [1, targetScale]);
 
 	return (
 		<div
 			ref={container}
-			className=' flex items-center justify-center sticky top-[10svh] gap-4 '
+			className=' flex items-center justify-center sticky top-[8svh] mb-12 '
 		>
 			<motion.div
 				style={{
 					backgroundColor: color,
-					scale, // Tylko wysokość się zmienia
-					top: `calc(1vh + ${i * 10}px)`,
+					scale, 
+					top: `calc(1vh + ${i * 10}px )`,
 				}}
-				className=' flex flex-col h-[92svh] w-[95%] relative  p-6 origin-top border shadow-lg  '
+				className=' flex flex-col h-[90svh] w-[95%] relative  p-6 origin-top border shadow-lg  '
 			>
 				<h2 className='text-center text-[28px]'>{title}</h2>
 				<div className='flex flex-col h-full w-full mt-6'>

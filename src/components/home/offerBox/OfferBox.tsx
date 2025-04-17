@@ -108,6 +108,7 @@ export const offerCardsData: OfferCardProps[] = [
 			"i umiejętności w zarządzaniu własną stroną internetową. Nasze" +
 			"szkolenia zapewniają praktyczne szkolenie w obszarach takich jak" +
 			"aktualizacja treści, dodawanie nowych funkcji, optymalizacja witryny" +
+			"aktualizacja treści, dodawanie nowych funkcji, optymalizacja witryny" +
 			"pod kątem szybkości i SEO oraz efektywne zarządzanie pluginami i" +
 			"narzędziami.",
 		src: "Dewwwelopment-oferta-projektowa.jpg",
