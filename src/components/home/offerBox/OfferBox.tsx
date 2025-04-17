@@ -1,4 +1,4 @@
-import { OfferCardProps } from "@/components/OfferScrollSection/OfferScrollSection";
+
 
 interface OfferCardMobileDataProps {
 	src: string;
