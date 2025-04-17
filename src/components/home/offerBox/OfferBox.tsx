@@ -1,6 +1,17 @@
 import { OfferCardProps } from "@/components/OfferScrollSection/OfferScrollSection";
 
-export const offerCardsData: OfferCardProps[] = [
+interface OfferCardMobileDataProps {
+	src: string;
+	title: string;
+	description: string;
+	path: string;
+	buttonTitle?: string;
+	bgColor: string;
+	color: string;
+	isLight: boolean;
+}
+
+export const offerCardsData: OfferCardMobileDataProps[] = [
 	{
 		title: "Strony internetowe-wizytówki",
 		description:

@@ -12,9 +12,7 @@ export type OfferCardProps = {
 	description: string;
 	path: string;
 	buttonTitle?: string;
-	bgColor: string;
-	color:string;
-	isLight:boolean;
+	color: string;
 };
 
 type OfferCardPropsData = {
@@ -36,7 +34,7 @@ export const OfferScrollSection: FC<OfferCardPropsData> = ({ data }) => {
 
 	return (
 		<section
-			id="oferta"
+			id='oferta'
 			ref={sectionRef}
 			className='relative w-full bg-zinc-950 h-[500vh]'
 		>
@@ -46,9 +44,6 @@ export const OfferScrollSection: FC<OfferCardPropsData> = ({ data }) => {
 					<motion.div
 						style={{ y: textY }}
 						className='flex flex-col'
-						
-						
-					
 					>
 						{data.map((product, index) => {
 							const isEven = index % 2 === 0;
@@ -76,7 +71,9 @@ export const OfferScrollSection: FC<OfferCardPropsData> = ({ data }) => {
 										</p>
 										<Link
 											href={product.path}
-											className={`${isEven ? "text-white" : "text-black" } hover:scale-105 transition-all hover:translate-x-10`}
+											className={`${
+												isEven ? "text-white" : "text-black"
+											} hover:scale-105 transition-all hover:translate-x-10`}
 										>
 											Dowiedz się więcej
 										</Link>
