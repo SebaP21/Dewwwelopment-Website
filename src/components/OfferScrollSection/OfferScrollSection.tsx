@@ -12,7 +12,9 @@ export type OfferCardProps = {
 	description: string;
 	path: string;
 	buttonTitle?: string;
-	color: string;
+	bgColor: string;
+	color:string;
+	isLight:boolean;
 };
 
 type OfferCardPropsData = {
