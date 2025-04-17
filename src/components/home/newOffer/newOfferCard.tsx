@@ -18,6 +18,7 @@ type NewCardProps = {
 	targetScale: any;
 	bgColor: string;
 	isLight: boolean;
+	disable?: boolean;
 };
 
 export const Card: FC<NewCardProps> = ({
@@ -32,6 +33,7 @@ export const Card: FC<NewCardProps> = ({
 	range,
 	targetScale,
 	isLight,
+	disable,
 }) => {
 	const container = useRef(null);
 
@@ -44,7 +46,10 @@ export const Card: FC<NewCardProps> = ({
 	const scale = useTransform(progress, range, [1, targetScale]);
 
 	return (
-		<BackgroundColorChange isLight={isLight}>
+		<BackgroundColorChange
+			isLight={isLight}
+			disable={disable}
+		>
 			<div
 				ref={container}
 				className=' flex items-center justify-center  mb-12 '
@@ -95,15 +100,20 @@ export const Card: FC<NewCardProps> = ({
 interface BackgroundColorChangeProps {
 	children: ReactNode;
 	isLight?: boolean;
+	disable?: boolean;
 }
 
 const BackgroundColorChange: React.FC<BackgroundColorChangeProps> = ({
 	children,
 	isLight,
+	disable,
 }) => {
 	const handleEnter = () => {
+		if (disable) return; // 👈 jeśli wyłączone, nie rób nic
+
 		const wrapper = document.querySelector(".offerbackground");
 		if (!wrapper) return;
+
 		if (isLight) {
 			wrapper.classList.add("light-section");
 		} else {
@@ -112,8 +122,11 @@ const BackgroundColorChange: React.FC<BackgroundColorChangeProps> = ({
 	};
 
 	const handleLeave = () => {
+		if (disable) return; // 👈 również tutaj
+
 		const wrapper = document.querySelector(".offerbackground");
 		if (!wrapper) return;
+
 		if (!isLight) {
 			wrapper.classList.add("light-section");
 		} else {
@@ -123,8 +136,6 @@ const BackgroundColorChange: React.FC<BackgroundColorChangeProps> = ({
 
 	return (
 		<motion.div
-			// initial={{ opacity: 0 }}
-			// whileInView={{ opacity: 1 }}
 			transition={{ duration: 0.5 }}
 			viewport={{ amount: 0.6 }}
 			onViewportEnter={handleEnter}

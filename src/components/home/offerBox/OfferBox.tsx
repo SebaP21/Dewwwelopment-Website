@@ -9,6 +9,7 @@ interface OfferCardMobileDataProps {
 	bgColor: string;
 	color: string;
 	isLight: boolean;
+	disable?:boolean
 }
 
 export const offerCardsData: OfferCardMobileDataProps[] = [
@@ -25,6 +26,8 @@ export const offerCardsData: OfferCardMobileDataProps[] = [
 		color: "#FFFFFF",
 		bgColor: "#000000",
 		isLight: false,
+		disable:true
+		
 	},
 	{
 		title: "Rozbudowane strony internetowe",
