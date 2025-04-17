@@ -13,7 +13,7 @@
 // import ParrallaxTest from "@/components/Animations/ParallaxTest/ParrallaxTest";
 // import Steps from "@/components/home/steps/Steps";
 import Head from "next/head";
-import ZoomSection from "@/components/Animations/ZoomParallax/ZoomSection";
+// import ZoomSection from "@/components/Animations/ZoomParallax/ZoomSection";
 // import ScrollSection from "@/components/Animations/OfferSlider/ScrollSection";
 // import StepsAnimation from "@/components/Animations/StepsAnimation/StepsAnimation";
 
@@ -25,8 +25,8 @@ import NewFaq from "@/components/home/FAQ/NewFaq";
 import BlogPreview from "@/components/home/BlogBox/BlogPreview";
 import OurWork from "@/components/Animations/StepsAnimation/StepsAnimation";
 import StepsAndFaqBackgroundWrapper from "@/components/home/StepsAndBlogBackgroundWrapper/StepsAndFaqBackgroundWrapper";
-import ScrollSection from "@/components/Animations/OfferSlider/ScrollSection";
-import ParrallaxTest from "@/components/Animations/ParallaxTest/ParrallaxTest";
+// import ScrollSection from "@/components/Animations/OfferSlider/ScrollSection";
+// import ParrallaxTest from "@/components/Animations/ParallaxTest/ParrallaxTest";
 import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
 // import StickyFooter from "@/components/global/Footer/StickyFooter";
 // import BlogBox from "@/components/home/BlogBox/BlogItem";

@@ -5,7 +5,7 @@
 import Lenis from "@studio-freight/lenis";
 import {
 	motion,
-	useMotionTemplate,
+	// useMotionTemplate,
 	// useMotionTemplate,
 	useScroll,
 	useTransform,
