@@ -39,14 +39,14 @@ export const Card: FC<NewCardProps> = ({
   const scaleY = useTransform(progress, range, [1, targetScale]); 
 
   return (
-    <div ref={container} className="flex items-center justify-center sticky top-[8svh] bg-black ">
+    <div ref={container} className="flex items-center justify-center sticky top-0 bg-black ">
       <motion.div
         style={{
           backgroundColor: color,
           scaleY, // Tylko wysokość się zmienia
           top: `calc(1vh + ${i * 20}px)`,
         }}
-        className=" flex flex-col h-[90svh] w-[full] max-w-[1000px] p-6 origin-top bg-white border shadow-lg"
+        className=" flex flex-col h-[100svh] w-[full] max-w-[1000px] p-6 origin-top bg-white border shadow-lg"
       >
         <h2 className="text-center text-[28px]">{title}</h2>
         <div className="flex flex-col h-full w-full mt-6">
