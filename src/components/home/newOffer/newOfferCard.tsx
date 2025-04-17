@@ -47,9 +47,9 @@ export const Card: FC<NewCardProps> = ({
 				style={{
 					backgroundColor: color,
 					scale, // Tylko wysokość się zmienia
-					top: `calc(1vh + ${i * 5}px)`,
+					top: `calc(1vh + ${i * 10}px)`,
 				}}
-				className=' flex flex-col h-[92svh] w-[80%] relative  p-6 origin-top border shadow-lg  '
+				className=' flex flex-col h-[92svh] w-[95%] relative  p-6 origin-top border shadow-lg  '
 			>
 				<h2 className='text-center text-[28px]'>{title}</h2>
 				<div className='flex flex-col h-full w-full mt-6'>
