@@ -28,6 +28,7 @@ import StepsAndFaqBackgroundWrapper from "@/components/home/StepsAndBlogBackgrou
 // import ScrollSection from "@/components/Animations/OfferSlider/ScrollSection";
 // import ParrallaxTest from "@/components/Animations/ParallaxTest/ParrallaxTest";
 import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
+import { NewOffer } from "@/components/home/newOffer/newOffer";
 // import StickyFooter from "@/components/global/Footer/StickyFooter";
 // import BlogBox from "@/components/home/BlogBox/BlogItem";
 
@@ -43,9 +44,10 @@ export default function Home() {
 			{/* <PageHeader /> */}
 			{/* <About /> */}
 			{/* <OfferBox /> */}
-			{/* <NewOffer/> */}
+			
 			{/* <NewOffer/>			 */}
 			<SmoothScrollHero />
+			<NewOffer/>
 			
 			{/* <ParrallaxTest/> */}
 

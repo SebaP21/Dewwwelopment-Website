@@ -25,7 +25,7 @@ export const NewOffer = () => {
   }, []);
 
   return (
-    <section ref={container} className=" mb-[1svh] scroll-m-[9svh]">
+    <section ref={container} className=" mb-[1svh] scroll-m-[9svh] relative bg-black">
       {offerCardsData.map((project, i) => {
         const targetScale = 1 - (offerCardsData.length - i) * 0.05;
 
