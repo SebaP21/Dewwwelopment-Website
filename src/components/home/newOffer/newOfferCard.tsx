@@ -56,7 +56,7 @@ export const Card: FC<NewCardProps> = ({
 						scale,
 						top: `calc(1vh + ${i * 10}px )`,
 					}}
-					className=' flex flex-col h-[90svh] w-[95%] relative  p-6 origin-top rounded-xl border-lime-300 border-[1px] shadow-lg  '
+					className=' flex flex-col h-[90svh] w-[95%] relative  p-6 origin-top rounded-xl border-lime-300 border-[2px] shadow-lg  '
 				>
 					<h2 className='text-center text-[28px]'>{title}</h2>
 					<div className='flex flex-col h-full w-full mt-6'>
