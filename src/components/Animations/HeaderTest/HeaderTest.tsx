@@ -5,6 +5,7 @@
 import Lenis from "@studio-freight/lenis";
 import {
 	motion,
+	useMotionTemplate,
 	// useMotionTemplate,
 	useScroll,
 	useTransform,
@@ -14,7 +15,7 @@ import {
 import { useEffect } from "react";
 // import Paragraph from "../OpacityTextTest/Character";
 import Link from "next/link";
-
+// import { clipPath } from "framer-motion/client";
 
 export const SmoothScrollHero = () => {
 	useEffect(() => {
@@ -44,12 +45,12 @@ export const SmoothScrollHero = () => {
 	);
 };
 
-const SECTION_HEIGHT = 600;
+const SECTION_HEIGHT = 1000;
 
 const Hero = () => {
 	return (
 		<div
-			style={{ height: `calc(${SECTION_HEIGHT}px + 50vh)` }}
+			style={{ height: `calc(${SECTION_HEIGHT}px + 10vh)` }}
 			className='relative w-full '
 		>
 			<CenterImage />
@@ -80,8 +81,7 @@ const CenterImage = () => {
 	// 	[1, 0]
 	// );
 
-
-    const opacity = useTransform(scrollY, [0, SECTION_HEIGHT], [1, 0]);
+	const opacity = useTransform(scrollY, [0, SECTION_HEIGHT], [1, 0]);
 
 	return (
 		<motion.div
@@ -93,8 +93,7 @@ const CenterImage = () => {
 			}}
 		>
 			<section className='w-full min-h-[100svh] '>
-				<div className='absolute w-full min-h-[100svh] flex items-end justify-center overflow-hidden'>
-					{/* Tło wideo */}
+				<div className='absolute w-full min-h-[100svh] flex items-end justify-center overflow-hidden '>
 					<video
 						className='absolute top-0 left-0 w-full h-full object-cover'
 						autoPlay
@@ -114,7 +113,7 @@ const CenterImage = () => {
 						<h1 className='text-5xl font-extrabold lg:text-5xl animate-fade-right text-white'>
 							Budowanie stron i sklepów internetowych
 						</h1>
-                       
+
 						<div className='w-[80%] flex flex-col animate-fade-right '>
 							<p>Zakładanie własnej strony internetowej nie musi być trudne.</p>
 							<p>Zbuduj z nami swój wizerunek w sieci!</p>
@@ -265,14 +264,9 @@ export const Schedule = () => {
 type ScheduleItemProps = {
 	title: string;
 	date: string;
-
 };
 
-const ScheduleItem: React.FC<ScheduleItemProps> = ({
-	title,
-	date,
-
-}) => {
+const ScheduleItem: React.FC<ScheduleItemProps> = ({ title, date }) => {
 	return (
 		<motion.div
 			initial={{ y: 48, opacity: 0 }}

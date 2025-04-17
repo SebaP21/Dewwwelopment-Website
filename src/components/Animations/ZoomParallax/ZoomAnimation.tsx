@@ -79,6 +79,7 @@ const ZoomAnimation = () => {
 					</motion.div>
 				))}
 			</div>
+			
 		</div>
 	);
 };

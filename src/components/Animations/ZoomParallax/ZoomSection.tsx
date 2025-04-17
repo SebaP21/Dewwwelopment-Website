@@ -18,6 +18,7 @@ const ZoomSection = () => {
 	return (
 		<div className=' bg-zinc-950'>
 			<ZoomAnimation />
+			
 		</div>
 	);
 };

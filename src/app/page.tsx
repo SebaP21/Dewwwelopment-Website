@@ -16,13 +16,18 @@ import Head from "next/head";
 import ZoomSection from "@/components/Animations/ZoomParallax/ZoomSection";
 // import ScrollSection from "@/components/Animations/OfferSlider/ScrollSection";
 // import StepsAnimation from "@/components/Animations/StepsAnimation/StepsAnimation";
-import OurWork from "@/components/Animations/StepsAnimation/StepsAnimation";
+
 import { SmoothScrollHero } from "@/components/Animations/HeaderTest/HeaderTest";
 // import { OfferScrollSection } from "@/components/OfferScrollSection/OfferScrollSection";
 import HomeOffer from "@/components/home/offer/Offer";
 // import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
 import NewFaq from "@/components/home/FAQ/NewFaq";
 import BlogPreview from "@/components/home/BlogBox/BlogPreview";
+import OurWork from "@/components/Animations/StepsAnimation/StepsAnimation";
+import StepsAndFaqBackgroundWrapper from "@/components/home/StepsAndBlogBackgroundWrapper/StepsAndFaqBackgroundWrapper";
+import ScrollSection from "@/components/Animations/OfferSlider/ScrollSection";
+import ParrallaxTest from "@/components/Animations/ParallaxTest/ParrallaxTest";
+import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
 // import StickyFooter from "@/components/global/Footer/StickyFooter";
 // import BlogBox from "@/components/home/BlogBox/BlogItem";
 
@@ -41,16 +46,20 @@ export default function Home() {
 			{/* <NewOffer/> */}
 			{/* <NewOffer/>			 */}
 			<SmoothScrollHero />
-			{/* <PortfolioGallery /> */}
-			{/* <ParrallaxTest/> */}
 			
+			{/* <ParrallaxTest/> */}
+
 			{/* <Mask /> */}
 			<HomeOffer />
-			<ZoomSection />
+			{/* <ZoomSection /> */}
 			{/* <TextOpacityAnimated/> */}
-			<OurWork />
-			<BlogPreview/>
-			<NewFaq/>
+			<PortfolioGallery />
+			<StepsAndFaqBackgroundWrapper>
+				<OurWork />
+				<BlogPreview />
+			</StepsAndFaqBackgroundWrapper>
+
+			<NewFaq />
 			{/* <BlogBox/> */}
 
 			{/* <ScrollSection /> */}

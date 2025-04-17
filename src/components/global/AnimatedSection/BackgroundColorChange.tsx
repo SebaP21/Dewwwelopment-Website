@@ -11,11 +11,17 @@ const BackgroundColorChange: React.FC<BackgroundColorChangeProps> = ({
 	children,
 }) => {
 	const handleEnter = () => {
-		document.body.classList.add("light-section");
+		const wrapper = document.querySelector(".backgroundwrapper");
+		if (wrapper) {
+			wrapper.classList.add("light-section");
+		}
 	};
 
 	const handleLeave = () => {
-		document.body.classList.remove("light-section");
+		const wrapper = document.querySelector(".backgroundwrapper");
+		if (wrapper) {
+			wrapper.classList.remove("light-section");
+		}
 	};
 
 	return (

@@ -5,10 +5,10 @@ import CookieConsentBanner from "@/components/CookieConsent/CookieConsentBanner"
 import Script from "next/script";
 import StickyFooter from "@/components/global/Footer/StickyFooter";
 
-const hind = Hind({
-	subsets: ["latin"],
-	weight: "400",
-});
+// const hind = Hind({
+// 	subsets: ["latin"],
+// 	weight: "400",
+// });
 
 export const metadata = {
 	title:
@@ -49,8 +49,10 @@ export default function RootLayout({
 				/>
 			</head>
 
-			<body className={`${hind.className} overflow-x-hidden `}>
-				<Script
+			{/* ${hind.className} */}
+
+			<body className={` overflow-x-hidden `}>
+				{/* <Script
 					strategy='afterInteractive'
 					src='https://www.googletagmanager.com/gtag/js?id=G-6RLN8N2PD3'
 				/>
@@ -67,7 +69,7 @@ export default function RootLayout({
       });
     `,
 					}}
-				/>
+				/> */}
 
 				<Nav />
 				{children}

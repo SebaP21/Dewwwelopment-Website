@@ -26,6 +26,8 @@ export default {
 			fontFamily: {
 				"proza-libre": ["Proza Libre", "sans-serif"],
 				hind: ["Hind", "sans-serif"],
+				headers:['AvenirHeavy', 'sans-serif'],
+				paragraphs:['AvenirLight', 'sans-serif']
 			},
 			keyframes: {
 				expand: {

@@ -24,12 +24,29 @@
 	background: var(--main-color);
 }
 
+@font-face {
+	font-family: 'AvenirLight';
+	src: url('/fonts/AvenirLTProLight.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+  }
+  
+  @font-face {
+	font-family: 'AvenirHeavy';
+	src: url('/fonts/AvenirLTProBlack.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+  }
+  
+
 body {
-	@apply font-hind;
+	@apply font-paragraphs;
 	transition-property: opacity, background-color, transform, filter;
 	transition-timing-function: ease-in-out;
 	transition-duration: 500ms;
-	background-color: black;
+	/* background-color: black; */
 	/* color: white; */
 }
 
@@ -43,7 +60,14 @@ h3,
 h4,
 h5,
 h6 {
-	@apply font-proza-libre;
+	@apply font-headers;
+}
+
+.backgroundwrapper{
+	background-color: black;
+	transition-property: opacity, background-color, transform, filter;
+	transition-timing-function: ease-in-out;
+	transition-duration: 500ms;
 }
 
 .page-transition {
