@@ -38,7 +38,7 @@ const Nav = () => {
 				${!isNavShown ? "translate-y-0" : "-translate-y-full"}
 				`}
 			>
-				<div className='w-[90%] flex justify-between items-center lg:w-[80%]'>
+				<div className='w-[90%]  flex justify-between items-center lg:w-[80%]'>
 					<Link
 						href={"/"}
 						className='w-[180px] lg:w-[220px]'
