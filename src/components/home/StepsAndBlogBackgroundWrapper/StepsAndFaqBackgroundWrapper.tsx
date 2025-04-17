@@ -7,7 +7,7 @@ interface StepsAndBlogBackgroundWrapperProps {
 const StepsAndFaqBackgroundWrapper: React.FC<
 	StepsAndBlogBackgroundWrapperProps
 > = ({ children }) => {
-	return <div className='backgroundwrapper'>{children}</div>;
+	return <div className='backgroundwrapper relative'>{children}</div>;
 };
 
 export default StepsAndFaqBackgroundWrapper;

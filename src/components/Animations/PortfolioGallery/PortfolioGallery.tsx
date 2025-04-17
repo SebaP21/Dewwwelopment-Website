@@ -62,7 +62,9 @@ const PortfolioGallery = () => {
 				<Column images={[images[0], images[1], images[2]]} y={y} extraClass="-top-[45%]" />
 				<Column images={[images[3], images[4], images[5]]} y={y2} extraClass="-top-[95%]" />
 				<Column images={[images[6], images[7], images[8]]} y={y3} extraClass="-top-[45%]" />
-				<Column images={[images[9], images[10], images[11]]} y={y4} extraClass="-top-[75%]" />
+				
+				<Column images={[images[9], images[10], images[11]]} y={y4} extraClass="-top-[75%] hidden md:flex " />
+				
 			</div>
 			
 		
@@ -73,7 +75,7 @@ export default PortfolioGallery;
 
 const Column: React.FC<ColumnProps & { extraClass?: string }> = ({ images, y, extraClass = "" }) => {
 	return (
-		<motion.div className={`relative h-full w-1/3 min-w-[250px] flex flex-col gap-[2vw] ${extraClass}`} style={{ y }}>
+		<motion.div className={`relative h-full w-1/3 flex flex-col gap-[2vw] ${extraClass}`} style={{ y }}>
 			{images.map((src: any, i: Key | null | undefined) => (
 				<div key={i} className="h-full w-full relative rounded-[1vw] overflow-hidden">
 					<Image src={`/assets/img/${src}`} alt='image' fill className="object-cover" />

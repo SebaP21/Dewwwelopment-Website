@@ -23,12 +23,15 @@ import { SmoothScrollHero } from "@/components/Animations/HeaderTest/HeaderTest"
 // import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
 import NewFaq from "@/components/home/FAQ/NewFaq";
 // import BlogPreview from "@/components/home/BlogBox/BlogPreview";
-// import OurWork from "@/components/Animations/StepsAnimation/StepsAnimation";
+import OurWork from "@/components/Animations/StepsAnimation/StepsAnimation";
 // import StepsAndFaqBackgroundWrapper from "@/components/home/StepsAndBlogBackgroundWrapper/StepsAndFaqBackgroundWrapper";
 // import ScrollSection from "@/components/Animations/OfferSlider/ScrollSection";
 // import ParrallaxTest from "@/components/Animations/ParallaxTest/ParrallaxTest";
 // import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
 import { NewOffer } from "@/components/home/newOffer/newOffer";
+import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
+import BlogPreview from "@/components/home/BlogBox/BlogPreview";
+import StepsAndFaqBackgroundWrapper from "@/components/home/StepsAndBlogBackgroundWrapper/StepsAndFaqBackgroundWrapper";
 // import BlogPreview from "@/components/home/BlogBox/BlogPreview";
 // import StepsAndFaqBackgroundWrapper from "@/components/home/StepsAndBlogBackgroundWrapper/StepsAndFaqBackgroundWrapper";
 // import StickyFooter from "@/components/global/Footer/StickyFooter";
@@ -57,11 +60,11 @@ export default function Home() {
 			{/* <HomeOffer /> */}
 			{/* <ZoomSection /> */}
 			{/* <TextOpacityAnimated/> */}
-			{/* <PortfolioGallery /> */}
-			{/* <StepsAndFaqBackgroundWrapper>
+			<PortfolioGallery />
+			<StepsAndFaqBackgroundWrapper>
 				<OurWork />
 				<BlogPreview />
-			</StepsAndFaqBackgroundWrapper> */}
+			</StepsAndFaqBackgroundWrapper>
 
 			<NewFaq />
 			{/* <BlogBox/> */}

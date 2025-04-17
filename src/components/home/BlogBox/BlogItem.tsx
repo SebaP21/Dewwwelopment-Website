@@ -30,19 +30,19 @@ export const BlogItem: FC<BlogBoxDataProps> = ({ blogData }) => {
 		<>
 			{blogData.map((data, index) => (
 				<div
-					className='min-w-[350px] min-h-[350px] flex flex-col relative overflow-hidden'
+					className=' min-w-[150px] min-h-[200px] md:min-w-[250px] md:min-h-[250px] lg:min-w-[350px] lg:min-h-[350px] flex flex-col relative overflow-hidden'
 					key={index}
 					onMouseEnter={() => handleHover(index)}
 					onMouseLeave={() => handleHover(index)}
 				>
 					<div className='w-full bg-black h-[50%] flex items-center px-4 relative z-10'>
-						<p className='text-white text-xl'>{data.title}</p>
+						<p className='text-white text-sm md:text-lg'>{data.title}</p>
 					</div>
 					<div className='w-full h-[50%] flex relative justify-end'>
 						<div className='w-1/2 h-full flex items-center justify-center'>
 							<Link
 								href={data.path}
-								className='transition-all text-black hover:text-accent'
+								className='transition-all text-sm text-black hover:text-accent'
 							>
 								Zobacz więcej +
 							</Link>
