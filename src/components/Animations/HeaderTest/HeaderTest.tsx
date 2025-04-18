@@ -45,7 +45,7 @@ export const SmoothScrollHero = () => {
 	);
 };
 
-const SECTION_HEIGHT = 1000;
+const SECTION_HEIGHT = 900;
 
 const Hero = () => {
 	return (
@@ -111,12 +111,12 @@ const CenterImage = () => {
 					{/* Zawartość */}
 					<div className='relative z-10 min-h-[50svh] w-[90%] flex flex-col gap-12 mb-2 sm:justify-center lg:w-[80%]'>
 						<h1 className='text-5xl font-extrabold lg:text-5xl animate-fade-right text-white'>
-							Budowanie stron i sklepów internetowych
+							
 						</h1>
 
 						<div className='w-[80%] flex flex-col animate-fade-right '>
-							<p>Zakładanie własnej strony internetowej nie musi być trudne.</p>
-							<p>Zbuduj z nami swój wizerunek w sieci!</p>
+							<p className="text-white">Zakładanie własnej strony internetowej nie musi być trudne.</p>
+							<p className="text-white">Zbuduj z nami swój wizerunek w sieci!</p>
 						</div>
 						<div className='flex w-[100%] justify-end xl:justify-start animate-fade-left xl:animate-fade-right'>
 							<Link
