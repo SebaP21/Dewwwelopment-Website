@@ -52,7 +52,7 @@ export const Card: FC<NewCardProps> = ({
 		>
 			<div
 				ref={container}
-				className=' flex items-center justify-center  mb-12 '
+				className=' flex items-center justify-center mb-12 '
 			>
 				<motion.div
 					style={{
@@ -77,15 +77,15 @@ export const Card: FC<NewCardProps> = ({
 						Błąd wyświetlania.
 					</video>
 
-					<div className='absolute inset-0 w-full h-full bg-black/40 flex flex-col justify-center p-4 gap-8'>
+					<div className='absolute inset-0 w-full h-full bg-black/40 flex flex-col justify-center px-6 gap-12'>
 						<h2 className=' text-4xl text-white'>{title}</h2>
-						<div className='w-full flex flex-col gap-2'>
+						<div className='w-full flex flex-col gap-6'>
 							<p className='text-white'>{description}</p>
 
 							<a
 								href={url}
 								target='_blank'
-								className='text-sm underline cursor-pointer self-end text-lime-300'
+								className=' underline cursor-pointer self-end text-lime-300'
 							>
 								Zobacz więcej
 							</a>
@@ -140,7 +140,7 @@ const BackgroundColorChange: React.FC<BackgroundColorChangeProps> = ({
 			viewport={{ amount: 0.6 }}
 			onViewportEnter={handleEnter}
 			onViewportLeave={handleLeave}
-			className='sticky top-[9svh]'
+			className='sticky top-[9svh] '
 		>
 			{children}
 		</motion.div>
