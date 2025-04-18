@@ -111,7 +111,7 @@ const CenterImage = () => {
 					{/* Zawartość */}
 					<div className='relative z-10 min-h-[50svh] w-[90%] flex flex-col gap-12 mb-2 sm:justify-center lg:w-[80%]'>
 						<h1 className='text-5xl font-extrabold lg:text-5xl animate-fade-right text-white'>
-							
+							Budowanie stron i sklepów internetowych
 						</h1>
 
 						<div className='w-[80%] flex flex-col animate-fade-right '>

@@ -59,12 +59,12 @@ export const Card: FC<NewCardProps> = ({
 						backgroundColor: bgColor,
 						color: color,
 						scale,
-						top: `calc(1vh + ${i * 10}px )`,
+						top: `calc(1vh + ${i * 10}px)`,
 					}}
-					className=' flex flex-col h-[90svh] w-[95%] relative  origin-top rounded-xl  shadow-lg overflow-hidden '
+					className='relative grid h-[90svh] w-[95%] place-items-center origin-top rounded-xl shadow-lg overflow-hidden'
 				>
 					<video
-						className='w-full h-full object-cover'
+						className='absolute inset-0 w-full h-full object-cover z-0'
 						autoPlay
 						loop
 						muted
@@ -77,19 +77,23 @@ export const Card: FC<NewCardProps> = ({
 						Błąd wyświetlania.
 					</video>
 
-					<div className='absolute inset-0 w-full h-full bg-black/40 will-change-transform flex flex-col justify-center px-6 gap-12 '>
-						<h2 className=' text-4xl text-white'>{title}</h2>
-						<div className='w-full flex flex-col gap-6'>
-							<p className='text-white'>{description}</p>
-
-							<a
-								href={url}
-								target='_blank'
-								className=' underline cursor-pointer self-end text-lime-300'
-							>
-								Zobacz więcej
-							</a>
-						</div>
+					<div
+						className='z-10 bg-black/50 p-6 rounded-xl max-w-[90%] text-white flex flex-col gap-6'
+						style={{
+							contain: "layout paint",
+							willChange: "transform, opacity",
+							contentVisibility: "auto",
+						}}
+					>
+						<h2 className='text-4xl'>{title}</h2>
+						<p>{description}</p>
+						<a
+							href={url}
+							target='_blank'
+							className='underline cursor-pointer self-end text-lime-300'
+						>
+							Zobacz więcej
+						</a>
 					</div>
 				</motion.div>
 			</div>
