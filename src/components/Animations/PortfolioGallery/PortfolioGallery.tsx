@@ -28,6 +28,9 @@ type ColumnProps = {
 };
 
 const PortfolioGallery = () => {
+
+	
+
 	const gallery = useRef<HTMLDivElement | null>(null);
 	const [dimension, setDimension] = useState({ width: 0, height: 0 });
 

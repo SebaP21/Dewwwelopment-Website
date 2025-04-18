@@ -78,14 +78,14 @@ export const Card: FC<NewCardProps> = ({
 					</video>
 
 					<div className='absolute inset-0 w-full h-full bg-black/40 will-change-transform flex flex-col justify-center px-6 gap-12 '>
-						<h2 className=' text-4xl text-white'>{title}</h2>
+						<h2 className=' text-4xl text-white brightness-[200] drop-shadow-lg mix-blend-screen '>{title}</h2>
 						<div className='w-full flex flex-col gap-6'>
-							<p className='text-white'>{description}</p>
+							<p className='text-white drop-shadow-lg mix-blend-screen'>{description}</p>
 
 							<a
 								href={url}
 								target='_blank'
-								className=' underline cursor-pointer self-end text-lime-300'
+								className=' underline cursor-pointer self-end text-lime-300 drop-shadow-lg mix-blend-screen'
 							>
 								Zobacz więcej
 							</a>
