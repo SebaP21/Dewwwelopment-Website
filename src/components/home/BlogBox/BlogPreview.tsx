@@ -18,8 +18,8 @@ const BlogPreview = () => {
 			</AnimatedSection>
 
 			{/* <BackgroundContextProvider> */}
-			<BackgroundColorChange >
-				<div className='grid grid-cols-2 md:grid-cols-3 md:grid-rows-2 gap-4 mx-auto py-8 max-w-[1100px] px-4 '>
+			<BackgroundColorChange>
+				<div className='grid grid-cols-2 md:grid-cols-3 md:grid-rows-2 gap-2 mx-auto py-8 max-w-[1100px] px-2 '>
 					<BlogItem blogData={blogData} />
 				</div>
 			</BackgroundColorChange>

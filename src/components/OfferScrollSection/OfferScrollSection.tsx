@@ -36,7 +36,7 @@ export const OfferScrollSection: FC<OfferCardPropsData> = ({ data }) => {
 		<section
 			id='oferta'
 			ref={sectionRef}
-			className='relative w-full bg-zinc-950 h-[500vh]'
+			className='hidden md:block relative w-full bg-zinc-950 h-[500vh]'
 		>
 			<div className='sticky top-0  flex h-[100vh]  '>
 				{/* Sekcja tekstowa - lewa strona */}

@@ -1,3 +1,4 @@
+
 "use client";
 
 import Lenis from "@studio-freight/lenis";
@@ -6,7 +7,7 @@ import { useRef, useEffect } from "react";
 import { Card } from "./newOfferCard";
 import { offerCardsData } from "../offerBox/OfferBox";
 
-export const NewOffer = () => {
+export const NewOfferMobile = () => {
 	const container = useRef(null);
 	const { scrollYProgress } = useScroll({
 		target: container,
@@ -27,7 +28,7 @@ export const NewOffer = () => {
 	return (
 		<section
 			ref={container}
-			className=' pb-[11svh] scroll-m-[8svh] relative  offerbackground '
+			className=' md:hidden pb-[11svh] scroll-m-[8svh] relative  offerbackground'
 		>
 			{offerCardsData.map((project, i) => {
 				const targetScale = 1 - (offerCardsData.length - i) * 0.07;

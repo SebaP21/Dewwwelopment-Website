@@ -39,10 +39,10 @@ export const BlogItem: FC<BlogBoxDataProps> = ({ blogData }) => {
 						<p className='text-white text-sm md:text-lg'>{data.title}</p>
 					</div>
 					<div className='w-full h-[50%] flex relative justify-end'>
-						<div className='w-1/2 h-full flex items-center justify-center'>
+						<div className='w-1/2 h-full flex items-center justify-center p-1'>
 							<Link
 								href={data.path}
-								className='transition-all text-sm text-black hover:text-accent'
+								className='transition-all text-sm text-center text-black hover:text-accent'
 							>
 								Zobacz więcej +
 							</Link>

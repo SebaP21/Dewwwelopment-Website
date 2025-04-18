@@ -2,7 +2,7 @@
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import Image from "next/image";
+// import Image from "next/image";
 import { useTransform, motion, useScroll } from "framer-motion";
 import { FC, ReactNode, useRef } from "react";
 
@@ -24,9 +24,9 @@ type NewCardProps = {
 export const Card: FC<NewCardProps> = ({
 	i,
 	title,
-	description,
+	// description,
 	src,
-	url,
+	// url,
 	bgColor,
 	color,
 	progress,
@@ -61,41 +61,65 @@ export const Card: FC<NewCardProps> = ({
 						scale,
 						top: `calc(1vh + ${i * 10}px )`,
 					}}
-					className=' flex flex-col h-[90svh] w-[95%] relative  p-6 origin-top rounded-xl border-lime-300 border-[2px] shadow-lg  '
+					className=' flex flex-col h-[90svh] w-[95%] relative  origin-top rounded-xl border-gray-300 border-[2px] shadow-lg overflow-hidden  '
 				>
-					<h2 className='text-center text-[28px]'>{title}</h2>
-					<div className='flex flex-col h-full w-full mt-6'>
-						<div className='w-full  top-[10%]'>
-							<p className='text-[16px]'>{description}</p>
-							<span className='flex items-center gap-2'>
-								<a
-									href={url}
-									target='_blank'
-									className='text-[12px] underline cursor-pointer'
-								>
-									Zobacz więcej
-								</a>
-							</span>
-						</div>
-						<div className=' w-full h-full rounded-xl overflow-hidden '>
-							<motion.div
-								className='w-full h-full relative '
-								style={{ scale: imageScale }}
-							>
-								<Image
-									src={`/assets/img/${src}`}
-									alt='image'
-									fill
-									className='object-cover'
-								/>
-							</motion.div>
-						</div>
+					<motion.div
+						className='w-full h-full relative '
+						style={{ scale: imageScale }}
+					>
+						<video
+							className='w-full h-full object-cover'
+							autoPlay
+							loop
+							muted
+							playsInline
+						>
+							<source
+								src={`/assets/video/${src}`}
+								type='video/mp4'
+							/>
+							Your browser does not support the video tag.
+						</video>
+					</motion.div>
+
+					<div className='absolute inset-0 w-full h-full bg-black/10 flex justify-center items-center'>
+						<h2 className='text-center text-4xl'>{title}</h2>
 					</div>
 				</motion.div>
 			</div>
 		</BackgroundColorChange>
 	);
 };
+
+{
+	/* <div className='flex flex-col h-full w-full mt-6'>
+<div className='w-full  top-[10%]'>
+	<p className='text-[16px]'>{description}</p>
+	<span className='flex items-center gap-2'>
+		<a
+			href={url}
+			target='_blank'
+			className='text-[12px] underline cursor-pointer'
+		>
+			Zobacz więcej
+		</a>
+	</span>
+</div>
+<div className=' w-full h-full rounded-xl overflow-hidden '>
+	<motion.div
+		className='w-full h-full relative '
+		style={{ scale: imageScale }}
+	>
+		<Image
+			src={`/assets/img/${src}`}
+			alt='image'
+			fill
+			className='object-cover'
+		/>
+	</motion.div>
+</div>
+</div> */
+}
 
 interface BackgroundColorChangeProps {
 	children: ReactNode;
@@ -140,7 +164,7 @@ const BackgroundColorChange: React.FC<BackgroundColorChangeProps> = ({
 			viewport={{ amount: 0.6 }}
 			onViewportEnter={handleEnter}
 			onViewportLeave={handleLeave}
-			className='sticky top-[8svh]'
+			className='sticky top-[9svh]'
 		>
 			{children}
 		</motion.div>
