@@ -28,10 +28,10 @@ export const NewOfferMobile = () => {
 	return (
 		<section
 			ref={container}
-			className=' md:hidden pb-[11svh] scroll-m-[8svh] relative  offerbackground'
+			className=' md:hidden pb-[11svh] scroll-m-[8svh] relative  offerbackground '
 		>
 			{offerCardsData.map((project, i) => {
-				const targetScale = 1 - (offerCardsData.length - i) * 0.07;
+				const targetScale = 1 - (offerCardsData.length - i) * 0.05;
 
 				return (
 					<Card

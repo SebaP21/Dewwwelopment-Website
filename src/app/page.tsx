@@ -13,6 +13,7 @@ import { NewOfferMobile } from "@/components/home/newOffer/newOffer";
 import BlogPreview from "@/components/home/BlogBox/BlogPreview";
 import StepsAndFaqBackgroundWrapper from "@/components/home/StepsAndBlogBackgroundWrapper/StepsAndFaqBackgroundWrapper";
 import HomeOffer from "@/components/home/offer/Offer";
+import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
 
 
 
@@ -42,7 +43,7 @@ export default function Home() {
 
 			{/* <ZoomSection /> */}
 			{/* <TextOpacityAnimated/> */}
-			{/* <PortfolioGallery /> */}
+			<PortfolioGallery />
 			<StepsAndFaqBackgroundWrapper>
 				<OurWork />
 				<BlogPreview />
