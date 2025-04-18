@@ -42,7 +42,7 @@ export default function Home() {
 
 			{/* <ZoomSection /> */}
 			{/* <TextOpacityAnimated/> */}
-			<PortfolioGallery />
+			{/* <PortfolioGallery /> */}
 			<StepsAndFaqBackgroundWrapper>
 				<OurWork />
 				<BlogPreview />

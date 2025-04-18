@@ -1,6 +1,5 @@
 "use client";
 
-
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import Lenis from "@studio-freight/lenis";
@@ -9,10 +8,18 @@ import Image from "next/image";
 import { useRef, useState, useEffect, Key } from "react";
 
 const images = [
-	"ptak.webp", "ptak.webp", "ptak.webp",
-	"ptak.webp", "ptak.webp", "ptak.webp",
-	"ptak.webp", "ptak.webp", "ptak.webp",
-	"ptak.webp", "ptak.webp", "ptak.webp",
+	"ptak.webp",
+	"ptak.webp",
+	"ptak.webp",
+	"ptak.webp",
+	"ptak.webp",
+	"ptak.webp",
+	"ptak.webp",
+	"ptak.webp",
+	"ptak.webp",
+	"ptak.webp",
+	"ptak.webp",
+	"ptak.webp",
 ];
 
 type ColumnProps = {
@@ -57,28 +64,58 @@ const PortfolioGallery = () => {
 	}, []);
 
 	return (
-		
-			<div ref={gallery} className="h-[175vh] bg-black relative flex gap-[2vw] p-[2vw] box-border overflow-hidden">
-				<Column images={[images[0], images[1], images[2]]} y={y} extraClass="-top-[45%]" />
-				<Column images={[images[3], images[4], images[5]]} y={y2} extraClass="-top-[95%]" />
-				<Column images={[images[6], images[7], images[8]]} y={y3} extraClass="-top-[45%]" />
-				
-				<Column images={[images[9], images[10], images[11]]} y={y4} extraClass="-top-[75%] hidden md:flex " />
-				
-			</div>
-			
-		
+		<div
+			ref={gallery}
+			className='h-[175vh] bg-black relative flex gap-[2vw] p-[2vw] box-border overflow-hidden'
+		>
+			<Column
+				images={[images[0], images[1], images[2]]}
+				y={y}
+				extraClass='-top-[45%]'
+			/>
+			<Column
+				images={[images[3], images[4], images[5]]}
+				y={y2}
+				extraClass='-top-[95%]'
+			/>
+			<Column
+				images={[images[6], images[7], images[8]]}
+				y={y3}
+				extraClass='-top-[45%]'
+			/>
+
+			<Column
+				images={[images[9], images[10], images[11]]}
+				y={y4}
+				extraClass='-top-[75%] hidden md:flex '
+			/>
+		</div>
 	);
 };
 
 export default PortfolioGallery;
 
-const Column: React.FC<ColumnProps & { extraClass?: string }> = ({ images, y, extraClass = "" }) => {
+const Column: React.FC<ColumnProps & { extraClass?: string }> = ({
+	images,
+	y,
+	extraClass = "",
+}) => {
 	return (
-		<motion.div className={`relative h-full w-1/3 flex flex-col gap-[2vw] ${extraClass}`} style={{ y }}>
+		<motion.div
+			className={`relative h-full w-1/3 flex flex-col gap-[2vw] ${extraClass}`}
+			style={{ y }}
+		>
 			{images.map((src: any, i: Key | null | undefined) => (
-				<div key={i} className="h-full w-full relative rounded-[1vw] overflow-hidden">
-					<Image src={`/assets/img/${src}`} alt='image' fill className="object-cover" />
+				<div
+					key={i}
+					className='h-full w-full relative rounded-[1vw] overflow-hidden'
+				>
+					<Image
+						src={`/assets/img/${src}`}
+						alt='image'
+						fill
+						className='object-cover'
+					/>
 				</div>
 			))}
 		</motion.div>
