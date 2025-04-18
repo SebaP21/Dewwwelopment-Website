@@ -31,7 +31,7 @@ export const NewOfferMobile = () => {
 			className=' md:hidden pb-[11svh] scroll-m-[8svh]  relative  offerbackground '
 		>
 			{offerCardsData.map((project, i) => {
-				const targetScale = 1 - (offerCardsData.length - i) * 0.05;
+				const targetScale = 1 - (offerCardsData.length - i) * 0.07;
 
 				return (
 					<Card
@@ -40,7 +40,7 @@ export const NewOfferMobile = () => {
 						{...project}
 						url={""}
 						progress={scrollYProgress}
-						range={[i * 0.25, 1.5]}
+						range={[i * 0.25, 2]}
 						targetScale={targetScale}
 					/>
 				);
