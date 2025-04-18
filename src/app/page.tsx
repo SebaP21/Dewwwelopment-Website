@@ -11,7 +11,7 @@ import { NewOfferMobile } from "@/components/home/newOffer/newOffer";
 // import BlogPreview from "@/components/home/BlogBox/BlogPreview";
 // import StepsAndFaqBackgroundWrapper from "@/components/home/StepsAndBlogBackgroundWrapper/StepsAndFaqBackgroundWrapper";
 // import HomeOffer from "@/components/home/offer/Offer";
-import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
+// import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
 // import TextOpacityAnimated from "@/components/Animations/OpacityTextTest/OpacityText";
 // import PageHeader from "@/components/home/pageHeader/pageHeader";
 import { LenisProvider } from "@/components/Lenis/LenisProvider";
@@ -35,7 +35,7 @@ export default function Home() {
 			<LenisProvider>
 				<NewOfferMobile />
 
-				<PortfolioGallery />
+				{/* <PortfolioGallery /> */}
 			</LenisProvider>
 
 			{/* <StepsAndFaqBackgroundWrapper>
