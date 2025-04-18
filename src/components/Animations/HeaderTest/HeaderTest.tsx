@@ -45,7 +45,7 @@ export const SmoothScrollHero = () => {
 	);
 };
 
-const SECTION_HEIGHT = 900;
+const SECTION_HEIGHT = 1000;
 
 const Hero = () => {
 	return (
