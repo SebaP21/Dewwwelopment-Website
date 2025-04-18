@@ -9,7 +9,7 @@ import NewFaq from "@/components/home/FAQ/NewFaq";
 import OurWork from "@/components/Animations/StepsAnimation/StepsAnimation";
 
 import { NewOfferMobile } from "@/components/home/newOffer/newOffer";
-import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
+// import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
 import BlogPreview from "@/components/home/BlogBox/BlogPreview";
 import StepsAndFaqBackgroundWrapper from "@/components/home/StepsAndBlogBackgroundWrapper/StepsAndFaqBackgroundWrapper";
 import HomeOffer from "@/components/home/offer/Offer";
