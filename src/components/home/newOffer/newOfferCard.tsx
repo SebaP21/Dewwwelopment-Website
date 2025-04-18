@@ -77,7 +77,7 @@ export const Card: FC<NewCardProps> = ({
 						Błąd wyświetlania.
 					</video>
 
-					<div className='absolute inset-0 w-full h-full bg-black/40 will-change-transform flex flex-col justify-center px-6 gap-12'>
+					<div className='absolute inset-0 w-full h-full bg-black/40  flex flex-col justify-center px-6 gap-12 transitionclass'>
 						<h2 className=' text-4xl text-white'>{title}</h2>
 						<div className='w-full flex flex-col gap-6'>
 							<p className='text-white'>{description}</p>
