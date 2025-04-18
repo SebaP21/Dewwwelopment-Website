@@ -47,6 +47,7 @@ body {
 	transition-duration: 500ms;
 	/* background-color: black; */
 	/* color: white; */
+	/* position: relative; */
 }
 
 body p {
@@ -66,6 +67,7 @@ h6 {
 	transition-property: opacity, background-color, transform, filter;
 	transition-timing-function: ease-in-out;
 	transition-duration: 500ms;
+	
 }
 
 

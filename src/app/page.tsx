@@ -1,21 +1,20 @@
-
 import Head from "next/head";
-
 
 import { SmoothScrollHero } from "@/components/Animations/HeaderTest/HeaderTest";
 
-import NewFaq from "@/components/home/FAQ/NewFaq";
+// import NewFaq from "@/components/home/FAQ/NewFaq";
 
-import OurWork from "@/components/Animations/StepsAnimation/StepsAnimation";
+// import OurWork from "@/components/Animations/StepsAnimation/StepsAnimation";
 
 import { NewOfferMobile } from "@/components/home/newOffer/newOffer";
 // import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
-import BlogPreview from "@/components/home/BlogBox/BlogPreview";
-import StepsAndFaqBackgroundWrapper from "@/components/home/StepsAndBlogBackgroundWrapper/StepsAndFaqBackgroundWrapper";
-import HomeOffer from "@/components/home/offer/Offer";
+// import BlogPreview from "@/components/home/BlogBox/BlogPreview";
+// import StepsAndFaqBackgroundWrapper from "@/components/home/StepsAndBlogBackgroundWrapper/StepsAndFaqBackgroundWrapper";
+// import HomeOffer from "@/components/home/offer/Offer";
 import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
-
-
+// import TextOpacityAnimated from "@/components/Animations/OpacityTextTest/OpacityText";
+// import PageHeader from "@/components/home/pageHeader/pageHeader";
+import { LenisProvider } from "@/components/Lenis/LenisProvider";
 
 
 export default function Home() {
@@ -33,23 +32,18 @@ export default function Home() {
 
 			{/* <NewOffer/>			 */}
 			<SmoothScrollHero />
-			<NewOfferMobile />
-			
+			<LenisProvider>
+				<NewOfferMobile />
 
-			{/* <ParrallaxTest/> */}
+				<PortfolioGallery />
+			</LenisProvider>
 
-			{/* <Mask /> */}
-			<HomeOffer />
-
-			{/* <ZoomSection /> */}
-			{/* <TextOpacityAnimated/> */}
-			<PortfolioGallery />
-			<StepsAndFaqBackgroundWrapper>
+			{/* <StepsAndFaqBackgroundWrapper>
 				<OurWork />
 				<BlogPreview />
-			</StepsAndFaqBackgroundWrapper>
+			</StepsAndFaqBackgroundWrapper> */}
 
-			<NewFaq />
+			{/* <NewFaq /> */}
 			{/* <BlogBox/> */}
 
 			{/* <ScrollSection /> */}
@@ -63,4 +57,22 @@ export default function Home() {
 			{/* <FooterHome /> */}
 		</>
 	);
+}
+
+{
+	/* <ParrallaxTest/> */
+}
+
+{
+	/* <Mask /> */
+}
+{
+	/* <HomeOffer /> */
+}
+
+{
+	/* <ZoomSection /> */
+}
+{
+	/* <TextOpacityAnimated/> */
 }
