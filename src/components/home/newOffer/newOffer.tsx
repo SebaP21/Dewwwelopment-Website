@@ -40,7 +40,7 @@ export const NewOfferMobile = () => {
 						{...project}
 						url={""}
 						progress={scrollYProgress}
-						range={[i * 0.25, 2]}
+						range={[i * 0.25, 1.5]}
 						targetScale={targetScale}
 					/>
 				);
