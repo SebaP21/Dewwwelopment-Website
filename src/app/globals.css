@@ -67,11 +67,7 @@ h6 {
 	transition-timing-function: ease-in-out;
 	transition-duration: 500ms;
 }
-.transitionclass {
-	transition-property: opacity, background-color, transform, filter;
-	transition-timing-function: ease-in-out;
-	transition-duration: 500ms;
-}
+
 
 .backgroundwrapper {
 	background-color: black;
