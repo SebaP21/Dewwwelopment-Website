@@ -24,9 +24,9 @@ type NewCardProps = {
 export const Card: FC<NewCardProps> = ({
 	i,
 	title,
-	// description,
+	description,
 	src,
-	// url,
+	url,
 	bgColor,
 	color,
 	progress,
@@ -61,7 +61,7 @@ export const Card: FC<NewCardProps> = ({
 						scale,
 						top: `calc(1vh + ${i * 10}px )`,
 					}}
-					className=' flex flex-col h-[90svh] w-[95%] relative  origin-top rounded-xl  shadow-lg overflow-hidden  '
+					className=' flex flex-col h-[90svh] w-[95%] relative  origin-top rounded-xl  shadow-lg overflow-hidden '
 				>
 					<video
 						className='w-full h-full object-cover'
@@ -77,8 +77,19 @@ export const Card: FC<NewCardProps> = ({
 						Błąd wyświetlania.
 					</video>
 
-					<div className='absolute inset-0 w-full h-full bg-black/10 flex justify-center items-center'>
-						<h2 className='text-center text-4xl'>{title}</h2>
+					<div className='absolute inset-0 w-full h-full bg-black/40 flex flex-col justify-center p-4 gap-8'>
+						<h2 className=' text-4xl text-white'>{title}</h2>
+						<div className='w-full flex flex-col gap-2'>
+							<p className='text-white'>{description}</p>
+
+							<a
+								href={url}
+								target='_blank'
+								className='text-sm underline cursor-pointer self-end text-lime-300'
+							>
+								Zobacz więcej
+							</a>
+						</div>
 					</div>
 				</motion.div>
 			</div>
