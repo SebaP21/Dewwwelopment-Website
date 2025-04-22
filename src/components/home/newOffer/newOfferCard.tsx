@@ -60,9 +60,9 @@ export const Card: FC<NewCardProps> = ({
 						color: color,
 						scale,
 						top: `calc(1vh + ${i * 10}px )`,
-						height: `calc(80svh - ${i * 10}px )`,
+						// height: `calc(90svh - ${i * 10}px )`,
 					}}
-					className=' flex flex-col  w-[95%] relative  origin-top rounded-xl  shadow-lg overflow-hidden '
+					className=' flex flex-col h-[90svh] w-[95%] relative  origin-top rounded-xl  shadow-lg overflow-hidden '
 				>
 					<video
 						className='w-full h-full object-cover'
