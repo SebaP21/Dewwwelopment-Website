@@ -23,10 +23,10 @@ type NewCardProps = {
 
 export const Card: FC<NewCardProps> = ({
 	i,
-	title,
-	description,
+	// title,
+	// description,
 	src,
-	url,
+	// url,
 	bgColor,
 	color,
 	progress,
