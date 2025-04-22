@@ -18,6 +18,7 @@
 	--cta-bgc: rgb(244, 244, 242);
 
 	/* scroll-behavior: smooth; */
+	
 }
 ::selection {
 	color: var(--medium-light-color);

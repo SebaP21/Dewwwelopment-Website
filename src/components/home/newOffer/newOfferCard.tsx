@@ -79,12 +79,17 @@ export const Card: FC<NewCardProps> = ({
 					</video>
 					{/* bg-black/40 will-change-transform */}
 
-					<div className='absolute w-full h-full  flex flex-col justify-center px-6 gap-12 bg-black/40 will-change-transform'
-					// style={{ backgroundImage: "url('/assets/img/ptak.webp')" }}
+					<div
+						className='absolute w-full h-full  flex flex-col justify-center px-6 gap-12 bg-black/40 will-change-transform'
+						// style={{ backgroundImage: "url('/assets/img/ptak.webp')" }}
 					>
-						<h2 className=' text-4xl text-white brightness-[200] drop-shadow-lg mix-blend-screen '>{title}</h2>
+						<h2 className=' text-4xl text-white brightness-[200] drop-shadow-lg mix-blend-screen '>
+							{title}
+						</h2>
 						<div className='w-full flex flex-col gap-6 '>
-							<p className='text-white drop-shadow-lg mix-blend-screen'>{description}</p>
+							<p className='text-white drop-shadow-lg mix-blend-screen'>
+								{description}
+							</p>
 
 							<a
 								href={url}
@@ -141,7 +146,7 @@ const BackgroundColorChange: React.FC<BackgroundColorChangeProps> = ({
 	return (
 		<motion.div
 			// transition={{ duration: 0.5 }}
-			viewport={{ amount: 0.3 }}
+			viewport={{ amount: 0.7 }}
 			onViewportEnter={handleEnter}
 			onViewportLeave={handleLeave}
 			className='sticky top-[9svh] '
