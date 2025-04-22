@@ -66,7 +66,7 @@ export const Card: FC<NewCardProps> = ({
 				>
 					<video
 						className='w-full h-full object-cover'
-						autoPlay
+						// autoPlay
 						loop
 						muted
 						playsInline
