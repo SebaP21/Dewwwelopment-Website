@@ -76,8 +76,11 @@ export const Card: FC<NewCardProps> = ({
 						/>
 						Błąd wyświetlania.
 					</video> */}
+					{/* bg-black/40 will-change-transform */}
 
-					<div className=' w-full h-full bg-black/40 will-change-transform flex flex-col justify-center px-6 gap-12 '>
+					<div className=' w-full h-full  flex flex-col justify-center px-6 gap-12 '
+					style={{ backgroundImage: "url('/assets/img/ptak.webp')" }}
+					>
 						<h2 className=' text-4xl text-white brightness-[200] drop-shadow-lg mix-blend-screen '>{title}</h2>
 						<div className='w-full flex flex-col gap-6 '>
 							<p className='text-white drop-shadow-lg mix-blend-screen'>{description}</p>
