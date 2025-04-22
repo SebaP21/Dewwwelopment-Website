@@ -79,7 +79,7 @@ export const Card: FC<NewCardProps> = ({
 					</video>
 					{/* bg-black/40 will-change-transform */}
 
-					<div className='absolute w-full h-full  flex flex-col justify-center px-6 gap-12 bg-black/40 will-change-transform'
+					<div className=' w-full h-full  flex flex-col justify-center px-6 gap-12 bg-black/40 will-change-transform'
 					// style={{ backgroundImage: "url('/assets/img/ptak.webp')" }}
 					>
 						<h2 className=' text-4xl text-white brightness-[200] drop-shadow-lg mix-blend-screen '>{title}</h2>
