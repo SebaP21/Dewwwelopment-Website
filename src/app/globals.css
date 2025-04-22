@@ -87,4 +87,7 @@ h6 {
 }
 .light-section {
 	background-color: white;
+	transition-property: opacity, background-color, transform, filter;
+	transition-timing-function: ease-in-out;
+	transition-duration: 400ms;
 }

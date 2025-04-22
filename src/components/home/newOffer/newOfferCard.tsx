@@ -138,8 +138,10 @@ const BackgroundColorChange: React.FC<BackgroundColorChangeProps> = ({
 
 		if (!isLight) {
 			wrapper.classList.add("light-section");
+			// wrapper.classList.remove("offerbackground");
 		} else {
 			wrapper.classList.remove("light-section");
+			// wrapper.classList.add("offerbackground");
 		}
 	};
 
