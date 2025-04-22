@@ -62,7 +62,7 @@ export const Card: FC<NewCardProps> = ({
 						top: `calc(1vh + ${i * 10}px )`,
 						// height: `calc(90svh - ${i * 10}px )`,
 					}}
-					className=' flex flex-col h-[90svh] w-[95%] relative  origin-top rounded-xl  shadow-lg overflow-hidden '
+					className=' flex flex-col h-[90svh] w-[95%] relative  origin-top rounded-xl  shadow-lg overflow-hidden bg-gray-500'
 				>
 					<video
 						className='w-full h-full object-cover'
@@ -80,7 +80,7 @@ export const Card: FC<NewCardProps> = ({
 					{/* bg-black/40 will-change-transform */}
 
 					<div
-						className='absolute w-full h-full  flex flex-col justify-center px-6 gap-12 bg-black/40 will-change-transform'
+						className='w-full h-full  flex flex-col justify-center px-6 gap-12 bg-black/40 will-change-transform'
 						// style={{ backgroundImage: "url('/assets/img/ptak.webp')" }}
 					>
 						<h2 className=' text-4xl text-white brightness-[200] drop-shadow-lg mix-blend-screen '>
