@@ -23,10 +23,10 @@ type NewCardProps = {
 
 export const Card: FC<NewCardProps> = ({
 	i,
-	// title,
-	// description,
+	title,
+	description,
 	// src,
-	// url,
+	url,
 	bgColor,
 	color,
 	progress,
@@ -77,7 +77,7 @@ export const Card: FC<NewCardProps> = ({
 						Błąd wyświetlania.
 					</video> */}
 
-					{/* <div className='absolute inset-0 w-full h-full bg-black/40 will-change-transform flex flex-col justify-center px-6 gap-12 '>
+					<div className=' w-full h-full bg-black/40 will-change-transform flex flex-col justify-center px-6 gap-12 '>
 						<h2 className=' text-4xl text-white brightness-[200] drop-shadow-lg mix-blend-screen '>{title}</h2>
 						<div className='w-full flex flex-col gap-6 '>
 							<p className='text-white drop-shadow-lg mix-blend-screen'>{description}</p>
@@ -90,7 +90,7 @@ export const Card: FC<NewCardProps> = ({
 								Zobacz więcej
 							</a>
 						</div>
-					</div> */}
+					</div>
 				</motion.div>
 			</div>
 		</BackgroundColorChange>
