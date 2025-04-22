@@ -25,7 +25,7 @@ export const Card: FC<NewCardProps> = ({
 	i,
 	title,
 	description,
-	src,
+	// src,
 	url,
 	bgColor,
 	color,
@@ -63,7 +63,7 @@ export const Card: FC<NewCardProps> = ({
 					}}
 					className=' flex flex-col h-[90svh] w-[95%] relative  origin-top rounded-xl  shadow-lg overflow-hidden '
 				>
-					<video
+					{/* <video
 						className='w-full h-full object-cover'
 						
 						loop
@@ -75,7 +75,7 @@ export const Card: FC<NewCardProps> = ({
 							type='video/mp4'
 						/>
 						Błąd wyświetlania.
-					</video>
+					</video> */}
 
 					<div className='absolute inset-0 w-full h-full bg-black/40 will-change-transform flex flex-col justify-center px-6 gap-12 '>
 						<h2 className=' text-4xl text-white brightness-[200] drop-shadow-lg mix-blend-screen '>{title}</h2>
