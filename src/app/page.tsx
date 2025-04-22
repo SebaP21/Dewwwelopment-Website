@@ -15,7 +15,7 @@ import { NewOfferMobile } from "@/components/home/newOffer/newOffer";
 // import TextOpacityAnimated from "@/components/Animations/OpacityTextTest/OpacityText";
 // import PageHeader from "@/components/home/pageHeader/pageHeader";
 import { LenisProvider } from "@/components/Lenis/LenisProvider";
-import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
+// import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
 
 
 export default function Home() {
@@ -38,7 +38,7 @@ export default function Home() {
 				<NewOfferMobile />
 			
 
-				<PortfolioGallery />
+				{/* <PortfolioGallery /> */}
 			</LenisProvider>
 
 			{/* <StepsAndFaqBackgroundWrapper>
