@@ -4,7 +4,7 @@
 
 // import Image from "next/image";
 import { useTransform, motion } from "framer-motion";
-import { FC, ReactNode, useRef } from "react";
+import { FC, ReactNode } from "react";
 
 type NewCardProps = {
 	i: number;
