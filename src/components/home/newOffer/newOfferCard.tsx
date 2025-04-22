@@ -140,8 +140,8 @@ const BackgroundColorChange: React.FC<BackgroundColorChangeProps> = ({
 
 	return (
 		<motion.div
-			transition={{ duration: 0.5 }}
-			viewport={{ amount: 0.6 }}
+			// transition={{ duration: 0.5 }}
+			viewport={{ amount: 0.3 }}
 			onViewportEnter={handleEnter}
 			onViewportLeave={handleLeave}
 			className='sticky top-[9svh] '
