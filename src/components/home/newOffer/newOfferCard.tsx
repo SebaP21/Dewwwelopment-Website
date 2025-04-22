@@ -25,7 +25,7 @@ export const Card: FC<NewCardProps> = ({
 	i,
 	title,
 	description,
-	// src,
+	src,
 	url,
 	bgColor,
 	color,
@@ -35,7 +35,7 @@ export const Card: FC<NewCardProps> = ({
 	isLight,
 	disable,
 }) => {
-	const container = useRef(null);
+	// const container = useRef(null);
 
 	// const { scrollYProgress } = useScroll({
 	// 	target: container,
@@ -51,7 +51,7 @@ export const Card: FC<NewCardProps> = ({
 			disable={disable}
 		>
 			<div
-				ref={container}
+				// ref={container}
 				className=' flex items-center justify-center mb-12 relative '
 			>
 				<motion.div
@@ -61,11 +61,11 @@ export const Card: FC<NewCardProps> = ({
 						scale,
 						top: `calc(1vh + ${i * 10}px )`,
 					}}
-					className=' flex flex-col h-[90svh] w-[95%] relative  origin-top rounded-xl  shadow-lg overflow-hidden border-8'
+					className=' flex flex-col h-[90svh] w-[95%] relative  origin-top rounded-xl  shadow-lg overflow-hidden '
 				>
-					{/* <video
+					<video
 						className='w-full h-full object-cover'
-						
+						autoPlay
 						loop
 						muted
 						playsInline
@@ -75,11 +75,11 @@ export const Card: FC<NewCardProps> = ({
 							type='video/mp4'
 						/>
 						Błąd wyświetlania.
-					</video> */}
+					</video>
 					{/* bg-black/40 will-change-transform */}
 
-					<div className=' w-full h-full  flex flex-col justify-center px-6 gap-12 '
-					style={{ backgroundImage: "url('/assets/img/ptak.webp')" }}
+					<div className='absolute w-full h-full  flex flex-col justify-center px-6 gap-12 bg-black/40 will-change-transform'
+					// style={{ backgroundImage: "url('/assets/img/ptak.webp')" }}
 					>
 						<h2 className=' text-4xl text-white brightness-[200] drop-shadow-lg mix-blend-screen '>{title}</h2>
 						<div className='w-full flex flex-col gap-6 '>
