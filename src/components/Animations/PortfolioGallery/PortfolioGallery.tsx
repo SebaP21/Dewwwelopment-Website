@@ -4,7 +4,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import { useState, useLayoutEffect, useRef, useEffect } from "react";
+import { useState, useLayoutEffect, useRef } from "react";
 
 const images = [
 	"ptak.webp",
