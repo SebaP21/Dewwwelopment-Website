@@ -53,18 +53,13 @@ const PortfolioGallery = () => {
 	const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25]);
 	const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3]);
 
-	useEffect(() => {
-		if (gallery.current) {
-			const style = window.getComputedStyle(gallery.current);
-			console.log("Gallery position:", style.position); // 🔍 Czy "relative"?
-		}
-	}, []);
+	
 
 	return (
 		<div
 			ref={gallery}
 			style={{ position: "relative" }}
-			className='h-[175vh] bg-black  flex gap-[2vw] p-[2vw] box-border overflow-hidden'
+			className='h-[175vh] bg-black  flex gap-[10px] p-[10px] box-border overflow-hidden'
 		>
 			<Column
 				images={[images[0], images[1], images[2]]}
@@ -96,7 +91,7 @@ const Column: React.FC<ColumnProps> = ({ images, y, extraClass = "" }) => {
 	return (
 		<motion.div
 			className={`relative h-full w-1/3 flex flex-col gap-[2vw] ${extraClass}`}
-			style={{ y }}
+			style={{ y, willChange: 'transform' }}
 		>
 			{images.map((src, i) => (
 				<div
@@ -116,10 +111,3 @@ const Column: React.FC<ColumnProps> = ({ images, y, extraClass = "" }) => {
 	);
 };
 
-// useLayoutEffect(() => {
-// 	setEnabled(true);
-// }, []);
-// const { scrollYProgress } = useScroll({
-// 	target: enabled ? gallery : undefined, // ← dopiero jak layout gotowy
-// 	offset: ["start end", "end start"],
-// });

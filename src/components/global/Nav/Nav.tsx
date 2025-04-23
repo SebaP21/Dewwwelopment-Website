@@ -49,6 +49,7 @@ const Nav = () => {
 								alt={
 									"Dewwwelopment-tworzenie stron i sklepów internetowych logo"
 								}
+								
 							/>
 						</div>
 						<div className={`${isScrolled ? "flex" : "hidden"}`}>
