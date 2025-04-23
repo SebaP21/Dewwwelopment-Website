@@ -3,7 +3,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { motion, useScroll, useTransform } from "framer-motion";
-// import Image from "next/image";
+import Image from "next/image";
 import { useState, useLayoutEffect, useRef } from "react";
 
 const images = [
@@ -57,7 +57,7 @@ const PortfolioGallery = () => {
 		<div
 			ref={gallery}
 			style={{ position: "relative" }}
-			className='h-[175vh] bg-black  flex gap-[10px] p-[10px] box-border overflow-hidden'
+			className='h-[175vh] bg-black  flex gap-[2vw] p-[2vw] box-border overflow-hidden'
 		>
 			<Column
 				images={[images[0], images[1], images[2]]}
@@ -95,22 +95,14 @@ const Column: React.FC<ColumnProps> = ({ images, y, extraClass = "" }) => {
 				<div
 					key={i}
 					className='h-full w-full relative rounded-[1vw] overflow-hidden'
-					style={{
-						backgroundImage: `url(/assets/img/${src})`,
-						backgroundSize: "cover",
-						backgroundPosition: "center",
-						willChange: "transform",
-						transform: `translate3d(0, ${y}px, 0)`,
-						
-					}}
 				>
-					{/* <Image
+					<Image
 						src={`/assets/img/${src}`}
 						alt='image'
 						fill
 						className='object-cover'
 						sizes='(max-width: 768px) 100vw, 33vw'
-					/> */}
+					/>
 				</div>
 			))}
 		</motion.div>

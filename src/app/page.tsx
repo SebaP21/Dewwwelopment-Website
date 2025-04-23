@@ -19,6 +19,9 @@ import { SmoothScrollHero } from "@/components/Animations/HeaderTest/HeaderTest"
 import BlogPreview from "@/components/home/BlogBox/BlogPreview";
 import StepsAndFaqBackgroundWrapper from "@/components/home/StepsAndBlogBackgroundWrapper/StepsAndFaqBackgroundWrapper";
 import NewFaq from "@/components/home/FAQ/NewFaq";
+// import { NewOffer } from "@/components/home/newOffer/testOffer";
+// import { OfferScrollSection } from "@/components/OfferScrollSection/Test";
+import HomeOffer from "@/components/home/offer/Offer";
 // import OfertaSnap from "@/components/home/OfferSnap/OfertaSnap";
 // import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
 
@@ -36,7 +39,11 @@ export default function Home() {
 			{/* <OfferBox /> */}
 
 			{/* <NewOffer/>			 */}
+			
+			
 			<SmoothScrollHero />
+			<HomeOffer/>
+			
 			<NewOfferMobile />
 			{/* <OfertaSnap/> */}
 
