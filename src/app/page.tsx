@@ -2,7 +2,7 @@ import Head from "next/head";
 
 // import NewFaq from "@/components/home/FAQ/NewFaq";
 
-// import OurWork from "@/components/Animations/StepsAnimation/StepsAnimation";
+import OurWork from "@/components/Animations/StepsAnimation/StepsAnimation";
 
 import { NewOfferMobile } from "@/components/home/newOffer/newOffer";
 // import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
@@ -16,9 +16,11 @@ import { NewOfferMobile } from "@/components/home/newOffer/newOffer";
 // import { SmoothScrollHero } from "@/components/Animations/HeaderTest/HeaderTest";
 import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
 import { SmoothScrollHero } from "@/components/Animations/HeaderTest/HeaderTest";
+import BlogPreview from "@/components/home/BlogBox/BlogPreview";
+import StepsAndFaqBackgroundWrapper from "@/components/home/StepsAndBlogBackgroundWrapper/StepsAndFaqBackgroundWrapper";
+import NewFaq from "@/components/home/FAQ/NewFaq";
 // import OfertaSnap from "@/components/home/OfferSnap/OfertaSnap";
 // import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
-
 
 export default function Home() {
 	return (
@@ -34,20 +36,18 @@ export default function Home() {
 			{/* <OfferBox /> */}
 
 			{/* <NewOffer/>			 */}
-			<SmoothScrollHero/>
+			<SmoothScrollHero />
 			<NewOfferMobile />
 			{/* <OfertaSnap/> */}
-			
-			<PortfolioGallery />
-			
-		
 
-			{/* <StepsAndFaqBackgroundWrapper>
+			<PortfolioGallery />
+
+			<StepsAndFaqBackgroundWrapper>
 				<OurWork />
 				<BlogPreview />
-			</StepsAndFaqBackgroundWrapper> */}
+			</StepsAndFaqBackgroundWrapper>
 
-			{/* <NewFaq /> */}
+			<NewFaq />
 			{/* <BlogBox/> */}
 
 			{/* <ScrollSection /> */}

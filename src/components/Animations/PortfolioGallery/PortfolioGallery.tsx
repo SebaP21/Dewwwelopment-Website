@@ -3,7 +3,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
+// import Image from "next/image";
 import { useState, useLayoutEffect, useRef } from "react";
 
 const images = [
@@ -53,8 +53,6 @@ const PortfolioGallery = () => {
 	const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25]);
 	const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3]);
 
-	
-
 	return (
 		<div
 			ref={gallery}
@@ -91,23 +89,30 @@ const Column: React.FC<ColumnProps> = ({ images, y, extraClass = "" }) => {
 	return (
 		<motion.div
 			className={`relative h-full w-1/3 flex flex-col gap-[2vw] ${extraClass}`}
-			style={{ y, willChange: 'transform' }}
+			style={{ y, willChange: "transform" }}
 		>
 			{images.map((src, i) => (
 				<div
 					key={i}
 					className='h-full w-full relative rounded-[1vw] overflow-hidden'
+					style={{
+						backgroundImage: `url(/assets/img/${src})`,
+						backgroundSize: "cover",
+						backgroundPosition: "center",
+						willChange: "transform",
+						transform: `translate3d(0, ${y}px, 0)`,
+						
+					}}
 				>
-					<Image
+					{/* <Image
 						src={`/assets/img/${src}`}
 						alt='image'
 						fill
 						className='object-cover'
 						sizes='(max-width: 768px) 100vw, 33vw'
-					/>
+					/> */}
 				</div>
 			))}
 		</motion.div>
 	);
 };
-

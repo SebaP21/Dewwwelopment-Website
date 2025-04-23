@@ -17,7 +17,7 @@ const HorizontalScrollCarousel = () => {
 		target: targetRef,
 	});
 
-	const x = useTransform(scrollYProgress, [0, 1], ["1%", "-51%"]);
+	const x = useTransform(scrollYProgress, [0, 1], ["1%", "-87%"]);
 
 	return (
 		<section
@@ -51,7 +51,7 @@ const Card = ({ card }: { card: CardType }) => {
 		>
 			<div
 				style={{
-					// backgroundImage: `url(${card.url})`,
+					backgroundImage: `url(/assets/img/ptak.webp)`,
 					backgroundSize: "cover",
 					backgroundPosition: "center",
 				}}
@@ -105,9 +105,5 @@ const cards: CardType[] = [
 		title: "Title 6",
 		id: 6,
 	},
-	{
-		// url: "/imgs/abstract/7.jpg",
-		title: "Title 7",
-		id: 7,
-	},
+	
 ];
