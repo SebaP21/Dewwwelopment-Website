@@ -37,7 +37,7 @@ export const Card: FC<NewCardProps> = ({
 
   return (
     <BackgroundColorChange isLight={isLight} disable={disable}>
-      <div className='flex items-center justify-center mb-12 relative '>
+      <div className='flex items-center justify-center mb-12 relative'>
         <motion.div
           style={{
             color,
@@ -47,7 +47,7 @@ export const Card: FC<NewCardProps> = ({
           className='flex flex-col h-[90svh] w-[95%] relative origin-top rounded-xl shadow-lg overflow-hidden bg-gray-500'
         >
           <video
-            className='w-full h-full object-cover'
+            className='w-full h-full object-cover relative'
             loop
             muted
             playsInline
@@ -56,7 +56,7 @@ export const Card: FC<NewCardProps> = ({
             Błąd wyświetlania.
           </video>
 
-          <div className='w-full h-full flex flex-col justify-center px-6 gap-12 bg-black/40 will-change-transform'>
+          <div className='absolute w-full h-full flex flex-col justify-center px-6 gap-12 bg-black/40 will-change-transform'>
             <h2 className='text-4xl text-white brightness-[200] drop-shadow-lg mix-blend-screen'>
               {title}
             </h2>
@@ -68,7 +68,7 @@ export const Card: FC<NewCardProps> = ({
               <a
                 href={url}
                 target='_blank'
-                className='underline cursor-pointer self-end text-lime-300 drop-shadow-lg mix-blend-screen'
+                className=' cursor-pointer self-end text-lime-300 drop-shadow-lg mix-blend-screen border-lime-300 border p-2 rounded-xl'
               >
                 Zobacz więcej
               </a>
