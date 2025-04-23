@@ -64,7 +64,7 @@ const Contact = () => {
 							<p className=''>661-924-740</p>
 						</Link>
 						<Link
-							href={"mailto:dewwwelopment@gmail.com"}
+							href={"mailto:kontakt@dewwwelopment.pl"}
 							className='flex gap-4 transition-all hover:scale-105 '
 						>
 							<div className='w-[20px]'>
@@ -73,7 +73,7 @@ const Contact = () => {
 									alt={"mail-icon"}
 								/>
 							</div>
-							<p className=''>dewwwwelopment@gmail.com</p>
+							<p className=''>kontakt@dewwwelopment.pl</p>
 						</Link>
 					</div>
 				</div>
