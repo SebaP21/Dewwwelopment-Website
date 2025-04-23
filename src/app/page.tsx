@@ -13,7 +13,7 @@ import { NewOfferMobile } from "@/components/home/newOffer/newOffer";
 // import TextOpacityAnimated from "@/components/Animations/OpacityTextTest/OpacityText";
 // import PageHeader from "@/components/home/pageHeader/pageHeader";
 // import { LenisProvider } from "@/components/Lenis/LenisProvider";
-import { SmoothScrollHero } from "@/components/Animations/HeaderTest/HeaderTest";
+// import { SmoothScrollHero } from "@/components/Animations/HeaderTest/HeaderTest";
 import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
 // import OfertaSnap from "@/components/home/OfferSnap/OfertaSnap";
 // import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
@@ -33,7 +33,7 @@ export default function Home() {
 			{/* <OfferBox /> */}
 
 			{/* <NewOffer/>			 */}
-			<SmoothScrollHero/>
+			{/* <SmoothScrollHero/> */}
 			<NewOfferMobile />
 			{/* <OfertaSnap/> */}
 			
