@@ -1,5 +1,7 @@
 "use client"
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { FC, ReactNode } from "react"
 import { useTransform, motion } from "framer-motion"
 
@@ -122,7 +124,7 @@ const BackgroundColorChange: React.FC<BackgroundColorChangeProps> = ({
     </motion.div>
   )
 }
-/* eslint-disable @typescript-eslint/no-explicit-any */
+
 
 {
 	/* <div className='flex flex-col h-full w-full mt-6'>
