@@ -1,7 +1,5 @@
 import Head from "next/head";
 
-import { SmoothScrollHero } from "@/components/Animations/HeaderTest/HeaderTest";
-
 // import NewFaq from "@/components/home/FAQ/NewFaq";
 
 // import OurWork from "@/components/Animations/StepsAnimation/StepsAnimation";
@@ -14,7 +12,9 @@ import { NewOfferMobile } from "@/components/home/newOffer/newOffer";
 // import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
 // import TextOpacityAnimated from "@/components/Animations/OpacityTextTest/OpacityText";
 // import PageHeader from "@/components/home/pageHeader/pageHeader";
-import { LenisProvider } from "@/components/Lenis/LenisProvider";
+// import { LenisProvider } from "@/components/Lenis/LenisProvider";
+import { SmoothScrollHero } from "@/components/Animations/HeaderTest/HeaderTest";
+// import OfertaSnap from "@/components/home/OfferSnap/OfertaSnap";
 // import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
 
 
@@ -32,14 +32,11 @@ export default function Home() {
 			{/* <OfferBox /> */}
 
 			{/* <NewOffer/>			 */}
-			<SmoothScrollHero />
-			<LenisProvider>
-				
-				<NewOfferMobile />
-			
-
-				{/* <PortfolioGallery /> */}
-			</LenisProvider>
+			<SmoothScrollHero/>
+			<NewOfferMobile />
+			{/* <OfertaSnap/> */}
+			{/* <PortfolioGallery /> */}
+		
 
 			{/* <StepsAndFaqBackgroundWrapper>
 				<OurWork />

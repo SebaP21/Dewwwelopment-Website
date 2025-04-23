@@ -4,6 +4,7 @@ import Nav from "@/components/global/Nav/Nav";
 import CookieConsentBanner from "@/components/CookieConsent/CookieConsentBanner";
 // import Script from "next/script";
 import StickyFooter from "@/components/global/Footer/StickyFooter";
+import { LenisWrapper } from "@/components/global/Lenis/LenisWrapper";
 
 // const hind = Hind({
 // 	subsets: ["latin"],
@@ -71,10 +72,12 @@ export default function RootLayout({
 					}}
 				/> */}
 
-				<Nav />
-				{children}
-				<StickyFooter/>
-				<CookieConsentBanner />
+				<LenisWrapper>
+					<Nav />
+					{children}
+					<StickyFooter />
+					<CookieConsentBanner />
+				</LenisWrapper>
 			</body>
 		</html>
 	);

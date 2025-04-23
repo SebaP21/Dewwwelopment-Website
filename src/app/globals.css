@@ -24,6 +24,11 @@
 	color: var(--medium-light-color);
 	background: var(--main-color);
 }
+html {
+	overscroll-behavior: none;
+	touch-action: pan-y;
+  }
+  
 
 @font-face {
 	font-family: "AvenirLight";
@@ -43,9 +48,9 @@
 
 body {
 	@apply font-paragraphs;
-	transition-property: opacity, background-color, transform, filter;
+	/* transition-property: opacity, background-color, transform, filter;
 	transition-timing-function: ease-in-out;
-	transition-duration: 500ms;
+	transition-duration: 500ms; */
 	/* background-color: black; */
 	/* color: white; */
 	/* position: relative; */

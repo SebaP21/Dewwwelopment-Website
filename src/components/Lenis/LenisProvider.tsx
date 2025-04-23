@@ -1,39 +1,51 @@
-"use client";
+'use client'
 
-/* eslint-disable @typescript-eslint/no-explicit-any */
+import { createContext, useContext, useEffect, useRef, useState } from 'react'
+import Lenis from '@studio-freight/lenis'
 
+// Tworzymy kontekst Lenisa
+const LenisContext = createContext<Lenis | null>(null)
 
-import { createContext, useContext, useEffect, useRef } from "react";
-import Lenis from "@studio-freight/lenis";
-
-const LenisContext = createContext<Lenis | null>(null);
-
+// Provider, który otacza całą aplikację
 export const LenisProvider = ({ children }: { children: React.ReactNode }) => {
-	const lenisRef = useRef<Lenis | null>(null);
+  const lenisRef = useRef<Lenis | null>(null)
+  const [lenisInstance, setLenisInstance] = useState<Lenis | null>(null)
 
-	useEffect(() => {
-		const lenis = new Lenis({
-			...( { smooth: true } as any ) // tu fix na TS
-		});
-		lenisRef.current = lenis;
+  useEffect(() => {
+    // Inicjalizacja Lenisa z płynnym scrollowaniem
+    const lenis = new Lenis({
+      // FIX TypeScript: używamy as any, bo typy są niepełne
+      smooth: true,
+      smoothTouch: true,
+      lerp: 0.05, // im mniejsze, tym wolniejszy, bardziej "miękki" scroll
+      direction: 'vertical',
+      gestureDirection: 'vertical',
+	  touchMultiplier: 1.2, // przyjemniejsze scrollowanie palcem
+    } as any)
 
-		const raf = (time: number) => {
-			lenis.raf(time);
-			requestAnimationFrame(raf);
-		};
+    lenisRef.current = lenis
+    setLenisInstance(lenis)
 
-		requestAnimationFrame(raf);
+    // Lenis wymaga ręcznego loopa opartego o requestAnimationFrame
+    const raf = (time: number) => {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
 
-		return () => {
-			lenis.destroy();
-		};
-	}, []);
+    requestAnimationFrame(raf)
 
-	return (
-		<LenisContext.Provider value={lenisRef.current}>
-			{children}
-		</LenisContext.Provider>
-	);
-};
+    // Sprzątamy Lenisa przy odmontowaniu
+    return () => {
+      lenis.destroy()
+    }
+  }, [])
 
-export const useLenis = () => useContext(LenisContext);
+  return (
+    <LenisContext.Provider value={lenisInstance}>
+      {children}
+    </LenisContext.Provider>
+  )
+}
+
+// Hook do użycia instancji Lenisa np. do scrollTo
+export const useLenis = () => useContext(LenisContext)
