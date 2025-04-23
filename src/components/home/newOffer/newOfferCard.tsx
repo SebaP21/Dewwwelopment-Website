@@ -2,7 +2,7 @@
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { FC, ReactNode, useEffect, useRef } from "react"
+import { FC, ReactNode } from "react"
 import { useTransform, motion } from "framer-motion"
 
 type NewCardProps = {
@@ -20,11 +20,6 @@ type NewCardProps = {
   disable?: boolean
 }
 
-const allCards: {
-  video: HTMLVideoElement
-  container: HTMLElement
-}[] = []
-
 export const Card: FC<NewCardProps> = ({
   i,
   title,
@@ -39,55 +34,11 @@ export const Card: FC<NewCardProps> = ({
   disable,
 }) => {
   const scale = useTransform(progress, range, [1, targetScale])
-  const videoRef = useRef<HTMLVideoElement>(null)
-  const overlayRef = useRef<HTMLDivElement>(null)
-  const cardRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const videoEl = videoRef.current
-    const overlayEl = overlayRef.current
-    const cardEl = cardRef.current
-    if (!videoEl || !overlayEl || !cardEl) return
-
-    const current = { video: videoEl, container: overlayEl }
-    allCards.push(current)
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          // Resetuj inne karty
-          allCards.forEach(({ video, container }) => {
-            if (!video || !container || !container.isConnected) return
-            if (video !== videoEl) {
-              video.pause()
-              video.currentTime = 0
-              container.style.opacity = "0"
-            } else {
-              container.style.opacity = "1"
-            }
-          })
-
-          videoEl.play().catch(() => {})
-        }
-      },
-      {
-        threshold: 0.7,
-      }
-    )
-
-    observer.observe(cardEl)
-
-    return () => {
-      observer.disconnect()
-      // Nie usuwaj z allCards — pozwalamy kartom wracać do gry
-    }
-  }, [])
 
   return (
-    <BackgroundColorChange isLight={isLight} disable={disable} videoRef={videoRef}>
+    <BackgroundColorChange isLight={isLight} disable={disable}>
       <div className='flex items-center justify-center mb-12 relative'>
         <motion.div
-          ref={cardRef}
           style={{
             color,
             scale,
@@ -96,8 +47,8 @@ export const Card: FC<NewCardProps> = ({
           className='flex flex-col h-[90svh] w-[95%] relative origin-top rounded-xl shadow-lg overflow-hidden bg-gray-500'
         >
           <video
-            ref={videoRef}
             className='w-full h-full object-cover relative'
+			autoPlay
             loop
             muted
             playsInline
@@ -106,11 +57,7 @@ export const Card: FC<NewCardProps> = ({
             Błąd wyświetlania.
           </video>
 
-          <div
-            ref={overlayRef}
-            className='absolute w-full h-full flex flex-col justify-center px-6 gap-12 bg-black/40 will-change-transform transition-opacity duration-500'
-            style={{ opacity: 0 }}
-          >
+          <div className='absolute w-full h-full flex flex-col justify-center px-6 gap-12 bg-black/40 will-change-transform'>
             <h2 className='text-4xl text-white brightness-[200] drop-shadow-lg mix-blend-screen'>
               {title}
             </h2>
@@ -122,7 +69,7 @@ export const Card: FC<NewCardProps> = ({
               <a
                 href={url}
                 target='_blank'
-                className='cursor-pointer self-end text-lime-300 drop-shadow-lg mix-blend-screen border-lime-300 border p-2 rounded-xl'
+                className=' cursor-pointer self-end text-lime-300 drop-shadow-lg mix-blend-screen border-lime-300 border p-2 rounded-xl'
               >
                 Zobacz więcej
               </a>
@@ -138,47 +85,32 @@ interface BackgroundColorChangeProps {
   children: ReactNode
   isLight?: boolean
   disable?: boolean
-  videoRef?: React.RefObject<HTMLVideoElement>
 }
 
 const BackgroundColorChange: React.FC<BackgroundColorChangeProps> = ({
   children,
   isLight,
   disable,
-  videoRef,
 }) => {
   const handleEnter = () => {
     if (disable) return
-
     const wrapper = document.querySelector(".offerbackground")
-    if (wrapper) {
-      if (isLight) {
-        wrapper.classList.add("light-section")
-      } else {
-        wrapper.classList.remove("light-section")
-      }
-    }
-
-    if (videoRef?.current) {
-      videoRef.current.play().catch(() => {})
+    if (!wrapper) return
+    if (isLight) {
+      wrapper.classList.add("light-section")
+    } else {
+      wrapper.classList.remove("light-section")
     }
   }
 
   const handleLeave = () => {
     if (disable) return
-
     const wrapper = document.querySelector(".offerbackground")
-    if (wrapper) {
-      if (!isLight) {
-        wrapper.classList.add("light-section")
-      } else {
-        wrapper.classList.remove("light-section")
-      }
-    }
-
-    if (videoRef?.current) {
-      videoRef.current.pause()
-      videoRef.current.currentTime = 0
+    if (!wrapper) return
+    if (!isLight) {
+      wrapper.classList.add("light-section")
+    } else {
+      wrapper.classList.remove("light-section")
     }
   }
 
@@ -193,6 +125,7 @@ const BackgroundColorChange: React.FC<BackgroundColorChangeProps> = ({
     </motion.div>
   )
 }
+
 
 
 {
