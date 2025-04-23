@@ -19,7 +19,7 @@ export const LenisProvider = ({ children }: { children: React.ReactNode }) => {
       // FIX TypeScript: używamy as any, bo typy są niepełne
       smooth: true,
       smoothTouch: true,
-      lerp: 0.05, // im mniejsze, tym wolniejszy, bardziej "miękki" scroll
+      lerp: 0.1, // im mniejsze, tym wolniejszy, bardziej "miękki" scroll
       direction: 'vertical',
       gestureDirection: 'vertical',
 	  touchMultiplier: 1.2, // przyjemniejsze scrollowanie palcem
