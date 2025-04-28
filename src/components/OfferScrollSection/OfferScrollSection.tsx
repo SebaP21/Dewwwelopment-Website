@@ -2,11 +2,11 @@
 
 import {
 	motion,
-	useMotionValueEvent,
+	
 	useScroll,
 	useTransform,
 } from "framer-motion";
-import { FC, useRef, useState } from "react";
+import { FC, useRef } from "react";
 // import Image from "next/image";
 import Link from "next/link";
 // import Paragraph from "../Animations/OpacityTextTest/Character";
