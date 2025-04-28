@@ -22,6 +22,9 @@ import NewFaq from "@/components/home/FAQ/NewFaq";
 // import { NewOffer } from "@/components/home/newOffer/testOffer";
 // import { OfferScrollSection } from "@/components/OfferScrollSection/Test";
 import HomeOffer from "@/components/home/offer/Offer";
+
+
+// import OfertaSection from "@/components/OfferScrollSection/OfferScrollSection";
 // import OfertaSnap from "@/components/home/OfferSnap/OfertaSnap";
 // import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
 
@@ -44,6 +47,8 @@ export default function Home() {
 			<SmoothScrollHero />
 			<HomeOffer/>
 			
+			{/* <HomeOfferTest/> */}
+			{/* <CardsOffer/> */}
 			<NewOfferMobile />
 			{/* <OfertaSnap/> */}
 
@@ -56,7 +61,9 @@ export default function Home() {
 
 			<NewFaq />
 			{/* <BlogBox/> */}
-
+			{/* <ScrollDetector/> */}
+			{/* <ScrollCarousel/> */}
+			{/* <StackedScrollCards/> */}
 			{/* <ScrollSection /> */}
 			{/* <CtaSteps /> */}
 			{/* <Steps /> */}

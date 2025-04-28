@@ -9,9 +9,7 @@ const HomeOffer = () => {
 
 export default HomeOffer;
 
-// C:\Users\sebas\Desktop\Projects\DewwwelopmentNext\dewwwelopment-next\public\assets\video\Gen-3 Alpha Turbo 712098762, On this picture pers, Cropped - Dewwwelopm, M 5.mp4
-// public\assets\video\Gen-3 Alpha Turbo 1517127650, On this picture pers, Dewwwelopment-o-nas , M 5.mp4
-// public\assets\video\Gen-3 Alpha Turbo 3826580842, On this picture pers, Cropped - Dewwwelopm, M 5.mp4
+
 
 const offerCardsData: OfferCardProps[] = [
 	{

@@ -19,10 +19,6 @@ const PageHeader = () => {
 					Your browser does not support the video tag.
 				</video>
 
-				
-
-				
-
 				{/* Zawartość */}
 				<div className='relative z-10 min-h-[50svh] w-[90%] flex flex-col gap-12 mb-2 sm:justify-center lg:w-[80%]'>
 					<h1 className='text-4xl font-extrabold lg:text-5xl animate-fade-right text-white'>
@@ -44,9 +40,7 @@ const PageHeader = () => {
 			</div>
 
 			{/* Nakładka, jeśli chcesz np. przyciemnić tło */}
-				<div className='absolute inset-0 w-full h-full bg-black/60'></div>
-
-			
+			<div className='absolute inset-0 w-full h-full bg-black/60'></div>
 		</section>
 	);
 };
