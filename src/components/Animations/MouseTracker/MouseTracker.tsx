@@ -34,6 +34,7 @@ const ScrollDetector = () => {
 			className="w-full h-screen overflow-hidden bg-neutral-900 text-white flex items-center justify-center"
 		>
 			<p className="text-lg">Scrolluj kółkiem myszy 👇</p>
+			<p>{scrollCount}</p>
 		</div>
 	);
 };

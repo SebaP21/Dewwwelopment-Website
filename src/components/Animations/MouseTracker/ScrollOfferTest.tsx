@@ -54,6 +54,7 @@ export const OfferScrollSection: FC<OfferCardPropsData> = ({ data }) => {
 	return (
 		<section
 			ref={sectionRef}
+			key={index}
 			id="oferta"
 			className="relative w-full h-screen bg-zinc-950 overflow-hidden"
 		>
