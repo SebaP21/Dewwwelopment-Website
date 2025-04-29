@@ -96,3 +96,15 @@ h6 {
 	transition-timing-function: ease-in-out;
 	transition-duration: 400ms;
 }
+
+.snap-container {
+    height: calc(100svh - 8svh);
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .snap-container > * {
+    scroll-snap-align: start;
+  }
