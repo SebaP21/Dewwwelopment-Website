@@ -7,7 +7,7 @@ export const NewOffer = () => {
   return (
     <section className="min-h-screen bg-black text-white">
       {offerCardsData.map((project, i) => (
-        <Card url={""} key={i} i={i} {...project} />
+        <Card  key={i} i={i} {...project} />
       ))}
     </section>
   );
