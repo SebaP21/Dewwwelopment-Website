@@ -165,33 +165,44 @@
 
 
 
-"use client"
-
+"use client";
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { motion, AnimatePresence } from "framer-motion"
-import { useState } from "react"
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
 
-const cards = [1, 2, 3, 4, 5]
+const cards = [1, 2, 3, 4, 5];
 
 export default function StackedCardsDraggable() {
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(0);
 
   const handleDragEnd = (
     _: any,
     info: { offset: { y: number }; velocity: { y: number } }
   ) => {
-    const offset = info.offset.y
-    const velocity = info.velocity.y
+    const offsetY = info.offset.y;
+    const velocityY = info.velocity.y;
 
-    if (offset < -100 || velocity < -500) {
-      // W dół
-      if (index < cards.length - 1) setIndex(index + 1)
-    } else if (offset > 100 || velocity > 500) {
-      // W górę
-      if (index > 0) setIndex(index - 1)
+    // przeciągnięcie w dół
+    if (offsetY < -100 || velocityY < -500) {
+      if (index < cards.length - 1) {
+        // przesuwamy do następnej karty
+        setIndex(index + 1);
+      } else {
+        // jesteśmy na ostatniej karcie -> scroll do #portfolio
+        const target = document.getElementById("portfolio");
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      }
     }
-  }
+    // przeciągnięcie w górę
+    else if (offsetY > 100 || velocityY > 500) {
+      if (index > 0) {
+        setIndex(index - 1);
+      }
+    }
+  };
 
   return (
     <section className="h-screen relative overflow-hidden pt-[10svh] bg-white">
@@ -200,6 +211,7 @@ export default function StackedCardsDraggable() {
           key={index}
           drag="y"
           dragConstraints={{ top: 0, bottom: 0 }}
+          dragElastic={0.2}
           onDragEnd={handleDragEnd}
           className="absolute top-0 left-0 w-full h-[90svh] flex items-center justify-center text-5xl font-bold"
           initial={{ y: 300, opacity: 0 }}
@@ -207,14 +219,14 @@ export default function StackedCardsDraggable() {
           exit={{ y: -300, opacity: 0 }}
           transition={{ duration: 0.4 }}
           style={{
-            background: index % 2 === 0 ? "#d1fae5" : "#e5e7eb", // emerald / gray
+            background: index % 2 === 0 ? "#d1fae5" : "#e5e7eb",
           }}
         >
           Karta #{cards[index]}
         </motion.div>
       </AnimatePresence>
 
-      {/* Przycisk przewinięcia dalej (jeśli ostatnia karta) */}
+      {/* Podpowiedź przy ostatniej karcie */}
       {index === cards.length - 1 && (
         <motion.div
           initial={{ opacity: 0 }}
@@ -225,7 +237,7 @@ export default function StackedCardsDraggable() {
         </motion.div>
       )}
     </section>
-  )
+  );
 }
 
 

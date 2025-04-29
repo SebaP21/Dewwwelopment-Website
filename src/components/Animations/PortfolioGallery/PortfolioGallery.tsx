@@ -55,7 +55,7 @@ const PortfolioGallery = () => {
 	const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3]);
 
 	return (
-		<motion.div
+		<motion.div id="portfolio"
 		layout
 		// transition={easeInOut}
 			ref={gallery}
