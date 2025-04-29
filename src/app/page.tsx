@@ -3,7 +3,7 @@ import Head from "next/head";
 import OurWork from "@/components/Animations/StepsAnimation/StepsAnimation";
 
 import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
-import { SmoothScrollHero } from "@/components/Animations/HeaderTest/HeaderTest";
+// import { SmoothScrollHero } from "@/components/Animations/HeaderTest/HeaderTest";
 import BlogPreview from "@/components/home/BlogBox/BlogPreview";
 import StepsAndFaqBackgroundWrapper from "@/components/home/StepsAndBlogBackgroundWrapper/StepsAndFaqBackgroundWrapper";
 import NewFaq from "@/components/home/FAQ/NewFaq";
@@ -26,7 +26,7 @@ export default function Home() {
 
 			{/* <NewOffer/>			 */}
 
-			<SmoothScrollHero />
+			{/* <SmoothScrollHero /> */}
 			{/* <Parallax/> */}
 			{/* <StackedCardsDraggable/> */}
 			{/* <NewOfferMobileDraggable/> */}

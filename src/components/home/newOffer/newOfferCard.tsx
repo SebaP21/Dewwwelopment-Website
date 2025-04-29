@@ -95,36 +95,36 @@ interface BackgroundColorChangeProps {
 
 const BackgroundColorChange: React.FC<BackgroundColorChangeProps> = ({
   children,
-  isLight,
-  disable,
+  // isLight,
+  // disable,
 }) => {
-  const handleEnter = () => {
-    if (disable) return;
-    const wrapper = document.querySelector(".offerbackground");
-    if (!wrapper) return;
-    if (isLight) {
-      wrapper.classList.add("light-section");
-    } else {
-      wrapper.classList.remove("light-section");
-    }
-  };
+  // const handleEnter = () => {
+  //   if (disable) return;
+  //   const wrapper = document.querySelector(".offerbackground");
+  //   if (!wrapper) return;
+  //   if (isLight) {
+  //     wrapper.classList.add("light-section");
+  //   } else {
+  //     wrapper.classList.remove("light-section");
+  //   }
+  // };
 
-  const handleLeave = () => {
-    if (disable) return;
-    const wrapper = document.querySelector(".offerbackground");
-    if (!wrapper) return;
-    if (!isLight) {
-      wrapper.classList.add("light-section");
-    } else {
-      wrapper.classList.remove("light-section");
-    }
-  };
+  // const handleLeave = () => {
+  //   if (disable) return;
+  //   const wrapper = document.querySelector(".offerbackground");
+  //   if (!wrapper) return;
+  //   if (!isLight) {
+  //     wrapper.classList.add("light-section");
+  //   } else {
+  //     wrapper.classList.remove("light-section");
+  //   }
+  // };
 
   return (
     <motion.div
       viewport={{ once: false, amount: 0.6 }}
-      onViewportEnter={handleEnter}
-      onViewportLeave={handleLeave}
+      // onViewportEnter={handleEnter}
+      // onViewportLeave={handleLeave}
       layout
       className="sticky top-[7svh] min-h-[100svh] flex items-center justify-center will-change-transform"
     >
