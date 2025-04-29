@@ -71,7 +71,7 @@ h6 {
 .offerbackground {
 	background-color: black;
 	transition-property: opacity, background-color, transform, filter;
-	transition-timing-function: ease-in-out;
+	/* transition-timing-function: ease-in-out; */
 	transition-duration: 400ms;
 	
 }

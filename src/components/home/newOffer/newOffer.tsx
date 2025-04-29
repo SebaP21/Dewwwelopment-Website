@@ -12,7 +12,7 @@ export const NewOfferMobile = () => {
 
 	return (
 		<section
-			className='relative md:hidden pb-[11svh] scroll-mt-[8svh] offerbackground min-h-screen overscroll-contain'
+			className='relative md:hidden  scroll-mt-[8svh] offerbackground min-h-screen overscroll-contain'
 			style={{ scrollMarginTop: "8svh" }}
 		>
 			{offerCardsData.map((project, i) => {
