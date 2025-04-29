@@ -4,7 +4,7 @@ import Nav from "@/components/global/Nav/Nav";
 import CookieConsentBanner from "@/components/CookieConsent/CookieConsentBanner";
 // import Script from "next/script";
 import StickyFooter from "@/components/global/Footer/StickyFooter";
-import { LenisWrapper } from "@/components/global/Lenis/LenisWrapper";
+// import { LenisWrapper } from "@/components/global/Lenis/LenisWrapper";
 
 // const hind = Hind({
 // 	subsets: ["latin"],

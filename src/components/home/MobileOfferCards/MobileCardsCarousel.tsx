@@ -167,6 +167,8 @@
 
 "use client"
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { motion, AnimatePresence } from "framer-motion"
 import { useState } from "react"
 

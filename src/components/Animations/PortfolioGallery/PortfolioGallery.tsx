@@ -2,8 +2,8 @@
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { easeInOut, motion, useScroll, useTransform } from "framer-motion";
-import { duration } from "moment";
+import {  motion, useScroll, useTransform } from "framer-motion";
+// import { duration } from "moment";
 import Image from "next/image";
 import { useState, useLayoutEffect, useRef } from "react";
 
