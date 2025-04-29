@@ -112,6 +112,12 @@ const Nav = () => {
 						>
 							Kontakt
 						</TransitionLink>
+						<TransitionLink
+							href={"/testowa"}
+							// className='transition-all hover:text-break'
+						>
+							Testowa
+						</TransitionLink>
 					</div>
 				</div>
 			</nav>

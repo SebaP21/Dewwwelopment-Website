@@ -10,7 +10,8 @@ import NewFaq from "@/components/home/FAQ/NewFaq";
 
 import { NewOfferMobile } from "@/components/home/newOffer/newOffer";
 import HomeOffer from "@/components/home/offer/Offer";
-import PageHeader from "@/components/home/pageHeader/pageHeader";
+// import PageHeader from "@/components/home/pageHeader/pageHeader";
+import { SmoothScrollHero } from "@/components/Animations/HeaderTest/HeaderTest";
 // import Parallax from "@/components/home/MobileOfferCards/MobileCardsCarousel";
 
 
@@ -23,13 +24,13 @@ export default function Home() {
 					href='https://dewwwelopment.pl'
 				/>
 			</Head>
-			<PageHeader />
+			{/* <PageHeader /> */}
 			{/* <About /> */}
 			{/* <OfferBox /> */}
 
 			{/* <NewOffer/>			 */}
 
-			{/* <SmoothScrollHero /> */}
+			<SmoothScrollHero />
 			
 			{/* <StackedCardsDraggable/> */}
 			{/* <NewOfferMobileDraggable/> */}

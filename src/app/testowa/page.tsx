@@ -1,13 +1,13 @@
-import Parallax from "@/components/home/MobileOfferCards/MobileCardsCarousel"
-import PageHeader from "@/components/home/pageHeader/pageHeader"
+import { SmoothScrollHero } from "@/components/Animations/HeaderTest/HeaderTest";
+import Parallax from "@/components/home/MobileOfferCards/MobileCardsCarousel";
 
 const TestPage = () => {
-  return(
-    <>
-    <PageHeader/>
-    <Parallax/>
-    </>
-  )
-}
+	return (
+		<>
+			<SmoothScrollHero />
+			<Parallax />
+		</>
+	);
+};
 
-export default TestPage
+export default TestPage;
