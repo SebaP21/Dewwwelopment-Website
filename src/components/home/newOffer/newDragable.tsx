@@ -46,7 +46,7 @@ export const NewOfferMobileDraggable = () => {
               <Card
                 i={i}
                 {...project}
-                url={project.url}
+                url={project.path}
                 progress={undefined}      // już nie używamy useScroll
                 range={undefined}         // niepotrzebne w tej wersji
                 targetScale={1}           // skala ustalana przez Card

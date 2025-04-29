@@ -1,5 +1,4 @@
 interface OfferCardMobileDataProps {
-    url: string;
 	src: string;
 	title: string;
 	description: string;
