@@ -28,7 +28,7 @@ export const NewOfferMobile = () => {
 							range={[i * 0.25, 2]}
 							targetScale={targetScale}
 						/>
-						<div className='h-[30svh]'></div>
+						<div className='h-[40svh]'></div>
 					</React.Fragment>
 				);
 			})}

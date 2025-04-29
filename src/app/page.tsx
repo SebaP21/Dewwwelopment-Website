@@ -9,6 +9,7 @@ import StepsAndFaqBackgroundWrapper from "@/components/home/StepsAndBlogBackgrou
 import NewFaq from "@/components/home/FAQ/NewFaq";
 
 import { NewOfferMobile } from "@/components/home/newOffer/newOffer";
+import HomeOffer from "@/components/home/offer/Offer";
 
 export default function Home() {
 	return (
@@ -29,7 +30,7 @@ export default function Home() {
 			{/* <Parallax/> */}
 			{/* <StackedCardsDraggable/> */}
 			{/* <NewOfferMobileDraggable/> */}
-			{/* <HomeOffer/> */}
+			<HomeOffer />
 
 			{/* <HomeOfferTest/> */}
 			{/* <CardsOffer/> */}
