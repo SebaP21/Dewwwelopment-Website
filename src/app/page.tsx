@@ -30,7 +30,7 @@ export default function Home() {
 			{/* <NewOffer/>			 */}
 
 			{/* <SmoothScrollHero /> */}
-			{/* <Parallax/> */}
+			
 			{/* <StackedCardsDraggable/> */}
 			{/* <NewOfferMobileDraggable/> */}
 			<HomeOffer />
