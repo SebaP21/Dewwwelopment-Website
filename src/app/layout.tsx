@@ -72,12 +72,12 @@ export default function RootLayout({
 					}}
 				/> */}
 
-				<LenisWrapper>
+				{/* <LenisWrapper> */}
 					<Nav />
 					{children}
 					<StickyFooter />
 					<CookieConsentBanner />
-				</LenisWrapper>
+				{/* </LenisWrapper> */}
 			</body>
 		</html>
 	);

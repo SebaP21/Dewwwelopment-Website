@@ -1,7 +1,7 @@
 "use client";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { FC, ReactNode } from "react";
+import { FC, ReactNode, useRef } from "react";
 import { useTransform, motion } from "framer-motion";
 
 type NewCardProps = {
@@ -33,17 +33,23 @@ export const Card: FC<NewCardProps> = ({
   disable,
 }) => {
   const scale = useTransform(progress, range, [1, targetScale]);
+ 
 
   return (
     <BackgroundColorChange isLight={isLight} disable={disable}>
-      <div className="flex items-center justify-center mb-12 relative">
+      <div className="flex items-center justify-center mb-12 relative"
+     
+      >
         <motion.div
+       
           style={{
             color,
             scale,
             top: `calc(1vh + ${i * 10}px)`,
+            
           }}
           className="flex flex-col h-[86svh] w-[95%] relative origin-top rounded-xl shadow-lg overflow-hidden bg-gray-500 will-change-transform"
+          
         >
           <video
             className="w-full h-full object-cover relative"
@@ -118,6 +124,7 @@ const BackgroundColorChange: React.FC<BackgroundColorChangeProps> = ({
       viewport={{ once: false, amount: 0.6 }}
       onViewportEnter={handleEnter}
       onViewportLeave={handleLeave}
+      layout
       className="sticky top-[7svh] min-h-[100svh] flex items-center justify-center will-change-transform"
     >
       {children}

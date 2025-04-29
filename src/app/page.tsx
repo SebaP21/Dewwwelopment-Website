@@ -4,7 +4,7 @@ import Head from "next/head";
 
 import OurWork from "@/components/Animations/StepsAnimation/StepsAnimation";
 
-import { NewOfferMobile } from "@/components/home/newOffer/newOffer";
+// import { NewOfferMobile } from "@/components/home/newOffer/newOffer";
 // import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
 // import BlogPreview from "@/components/home/BlogBox/BlogPreview";
 // import StepsAndFaqBackgroundWrapper from "@/components/home/StepsAndBlogBackgroundWrapper/StepsAndFaqBackgroundWrapper";
@@ -21,7 +21,11 @@ import StepsAndFaqBackgroundWrapper from "@/components/home/StepsAndBlogBackgrou
 import NewFaq from "@/components/home/FAQ/NewFaq";
 // import { NewOffer } from "@/components/home/newOffer/testOffer";
 // import { OfferScrollSection } from "@/components/OfferScrollSection/Test";
-import HomeOffer from "@/components/home/offer/Offer";
+// import HomeOffer from "@/components/home/offer/Offer";
+// import Parallax from "@/components/home/MobileOfferCards/MobileCardsCarousel";
+// import StackedCards from "@/components/home/MobileOfferCards/MobileCardsCarousel";
+import StackedCardsDraggable from "@/components/home/MobileOfferCards/MobileCardsCarousel";
+// import { NewOfferMobileDraggable } from "@/components/home/newOffer/newDragable";
 
 
 // import OfertaSection from "@/components/OfferScrollSection/OfferScrollSection";
@@ -45,11 +49,14 @@ export default function Home() {
 			
 			
 			<SmoothScrollHero />
-			<HomeOffer/>
+			{/* <Parallax/> */}
+			<StackedCardsDraggable/>
+			{/* <NewOfferMobileDraggable/> */}
+			{/* <HomeOffer/> */}
 			
 			{/* <HomeOfferTest/> */}
 			{/* <CardsOffer/> */}
-			<NewOfferMobile />
+			{/* <NewOfferMobile /> */}
 			{/* <OfertaSnap/> */}
 
 			<PortfolioGallery />

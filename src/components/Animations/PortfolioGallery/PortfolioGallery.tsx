@@ -2,7 +2,8 @@
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { easeInOut, motion, useScroll, useTransform } from "framer-motion";
+import { duration } from "moment";
 import Image from "next/image";
 import { useState, useLayoutEffect, useRef } from "react";
 
@@ -54,8 +55,11 @@ const PortfolioGallery = () => {
 	const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3]);
 
 	return (
-		<div
+		<motion.div
+		layout
+		// transition={easeInOut}
 			ref={gallery}
+			
 			style={{ position: "relative" }}
 			className='h-[175vh] bg-black  flex gap-[2vw] p-[2vw] box-border overflow-hidden'
 		>
@@ -79,7 +83,7 @@ const PortfolioGallery = () => {
 				y={y4}
 				extraClass='-top-[75%] hidden md:flex'
 			/>
-		</div>
+		</motion.div>
 	);
 };
 
@@ -88,6 +92,7 @@ export default PortfolioGallery;
 const Column: React.FC<ColumnProps> = ({ images, y, extraClass = "" }) => {
 	return (
 		<motion.div
+		
 			className={`relative h-full w-1/3 flex flex-col gap-[2vw] ${extraClass}`}
 			style={{ y, willChange: "transform" }}
 		>
