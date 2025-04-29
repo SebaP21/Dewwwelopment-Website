@@ -37,7 +37,7 @@ export const Card: FC<NewCardProps> = ({
 
   return (
     <BackgroundColorChange isLight={isLight} disable={disable}>
-      <div className="flex items-center justify-center mb-12 relative"
+      <div className="flex flex-col items-center justify-center mb-12 relative"
      
       >
         <motion.div
@@ -81,6 +81,7 @@ export const Card: FC<NewCardProps> = ({
             </div>
           </div>
         </motion.div>
+      
       </div>
     </BackgroundColorChange>
   );

@@ -1,36 +1,14 @@
 import Head from "next/head";
 
-// import NewFaq from "@/components/home/FAQ/NewFaq";
-
 import OurWork from "@/components/Animations/StepsAnimation/StepsAnimation";
 
-// import { NewOfferMobile } from "@/components/home/newOffer/newOffer";
-// import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
-// import BlogPreview from "@/components/home/BlogBox/BlogPreview";
-// import StepsAndFaqBackgroundWrapper from "@/components/home/StepsAndBlogBackgroundWrapper/StepsAndFaqBackgroundWrapper";
-// import HomeOffer from "@/components/home/offer/Offer";
-// import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
-// import TextOpacityAnimated from "@/components/Animations/OpacityTextTest/OpacityText";
-// import PageHeader from "@/components/home/pageHeader/pageHeader";
-// import { LenisProvider } from "@/components/Lenis/LenisProvider";
-// import { SmoothScrollHero } from "@/components/Animations/HeaderTest/HeaderTest";
 import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
 import { SmoothScrollHero } from "@/components/Animations/HeaderTest/HeaderTest";
 import BlogPreview from "@/components/home/BlogBox/BlogPreview";
 import StepsAndFaqBackgroundWrapper from "@/components/home/StepsAndBlogBackgroundWrapper/StepsAndFaqBackgroundWrapper";
 import NewFaq from "@/components/home/FAQ/NewFaq";
-// import { NewOffer } from "@/components/home/newOffer/testOffer";
-// import { OfferScrollSection } from "@/components/OfferScrollSection/Test";
-// import HomeOffer from "@/components/home/offer/Offer";
-// import Parallax from "@/components/home/MobileOfferCards/MobileCardsCarousel";
-// import StackedCards from "@/components/home/MobileOfferCards/MobileCardsCarousel";
-import StackedCardsDraggable from "@/components/home/MobileOfferCards/MobileCardsCarousel";
-// import { NewOfferMobileDraggable } from "@/components/home/newOffer/newDragable";
 
-
-// import OfertaSection from "@/components/OfferScrollSection/OfferScrollSection";
-// import OfertaSnap from "@/components/home/OfferSnap/OfertaSnap";
-// import PortfolioGallery from "@/components/Animations/PortfolioGallery/PortfolioGallery";
+import { NewOfferMobile } from "@/components/home/newOffer/newOffer";
 
 export default function Home() {
 	return (
@@ -46,17 +24,16 @@ export default function Home() {
 			{/* <OfferBox /> */}
 
 			{/* <NewOffer/>			 */}
-			
-			
+
 			<SmoothScrollHero />
 			{/* <Parallax/> */}
-			<StackedCardsDraggable/>
+			{/* <StackedCardsDraggable/> */}
 			{/* <NewOfferMobileDraggable/> */}
 			{/* <HomeOffer/> */}
-			
+
 			{/* <HomeOfferTest/> */}
 			{/* <CardsOffer/> */}
-			{/* <NewOfferMobile /> */}
+			<NewOfferMobile />
 			{/* <OfertaSnap/> */}
 
 			<PortfolioGallery />

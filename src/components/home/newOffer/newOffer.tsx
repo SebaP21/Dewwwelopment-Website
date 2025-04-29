@@ -1,15 +1,14 @@
 "use client";
 
-import {  useScroll } from "framer-motion";
+import { useScroll } from "framer-motion";
 import { Card } from "./newOfferCard";
 import { offerCardsData } from "../offerBox/OfferBox";
-
+import React from "react";
 
 export const NewOfferMobile = () => {
 	const { scrollYProgress } = useScroll({
-	  offset: ["start start", "end end"],
+		offset: ["start start", "end end"],
 	});
-	
 
 	return (
 		<section
@@ -17,17 +16,20 @@ export const NewOfferMobile = () => {
 			style={{ scrollMarginTop: "8svh" }}
 		>
 			{offerCardsData.map((project, i) => {
-				const targetScale = 1 - (offerCardsData.length - i) * 0.05;
+				const targetScale = 1 - (offerCardsData.length - i) * 0.08;
 				return (
-					<Card
-						key={`p_${i}`}
-						i={i}
-						{...project}
-						url=''
-						progress={scrollYProgress}
-						range={[i * 0.25, 1.5]}
-						targetScale={targetScale}
-					/>
+					<React.Fragment key={project.title}>
+						<Card
+							key={`p_${i}`}
+							i={i}
+							{...project}
+							url=''
+							progress={scrollYProgress}
+							range={[i * 0.25, 2]}
+							targetScale={targetScale}
+						/>
+						<div className='h-[30svh]'></div>
+					</React.Fragment>
 				);
 			})}
 		</section>
